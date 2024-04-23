@@ -6,9 +6,10 @@
 
   @media (min-width: 740px) {
     max-width: 960px;
-    min-height: calc(100vh - 78px);
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
 
   @media (min-width: 1024px) {
@@ -126,7 +127,7 @@
     &--down {
       display: none;
 
-      @media (min-width: 760px) {
+      @media (min-width: 750px) {
         margin: 0 auto;
         padding: 20px;
         width: 80px;
@@ -134,13 +135,17 @@
         color: #13529e;
         opacity: 0;
         position: absolute;
-        bottom: 80px;
+        bottom: 10px;
         left: calc(50% - 36px);
         display: block;
         z-index: 1;
         transform: translateX(-50%);
         animation: fadeDown 2.3s ease infinite;
         animation-play-state: running;
+      }
+
+      @media (min-width: 960px) {
+        bottom: 20px;
       }
 
       &:hover {

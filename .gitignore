@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Exclude
+src/constants/skillsLanguages.js
+src/constants/skillsTools.js
