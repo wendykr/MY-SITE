@@ -7,7 +7,7 @@ export const projectsData = [
     description: 'Web informuje o jednodenní události, u kterého jsem využila znalosti získané z kurzu <a class="link-anchor" href="#stan-se-koderkou">Staň se kodérkou</a>, na kterém jsem tento web prezentovala jako závěrečný projekt.',
     linkGH: 'https://github.com/wendykr/ZAVERECNY-PROJEKT-Expo',
     linkWeb: 'https://expo-pce.netlify.app/',
-    screen: '../src/assets/project/screen-expo-pce.jpg'
+    screen: '../project/screen-expo-pce.jpg'
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ export const projectsData = [
     description: 'Web s tématikou vinařství je projekt založený na Webpacku a mým cílem bylo si na něm procvičit své znalosti z kurzů JavaScript 1 & <a class="link-anchor" href="#javascript-2">JavaScript 2</a>.',
     linkGH: 'https://github.com/wendykr/ZAVERECNY-PROJEKT-Winery',
     linkWeb: 'https://vinarstvi.netlify.app/',
-    screen: '../src/assets/project/screen-winery.jpg'
+    screen: '../project/screen-winery.jpg'
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ export const projectsData = [
     description: 'Web s prezentací mých projektů a dovedností vytvořený pomocí HTML a JavaScriptu. Cílem tohoto projektu bylo jej nakódovat pomocí Tailwindu s minimem použití klasického CSS.',
     linkGH: 'https://github.com/wendykr/RESUME-CV',
     linkWeb: 'https://wendykr.netlify.app/',
-    screen: '../src/assets/project/screen-resume-cv.jpg'
+    screen: '../project/screen-resume-cv.jpg'
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ export const projectsData = [
     description: 'Web s databází filmů založený na Vite a naprogramovaný v Reactu. Cílem tohoto projektu bylo vytvořit filmovou vyhledávací aplikaci s načítáním data z API v rámci Adventní programovací výzvy ReactGirls a Lenovo.',
     linkGH: 'https://github.com/wendykr/the-movie-db-app',
     linkWeb: 'https://filmova-databaze.netlify.app/',
-    screen: '../src/assets/project/screen-filmova-databaze.jpg'
+    screen: '../project/screen-filmova-databaze.jpg'
   },
   {
     id: 5,
@@ -47,6 +47,6 @@ export const projectsData = [
     description: 'Web na procvičování anglické slovní zásoby založený na Vite a naprogramovaný v Reactu. Cílem tohoto projektu bylo se naučit základní principy Reactu v rámci <a class="link-anchor" href="#rg-mentoring">ReactGirls Mentoringového programu</a>.',
     linkGH: 'https://github.com/wendykr/WORDS-GAME',
     linkWeb: 'https://words-game.netlify.app/',
-    screen: '../src/assets/project/screen-words-game.jpg'
+    screen: '../project/screen-words-game.jpg'
   },
 ]
