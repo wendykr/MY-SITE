@@ -1,0 +1,29 @@
+.ToTop {
+  background-color: #050e19;
+  color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 50;
+  cursor: pointer;
+  transition: background-color 200ms ease-linear;
+  display: none;
+
+  &.display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &:hover {
+    background-color: #357ed7;
+  }
+
+  &__button {
+    font-size: 40px;
+
+    @media (min-width: 760px) {
+      font-size: 60px;
+    }
+  }
+}

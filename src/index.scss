@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  background-color: #f8f9fa;
+  color: #333333;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.title {
+  margin-bottom: 36px;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.description {
+  color: #4d4d4d;
+  text-align: center;
+}
+
+section {
+  margin: 0 auto;
+  padding: 64px 80px;
+}
+
+.link-anchor {
+  color: #13529e;
+  text-decoration: underline;
+  cursor: pointer;
+
+  &:hover {
+    color: #000000;
+    text-decoration: none;
+  }
+}

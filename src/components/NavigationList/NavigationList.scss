@@ -1,0 +1,48 @@
+.navigationList {
+  width: 100%;
+  font-size: 18px;
+  list-style: none;
+  position: absolute;
+  left: 0;
+  background-color: #ffffff;
+  z-index: 100;
+  display: none;
+
+  @media (min-width: 740px) {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    height: auto;
+  }
+
+  &.display {
+    display: block;
+  }
+}
+
+.navigation {
+  display: block;
+
+  @media (min-width: 740px) {
+    padding: 0 40px;
+  }
+
+  &__icon {
+    font-size: 30px;
+    cursor: pointer;
+    color: #ffffff;
+
+    @media (min-width: 740px) {
+      color: #333333;
+    }
+  }
+}
+
+#toggler {
+  cursor: pointer;
+
+  &:hover {
+    background-color: #1762bc;
+  }
+}

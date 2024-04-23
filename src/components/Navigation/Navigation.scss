@@ -1,0 +1,37 @@
+.navigation {
+  margin: 0 auto;
+  color: #ffffff;
+  text-align: center;
+
+  @media (min-width: 740px) {
+    max-width: 960px;
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 1440px;
+  }
+
+  &__container {
+  margin: 0 auto;
+  width: 100%;
+  background-color: #13529e;
+
+    @media (min-width: 740px) {
+      background-color: #ffffff;;
+    }
+  }
+
+  #toggler {
+    padding: 22px 40px;
+    text-align: right;
+
+    @media (min-width: 740px) {
+      display: none;
+    }
+  }
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+}

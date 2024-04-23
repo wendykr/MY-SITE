@@ -1,0 +1,31 @@
+.about {
+
+  @media (min-width: 768px) {
+    max-width: 960px;
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 1440px;
+  }
+
+  &__subtitle {
+    margin: 32px 0 16px 0;
+    font-size: 18px;
+    color: #13529e;
+    font-weight: 400;
+  }
+
+  &__text {
+    margin-bottom: 16px;
+  }
+
+  &__link {
+    text-decoration: underline;
+    color: #13529e;
+
+    &:hover {
+      text-decoration: none;
+      color: #000000;
+    }
+  }
+}

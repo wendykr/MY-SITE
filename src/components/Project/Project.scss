@@ -1,0 +1,85 @@
+.project {
+  margin: 32px 0 0 0;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1.7s ease-out, transform 1.7s ease-out;
+
+  @media (min-width: 760px) {
+    margin: 32px 0 0 0;
+    display: flex;
+    gap: 56px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+
+    @media (min-width: 760px) {
+      min-width: 40%;
+      justify-content: flex-start;
+      align-self: center;
+    }
+  }
+
+  &__screen {
+    width: 100%;
+    object-fit: contain;
+    transform: scale(1);
+    transition: transform 500ms ease;
+  
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &--link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+  }
+
+  &__data {
+    padding-top: 20px;
+
+    @media (min-width: 760px) {
+      width: 60%;
+    }
+  }
+
+  &__skills {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #13529E;
+  }
+  
+  &__name {
+    margin: 14px 0;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  &__link {
+    color: #13529e;
+    text-decoration: underline;
+
+    &:hover {
+      color: #000000;
+      text-decoration: none;
+    }
+  }
+}
+
+.order {
+  @media (min-width: 760px) {
+    order: 2;
+  }
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
