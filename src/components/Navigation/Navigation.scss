@@ -3,7 +3,7 @@
   color: #ffffff;
   text-align: center;
 
-  @media (min-width: 740px) {
+  @media (min-width: 640px) {
     max-width: 960px;
   }
 
@@ -16,18 +16,9 @@
   width: 100%;
   background-color: #13529e;
 
-    @media (min-width: 740px) {
+    @media (min-width: 640px) {
       background-color: #ffffff;
       position: absolute;
-    }
-  }
-
-  #toggler {
-    padding: 22px 40px;
-    text-align: right;
-
-    @media (min-width: 740px) {
-      display: none;
     }
   }
 }

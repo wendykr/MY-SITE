@@ -1,7 +1,7 @@
 .navigationItem {
   background-color: #13529e;
 
-  @media (min-width: 740px) {
+  @media (min-width: 640px) {
     background-color: #ffffff;
     border: none;
     max-width: 320px;
@@ -10,34 +10,30 @@
   &__link {
     position: relative;
     display: block;
-    padding: 16px;
+    padding: 20px 40px;
     color: #ffffff;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 500;
     text-decoration: none;
     transition: color 0.2s linear;
     cursor: pointer;
 
-    @media (min-width: 500px) {
-      font-size: 24px;
-    }
-
-    @media (min-width: 740px) {
+    @media (min-width: 640px) {
+      padding: 20px;
       color: #333333;
-      font-size: 24px;
     }
 
     &:hover {
       background-color: #1762bc;
 
-      @media (min-width: 740px) {
+      @media (min-width: 640px) {
         background-color: #ffffff;
         color: #13529e;
 
         &::after {
           content: "";
           height: 2px;
-          width: calc(100% - 32px);
+          width: calc(100% - 40px);
           background-color: #13529e;
           margin: 1px auto 0 auto;
           display: block;
@@ -53,5 +49,5 @@
 
 @keyframes underlineLink {
   0%   { width: 0; }
-  100% { width: calc(100% - 32px); }
+  100% { width: calc(100% - 40px); }
 }

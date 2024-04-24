@@ -8,11 +8,10 @@
   z-index: 100;
   display: none;
 
-  @media (min-width: 740px) {
+  @media (min-width: 640px) {
     position: relative;
     display: flex;
     justify-content: flex-end;
-    gap: 30px;
     height: auto;
   }
 
@@ -24,7 +23,7 @@
 .navigation {
   display: block;
 
-  @media (min-width: 740px) {
+  @media (min-width: 640px) {
     padding: 0 40px;
   }
 
@@ -33,16 +32,24 @@
     cursor: pointer;
     color: #ffffff;
 
-    @media (min-width: 740px) {
+    @media (min-width: 640px) {
       color: #333333;
     }
   }
 }
 
 #toggler {
+  padding: 22px 40px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: end;
 
   &:hover {
     background-color: #1762bc;
+  }
+
+  @media (min-width: 640px) {
+    display: none;
   }
 }
