@@ -29,7 +29,7 @@ export const About = () => {
             offset={0}
             duration={1000}
             >technologii
-          </Link>, kterou se chci výhledově naučit je Vue.</p>
+          </Link>, kterou se chci naučit je Vue.</p>
 
         <h3 className="about__subtitle">Proč frontend?</h3>
         <p className="about__text">Po zkušenostech s psaním textů a úpravou obsahu webů v HTML editoru jsem se posunula blíže ke kódu. Získávám tak větší kontrolu nad obsahem webových stránek, které si můžu přizpůsobit svým potřebám bez omezení. S <Link className="link-anchor"

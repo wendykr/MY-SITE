@@ -30,7 +30,11 @@
 
 section {
   margin: 0 auto;
-  padding: 64px 80px;
+  padding: 64px 40px;
+
+  @media (min-width: 680px) {
+    padding: 64px 80px;
+  }
 }
 
 .link-anchor {
