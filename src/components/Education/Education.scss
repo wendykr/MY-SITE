@@ -44,12 +44,12 @@
   }
 
   &__name {
-    margin-top: 14px;
+    margin: 16px 0;
     font-size: 18px;
     font-weight: 400;
 
     @media (min-width: 640px) {
-      margin-top: 0;
+      margin: 0 0 16px 0;
     }
   }
 
