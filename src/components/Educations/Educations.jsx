@@ -12,6 +12,7 @@ export const Educations = () => {
 
   const toggleShowAll = () => {
     setShowAll(prev => !prev);
+    showAll && setTargetAnchor(null);
   };
 
   useEffect(() => {
@@ -31,7 +32,6 @@ export const Educations = () => {
             behavior: 'smooth',
           });
         }
-        setTargetAnchor(null);
       }, 500);
   
       return () => clearTimeout(timeout);
@@ -75,6 +75,7 @@ export const Educations = () => {
             name={course.name}
             description={course.description}
             anchor={course.anchor}
+            isClicked={course.anchor === targetAnchor}
           />
         ))}
         {coursesData.length > 3 && (
