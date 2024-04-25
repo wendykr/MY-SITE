@@ -4,7 +4,8 @@ import { FaEnvelope } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaAngleDoubleDown } from "react-icons/fa";
-import { Link } from 'react-scroll';
+import { Link } from 'react-router-dom';
+import { scroller } from 'react-scroll';
 
 export const Header = () => {
   const [isDisplay, setIsDisplay] = useState(true);
@@ -24,6 +25,15 @@ export const Header = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  const handleClick = (to) => {
+    scroller.scrollTo(to, {
+      spy: true,
+      smooth: true,
+      offset: 0,
+      duration: 1000,
+    });
+  };
 
   return (
     <div className="header__cover">
@@ -55,10 +65,7 @@ export const Header = () => {
           (
             <Link
               to="about"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={1000}
+              onClick={() => handleClick("about")}
             ><FaAngleDoubleDown className="header__icon--down" />
             </Link>
           )
