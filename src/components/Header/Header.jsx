@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import './Header.scss';
 import { FaEnvelope } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -6,6 +7,24 @@ import { FaAngleDoubleDown } from "react-icons/fa";
 import { Link } from 'react-scroll';
 
 export const Header = () => {
+  const [isDisplay, setIsDisplay] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 20) {
+        setIsDisplay(false);
+      } else {
+        setIsDisplay(true);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <div className="header__cover">
       <header className="header">
@@ -31,14 +50,20 @@ export const Header = () => {
             </li>
           </ul>
         </div>
-        <Link
-            to="about"
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={1000}
-          ><FaAngleDoubleDown className="header__icon--down" />
-          </Link>
+        {
+          isDisplay && 
+          (
+            <Link
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={1000}
+            ><FaAngleDoubleDown className="header__icon--down" />
+            </Link>
+          )
+        }
+
       </header>
     </div>
   )
