@@ -1,4 +1,4 @@
-.experience {
+.education {
   margin: 24px 0;
 
   @media (min-width: 640px) {
@@ -10,7 +10,7 @@
     margin: 32px 0 24px 0;
   }
 
-  .experience__info {
+  &__info {
     padding: 20px;
     background-color: #13529E;
     color: #ffffff;
@@ -30,7 +30,7 @@
     }
   }
 
-  .experience__text {
+  &__text {
     padding: 0 0 20px 0;
 
     @media (min-width: 640px) {
@@ -53,17 +53,17 @@
     }
   }
 
-  .experience__year {
+  &__year {
     margin-bottom: 10px;
     font-size: 14px;
   }
-  
-  .experience__company {
+
+  &__company {
     font-size: 18px;
     text-transform: uppercase;
   }
-  
-  .experience__title {
+
+  &__title {
     margin-top: 14px;
     font-size: 18px;
 

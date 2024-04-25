@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
-import './Experiences.scss';
+import './Educations.scss';
 import { coursesData } from '../../constants/courses';
-import { Experience } from '../Experience/Experience';
+import { Education } from '../Education/Education';
 import { Link as ScrollLink } from 'react-scroll';
 
-export const Experiences = () => {
+export const Educations = () => {
   const [showAll, setShowAll] = useState(false);
   const [displayedCourses, setDisplayedCourses] = useState([]);
   const [targetAnchor, setTargetAnchor] = useState(null);
@@ -64,11 +64,11 @@ export const Experiences = () => {
 
   return (
     <div className="bg-white">
-      <section id="educations" className="experiences">
+      <section id="educations" className="educations">
         <h2 className="title">Kurzy a certifikáty</h2>
         <p className="description">... vzdělávám se a rozšiřuju si své dovednosti.</p>
         {displayedCourses.map(course => (
-          <Experience
+          <Education
             key={course.id}
             year={course.year}
             company={course.company}

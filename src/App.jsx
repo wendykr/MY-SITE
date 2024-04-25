@@ -1,5 +1,5 @@
 import { About } from './components/About/About';
-import { Experiences } from './components/Experiences/Experiences';
+import { Educations } from './components/Educations/Educations';
 import { Footer } from './components/Footer/Footer';
 import { Header } from './components/Header/Header';
 import { Navigation } from './components/Navigation/Navigation';
@@ -16,7 +16,7 @@ function App() {
       <About />
       <Skills />
       <Projects />
-      <Experiences />
+      <Educations />
       <Footer />
       <ToTop />
     </>
