@@ -3,11 +3,11 @@ import { createContext, useContext, useState } from 'react';
 export const NavContext = createContext();
 
 export const NavProvider = ({ children }) => {
-  const [isOpenHamburger, setIsOpenHamburger] = useState(false);
+  const [isOpenMenu, setIsOpenMenu] = useState(false);
 
   return (
     <NavContext.Provider value={{
-      isOpenHamburger, setIsOpenHamburger
+      isOpenMenu, setIsOpenMenu
     }}>
       {children}
     </NavContext.Provider>

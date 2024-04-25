@@ -3,7 +3,7 @@ import './NavigationItem.scss';
 import { useNav } from '../../context/NavContext';
 
 export const NavigationItem = ({ name, to }) => {
-  const { setIsOpenHamburger } = useNav();
+  const { setIsOpenMenu } = useNav();
 
   return (
     <li className="navigationItem">
@@ -14,7 +14,7 @@ export const NavigationItem = ({ name, to }) => {
         smooth={true}
         offset={0}
         duration={1000}
-        onClick={() => setIsOpenHamburger(false)}
+        onClick={() => setIsOpenMenu(false)}
       >
         {name}
       </Link>

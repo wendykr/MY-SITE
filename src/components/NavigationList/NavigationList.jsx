@@ -7,12 +7,12 @@ import { RxCross2 } from "react-icons/rx";
 import { useNav } from '../../context/NavContext';
 
 export const NavigationList = () => {
-  const { isOpenHamburger, setIsOpenHamburger } = useNav();
+  const { isOpenMenu, setIsOpenMenu } = useNav();
 
   useEffect(() => {
     const handleResize = () => {
-      if (isOpenHamburger && window.innerWidth > 640) {
-        setIsOpenHamburger(prev => !prev);
+      if (isOpenMenu && window.innerWidth > 640) {
+        setIsOpenMenu(prev => !prev);
       }
     };
 
@@ -21,20 +21,20 @@ export const NavigationList = () => {
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, [isOpenHamburger]);
+  }, [isOpenMenu]);
 
   const handleClick = () => {
-    setIsOpenHamburger(prev => !prev);
+    setIsOpenMenu(prev => !prev);
   }
 
   return (
   <nav>
     <div id="toggler" onClick={handleClick}>
       {
-        isOpenHamburger ? <RxCross2 className="navigation__icon" /> : <RxHamburgerMenu className="navigation__icon" />
+        isOpenMenu ? <RxCross2 className="navigation__icon" /> : <RxHamburgerMenu className="navigation__icon" />
       }
     </div>
-      <ul id="menu" className={`navigationList ${isOpenHamburger ? 'display' : ''}`}>
+      <ul id="menu" className={`navigationList ${isOpenMenu ? 'display' : ''}`}>
         {
           linkMenuData.map(link => <NavigationItem key={link.id} name={link.name} to={link.url} />)
         }
