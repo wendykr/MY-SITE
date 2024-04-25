@@ -42,10 +42,16 @@ export const Experiences = () => {
     if (!event.target.classList.contains('link-anchor')) {
       return;
     }
-    setShowAll(true);
+
     const clickedAnchor = event.target.getAttribute('href').replace('#', '');
     setTargetAnchor(clickedAnchor);
-    setScroll(true);
+    if (!showAll) {
+      setShowAll(true);
+      setScroll(true);
+    } else {
+      setScroll(true);
+    }
+    event.preventDefault();
   };
 
   useEffect(() => {
