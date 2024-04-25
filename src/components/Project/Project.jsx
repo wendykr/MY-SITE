@@ -33,8 +33,10 @@ export const Project = ({ name, skills, description, linkWeb, linkGH, screen, or
           <p className="project__skills">{skills}</p>
           <h3 className="project__name">{name}</h3>
           <p className="project__description" dangerouslySetInnerHTML={{ __html: description }} />
-          <Button link={linkGH} text="Zobrazit kód" style="primary" />
-          <Button link={linkWeb} text="Přejít na web" style="secondary" />
+          <div className="project__butons">
+            <Button link={linkGH} text="Zobrazit kód" style="primary" />
+            <Button link={linkWeb} text="Přejít na web" style="secondary" />
+          </div>
       </div>
     </div>
   )

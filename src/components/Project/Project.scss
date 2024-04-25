@@ -1,11 +1,10 @@
 .project {
-  margin: 32px 0 0 0;
+  margin-top: 32px;
   opacity: 0;
   transform: translateY(100px);
   transition: opacity 1.7s ease-out, transform 1.7s ease-out;
 
   @media (min-width: 760px) {
-    margin: 32px 0 0 0;
     display: flex;
     gap: 56px;
   }
@@ -69,6 +68,17 @@
     &:hover {
       color: #000000;
       text-decoration: none;
+    }
+  }
+
+  &__butons {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @media (min-width: 350px) {
+      flex-direction: row;
     }
   }
 }

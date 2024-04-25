@@ -1,17 +1,16 @@
 .button {
-  margin: 24px 24px 0 0;
   padding: 24px 0;
   width: 120px;
   height: 32px;
+  font-size: 16px;
   border-radius: 4px;
+  border: none;
   transition-property: background-color;
   transition-duration: 300ms;
   transition-timing-function: ease-linear;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: none;
-  font-size: 16px;
 
   &:hover {
     background-color: #406fa8;
