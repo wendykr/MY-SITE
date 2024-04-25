@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import './NavigationList.scss';
 import { linkMenuData } from '../../constants/linkMenu';
 import { NavigationItem } from '../NavigationItem/NavigationItem';
@@ -7,6 +8,20 @@ import { useNav } from '../../context/NavContext';
 
 export const NavigationList = () => {
   const { isOpenHamburger, setIsOpenHamburger } = useNav();
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (isOpenHamburger && window.innerWidth > 640) {
+        setIsOpenHamburger(prev => !prev);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [isOpenHamburger]);
 
   const handleClick = () => {
     setIsOpenHamburger(prev => !prev);
