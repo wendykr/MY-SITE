@@ -44,18 +44,18 @@ export const Header = () => {
           <p className="header__description">Frontend React vývojářka webů a webových aplikací, HTML/CSS kodérka grafických návrhů webů.</p>
           <ul className="header__list">
           <li>
-              <a href="https://github.com/wendykr/">
-                <FaGithub className="header__icon" />
+              <a href="https://github.com/wendykr/" aria-label="Profil na GitHubu">
+                <FaGithub className="header__icon" alt="Ikona GitHubu" />
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/vendula-krajickova/">
-                <FaLinkedinIn className="header__icon" />
+              <a href="https://www.linkedin.com/in/vendula-krajickova/" aria-label="Profil na LinkedInu">
+                <FaLinkedinIn className="header__icon" alt="Ikona LinkedInu" />
               </a>
             </li>
             <li>
-              <a href="mailto:vendysacek@seznam.cz">
-                <FaEnvelope className="header__icon" />
+              <a href="mailto:vendysacek@seznam.cz" aria-label="Kontaktovat Vendulu">
+                <FaEnvelope className="header__icon" alt="Ikona e-mailu" />
               </a>
             </li>
           </ul>
@@ -66,7 +66,8 @@ export const Header = () => {
             <Link
               to="about"
               onClick={() => handleClick("about")}
-            ><FaAngleDoubleDown className="header__icon--down" />
+              aria-label="Přejít na sekci 'O mě'"
+            ><FaAngleDoubleDown className="header__icon--down" alt="Ikona scroll down" />
             </Link>
           )
         }
