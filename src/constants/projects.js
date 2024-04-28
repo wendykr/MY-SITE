@@ -23,7 +23,7 @@ export const projectsData = [
     id: 3,
     year: '09/2023 - 09/2023',
     name: 'Personal portfolio',
-    skills: 'Tailwind / JavaScript / Vite',
+    skills: 'Tailwind / JavaScript',
     description: 'Web s prezentací mých projektů a dovedností vytvořený pomocí HTML a JavaScriptu. Cílem tohoto projektu bylo jej nakódovat pomocí Tailwindu s minimem použití klasického CSS.',
     linkGH: 'https://github.com/wendykr/RESUME-CV',
     linkWeb: 'https://wendykr.netlify.app/',
