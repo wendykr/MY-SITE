@@ -1,6 +1,4 @@
 import './Skills.scss';
-// import { skillsLanguagesData } from '../../constants/skillsLanguages';
-// import { skillsToolsData } from '../../constants/skillsTools';
 import { Skill } from '../Skill/Skill';
 
 import { FaReact, FaHtml5, FaSass } from "react-icons/fa";
