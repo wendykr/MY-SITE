@@ -2,7 +2,8 @@ import { useState, useEffect } from 'react';
 import './Educations.scss';
 import { coursesData } from '../../constants/courses';
 import { Education } from '../Education/Education';
-import { Link as ScrollLink } from 'react-scroll';
+import { Link } from 'react-router-dom';
+import { scroller } from 'react-scroll';
 
 export const Educations = () => {
   const [showAll, setShowAll] = useState(false);
@@ -12,7 +13,18 @@ export const Educations = () => {
 
   const toggleShowAll = () => {
     setShowAll(prev => !prev);
-    showAll && setTargetAnchor(null);
+
+    if (showAll) {
+      setTargetAnchor(null);
+      setTimeout(() => {
+        scroller.scrollTo('educations', {
+          spy: true,
+          smooth: true,
+          offset: 0,
+          duration: 1000,
+        });
+      }, 200);
+    }
   };
 
   useEffect(() => {
@@ -39,19 +51,22 @@ export const Educations = () => {
   }, [scroll, targetAnchor]);
 
   const handleAnchorClick = (event) => {
-    if (!event.target.classList.contains('link-anchor')) {
-      return;
-    }
 
-    const clickedAnchor = event.target.getAttribute('href').replace('#', '');
-    setTargetAnchor(clickedAnchor);
-    if (!showAll) {
-      setShowAll(true);
-      setScroll(true);
-    } else {
-      setScroll(true);
+    if (event.target.tagName === 'A' && event.target.getAttribute('href')) {
+      const hrefValue = event.target.getAttribute('href');
+
+      if (hrefValue.includes('#')) {
+        const clickedAnchor = hrefValue.replace('#', '');
+        setTargetAnchor(clickedAnchor);
+        if (!showAll) {
+          setShowAll(true);
+          setScroll(true);
+        } else {
+          setScroll(true);
+        }
+        event.preventDefault();
+      }
     }
-    event.preventDefault();
   };
 
   useEffect(() => {
@@ -79,17 +94,15 @@ export const Educations = () => {
           />
         ))}
         {coursesData.length > 3 && (
-          <ScrollLink
-            className="link-anchor"
-            onClick={toggleShowAll}
-            to={showAll ? "educations" : ""}
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={1500}
-          >
-            {showAll ? 'Skrýt' : 'Zobrazit další'}
-          </ScrollLink>
+          showAll ?
+            <Link
+              className="link-anchor"
+              onClick={toggleShowAll}
+              to="/educations">Skrýt</Link>
+              :
+            <button
+              className="link-anchor button-reset-style"
+              onClick={toggleShowAll}>Zobrazit další</button>
         )}
       </section>
     </div>
