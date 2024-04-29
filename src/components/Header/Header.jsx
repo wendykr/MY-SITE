@@ -64,7 +64,7 @@ export const Header = () => {
           isDisplay && 
           (
             <Link
-              to="about"
+              to="#about"
               onClick={() => handleClick("about")}
               aria-label="Přejít na sekci 'O mě'"
             ><FaAngleDoubleDown className="header__icon--down" alt="Ikona scroll down" />

@@ -12,10 +12,11 @@ export const Educations = () => {
   const [scroll, setScroll] = useState(false);
 
   const toggleShowAll = () => {
-    setShowAll(prev => !prev);
-
     if (showAll) {
       setTargetAnchor(null);
+      setTimeout(() => {
+        setShowAll(false);
+      }, 1300);
       setTimeout(() => {
         scroller.scrollTo('educations', {
           spy: true,
@@ -23,13 +24,15 @@ export const Educations = () => {
           offset: 0,
           duration: 1000,
         });
-      }, 200);
+      }, 300);
+    } else {
+      setShowAll(true);
     }
   };
 
   useEffect(() => {
     if (!showAll) {
-      setDisplayedCourses(coursesData.slice(-3).reverse());
+      setDisplayedCourses(coursesData.slice(-5).reverse());
     } else {
       setDisplayedCourses(coursesData.slice().reverse());
     }
@@ -50,14 +53,16 @@ export const Educations = () => {
     }
   }, [scroll, targetAnchor]);
 
-  const handleAnchorClick = (event) => {
+const handleAnchorClick = (event) => {
+  if (event.target.tagName === 'A' && event.target.getAttribute('href')) {
+    const hrefValue = event.target.getAttribute('href');
 
-    if (event.target.tagName === 'A' && event.target.getAttribute('href')) {
-      const hrefValue = event.target.getAttribute('href');
+    if (hrefValue.includes('#')) {
+      const clickedAnchor = hrefValue.replace('#', '');
 
-      if (hrefValue.includes('#')) {
-        const clickedAnchor = hrefValue.replace('#', '');
+      if (event.target.classList.contains('show-edu')) {
         setTargetAnchor(clickedAnchor);
+
         if (!showAll) {
           setShowAll(true);
           setScroll(true);
@@ -67,7 +72,9 @@ export const Educations = () => {
         event.preventDefault();
       }
     }
-  };
+  }
+};
+
 
   useEffect(() => {
     document.addEventListener('click', handleAnchorClick);
@@ -96,9 +103,9 @@ export const Educations = () => {
         {coursesData.length > 3 && (
           showAll ?
             <Link
-              className="link-anchor"
+              className="link-anchor show-edu"
               onClick={toggleShowAll}
-              to="/educations">Skrýt</Link>
+              to="#educations">Skrýt</Link>
               :
             <button
               className="link-anchor button-reset-style"

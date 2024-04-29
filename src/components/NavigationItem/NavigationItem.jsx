@@ -1,11 +1,12 @@
 import { useEffect } from 'react';
 import './NavigationItem.scss';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { scroller } from 'react-scroll';
 import { useNav } from '../../context/NavContext';
 
 export const NavigationItem = ({ name, to }) => {
   const { setIsOpenMenu } = useNav();
+  const location = useLocation();
 
   const handleClick = () => {
     setIsOpenMenu(false);
@@ -17,23 +18,25 @@ export const NavigationItem = ({ name, to }) => {
     });
   };
 
+
   useEffect(() => {
-    const urlPath = window.location.pathname;
-    if (urlPath === `/${to}`) {
-      scroller.scrollTo(to, {
-        spy: true,
-        smooth: true,
-        offset: 0,
-        duration: 0,
+    const { hash } = location;
+
+    if (hash === `#${to}`) {
+      window.addEventListener('load', () => {
+        const targetElement = document.getElementById(to);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'auto', block: 'start' });
+        }
       });
     }
-  }, [to]);
+  }, [location, to]);
 
   return (
     <li className="navigationItem">
       <Link
         className="navigationItem__link"
-        to={`/${to}`}
+        to={`#${to}`}
         onClick={handleClick}
       >
         {name}

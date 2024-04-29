@@ -26,7 +26,7 @@ export const Project = ({ name, skills, description, linkWeb, linkGH, screen, or
     <div ref={projectRef} className={`project ${isVisible ? 'visible' : ''}`}>
       <div className={`project__container ${order ? 'order': ''}`}>
         <a className="project__screen--link" href={linkWeb}>
-          <img className="project__screen" src={screen} width="100%" height="auto" alt={`náhled webu ${name}`} loading="lazy" />
+          <img className="project__screen" src={screen} width="100%" height="auto" alt={`náhled webu ${name}`} />
         </a>
       </div>
       <div className="project__data">
