@@ -44,7 +44,11 @@ export const About = () => {
       </Link> mi nejvíce přirostl k srdci React. Pomocí něj můžu programovat weby s dynamickým obsahem.</p>
 
       <h3 className="about__subtitle">Jak dál?</h3>
-      <p className="about__text">Jsem <a className="link-anchor" href='https://www.linkedin.com/in/vendula-krajickova/'>#opentowork</a> příležitosti, kde chci získávat zkušenosti ve vývoji webů a webových aplikací. Být součástí týmu, kde mohu profesně růst a uplatnit své dovednosti. Oslovil vás můj profil? Napište mi a pojďme si popovídat. Pouze tak zjistíme, zdali najdeme ideální souhrnu mezi mými dovednostmi a vašimi potřebami.</p>
+      <p className="about__text">Jsem <a className="link-anchor" href='https://www.linkedin.com/in/vendula-krajickova/'>#opentowork</a> příležitosti, kde chci získávat zkušenosti ve vývoji webů a webových aplikací. Být součástí týmu, kde mohu profesně růst a uplatnit své dovednosti. Oslovil vás můj profil? <Link className="link-anchor"
+        to="#contact"
+        onClick={() => handleClick("contact")}
+      >Napište mi
+      </Link> a pojďme si popovídat. Pouze tak zjistíme, zdali najdeme ideální souhrnu mezi mými dovednostmi a vašimi potřebami.</p>
     </section>
   )
 }

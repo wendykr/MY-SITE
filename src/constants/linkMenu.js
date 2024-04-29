@@ -19,4 +19,9 @@ export const linkMenuData = [
     name: 'Vzdělávání',
     url: 'educations',
   },
+  {
+    id: 5,
+    name: 'Kontakt',
+    url: 'contact',
+  },
 ]

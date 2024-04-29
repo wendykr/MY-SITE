@@ -3,7 +3,7 @@
   color: #ffffff;
   text-align: center;
 
-  @media (min-width: 640px) {
+  @media (min-width: 720px) {
     max-width: 960px;
   }
 
@@ -16,7 +16,7 @@
   width: 100%;
   background-color: #13529e;
 
-    @media (min-width: 640px) {
+    @media (min-width: 720px) {
       background-color: #ffffff;
       position: absolute;
     }

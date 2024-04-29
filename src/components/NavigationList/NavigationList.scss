@@ -8,7 +8,7 @@
   z-index: 100;
   display: none;
 
-  @media (min-width: 640px) {
+  @media (min-width: 720px) {
     position: relative;
     display: flex;
     justify-content: flex-end;
@@ -23,7 +23,7 @@
 .navigation {
   display: block;
 
-  @media (min-width: 640px) {
+  @media (min-width: 720px) {
     padding: 0 40px;
   }
 
@@ -32,7 +32,7 @@
     cursor: pointer;
     color: #ffffff;
 
-    @media (min-width: 640px) {
+    @media (min-width: 720px) {
       color: #333333;
     }
   }
@@ -49,7 +49,7 @@
     background-color: #1762bc;
   }
 
-  @media (min-width: 640px) {
+  @media (min-width: 720px) {
     display: none;
   }
 }

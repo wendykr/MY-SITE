@@ -1,6 +1,6 @@
 .footer {
   margin: 0 auto;
-  padding: 16px 40px;
+  padding: 40px;
   width: 100%;
   background-color: #13529e;
   color: #ffffff;
@@ -34,5 +34,58 @@
       text-decoration: none;
       color: #cBd8eB;
     }
+  }
+
+  &__line {
+    margin: 40px auto;
+    border: 1px solid rgba(187, 214, 253, 0.3);
+    max-width: 1440px;
+  }
+}
+
+.contact {
+
+  &__text {
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  &__container {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+    @media (min-width: 640px) {
+      flex-direction: row;
+      gap: 120px;
+    }
+  }
+
+  &__button {
+    padding: 8px 16px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color: #13529e;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    gap: 10px;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.6);
+    }
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    color: #13529e;
   }
 }
