@@ -18,7 +18,6 @@ export const NavigationItem = ({ name, to }) => {
     });
   };
 
-
   useEffect(() => {
     const { hash } = location;
 
