@@ -35,7 +35,7 @@ export const NavigationItem = ({ name, to }) => {
   return (
     <li className="navigationItem">
       <Link
-        className="navigationItem__link"
+        className={`navigationItem__link ${(name=== 'Kontakt') ? 'navigationItem__link--last' : 'navigationItem__link--other' }`}
         to={`#${to}`}
         onClick={handleClick}
       >

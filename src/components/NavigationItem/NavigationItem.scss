@@ -1,7 +1,7 @@
 .navigationItem {
   background-color: #13529e;
 
-  @media (min-width: 720px) {
+  @media (min-width: 730px) {
     background-color: #ffffff;
     border: none;
     max-width: 320px;
@@ -18,17 +18,10 @@
     transition: color 0.2s linear;
     cursor: pointer;
 
-    @media (min-width: 720px) {
-      padding: 20px;
-      color: #333333;
-    }
-
     &:hover {
       background-color: #1762bc;
 
-      @media (min-width: 720px) {
-        background-color: #ffffff;
-        color: #13529e;
+      @media (min-width: 730px) {
 
         &::after {
           content: "";
@@ -41,6 +34,34 @@
           animation-name: underlineLink;
           animation-duration: .3s;
           animation-timing-function: ease;
+        }
+      }
+    }
+
+    &--other {
+      @media (min-width: 730px) {
+        padding: 20px;
+        color: #333333;
+        &:hover {
+          @media (min-width: 730px) {
+            background-color: #ffffff;
+            color: #13529e;
+          }
+        }
+      }
+    }
+
+    &--last {
+      @media (min-width: 730px) {
+        padding: 6px 20px;
+        color: #ffffff;
+        background-color: #1762bc;
+        border-radius: 4px;
+        &:hover {
+          @media (min-width: 730px) {
+            background-color: #13529e;
+            color: #ffffff;
+          }
         }
       }
     }
