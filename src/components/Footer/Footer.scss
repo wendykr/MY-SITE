@@ -69,6 +69,11 @@
 
     &--link {
       color: #ffffff;
+
+      &:hover {
+        text-decoration: none;
+        color: #cbd8eb;
+      }
     }
   }
 }
