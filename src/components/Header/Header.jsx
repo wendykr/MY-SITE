@@ -66,7 +66,7 @@ export const Header = () => {
             <Link
               to="#about"
               onClick={() => handleClick("about")}
-              aria-label="Přejít na sekci 'O mě'"
+              aria-label="Přejít na sekci 'O mně'"
             ><FaAngleDoubleDown className="header__icon--down" alt="Ikona scroll down" />
             </Link>
           )

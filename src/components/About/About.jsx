@@ -14,7 +14,7 @@ export const About = () => {
 
   return (
     <section id="about" className="about">
-      <h2 className="title">O mě</h2>
+      <h2 className="title">O mně</h2>
       <h3 className="about__subtitle">Kdo jsem?</h3>
       <p className="about__text">Junior s pokročilými <Link className="link-anchor"
         to="#skills"

@@ -1,10 +1,10 @@
 .header {
   margin: 0 auto;
-  max-width: 730px;
+  max-width: 740px;
   text-align: left;
   position: relative;
 
-  @media (min-width: 730px) {
+  @media (min-width: 740px) {
     max-width: 960px;
     min-height: 100vh;
     display: flex;
@@ -14,6 +14,10 @@
 
   @media (min-width: 1024px) {
     max-width: 1440px;
+  }
+
+  @media (min-width: 2048px) {
+    min-height: auto;
   }
 
   &__cover {
@@ -31,7 +35,7 @@
     justify-content: space-between;
     height: 100%;
 
-    @media (min-width: 730px) {
+    @media (min-width: 740px) {
       margin: 50px 0;
       padding: 20px 60px 40px 60px;
       text-align: left;
@@ -91,7 +95,7 @@
     justify-content: center;
     list-style: none;
 
-    @media (min-width: 730px) {
+    @media (min-width: 740px) {
       margin-top: 50px;
       justify-content: start;
     }
@@ -123,7 +127,7 @@
     &--down {
       display: none;
 
-      @media (min-width: 730px) {
+      @media (min-width: 740px) {
         margin: 0 auto;
         padding: 20px;
         width: 80px;

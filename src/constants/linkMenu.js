@@ -1,7 +1,7 @@
 export const linkMenuData = [
   {
     id: 1,
-    name: 'O mě',
+    name: 'O mně',
     url: 'about',
   },
   {
