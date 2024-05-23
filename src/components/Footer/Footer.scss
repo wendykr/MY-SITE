@@ -20,7 +20,7 @@
       max-width: 540px;
     }
 
-    @media (min-width: 780px) {
+    @media (min-width: 790px) {
       max-width: 960px;
       display: flex;
       flex-direction: row;
@@ -61,7 +61,7 @@
   &__navigation {
     display: none;
 
-    @media (min-width: 780px) {
+    @media (min-width: 790px) {
       display: flex;
       flex-direction: row;
       gap: 20px;

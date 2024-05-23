@@ -23,6 +23,7 @@ export const Projects = () => {
               />
             ))
         }
+        <p className="projects__footer">Neusínám na vavřinech a věnuji se i menším projektům. Podívejte se na můj <a className="link-anchor" href='https://github.com/wendykr/'>GitHub</a>, kde mám tyto projekty připnuté.</p>
     </section>
   )
 }

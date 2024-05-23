@@ -1,9 +1,11 @@
+@use '../../breakpoint';
+
 .navigation {
   margin: 0 auto;
   color: #ffffff;
   text-align: center;
 
-  @media (min-width: 740px) {
+  @media (min-width: breakpoint.$width-computer-header) {
     max-width: 960px;
   }
 
@@ -16,7 +18,7 @@
   width: 100%;
   background-color: #13529e;
 
-    @media (min-width: 740px) {
+    @media (min-width: breakpoint.$width-computer-header) {
       background-color: #ffffff;
       position: absolute;
     }

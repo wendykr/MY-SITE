@@ -1,10 +1,12 @@
+@use '../../breakpoint';
+
 .header {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: breakpoint.$width-computer-header;
   text-align: left;
   position: relative;
 
-  @media (min-width: 740px) {
+  @media (min-width: breakpoint.$width-computer-header) {
     max-width: 960px;
     min-height: 100vh;
     display: flex;
@@ -35,7 +37,7 @@
     justify-content: space-between;
     height: 100%;
 
-    @media (min-width: 740px) {
+    @media (min-width: breakpoint.$width-computer-header) {
       margin: 50px 0;
       padding: 20px 60px 40px 60px;
       text-align: left;
@@ -95,7 +97,7 @@
     justify-content: center;
     list-style: none;
 
-    @media (min-width: 740px) {
+    @media (min-width: breakpoint.$width-computer-header) {
       margin-top: 50px;
       justify-content: start;
     }
@@ -127,7 +129,7 @@
     &--down {
       display: none;
 
-      @media (min-width: 740px) {
+      @media (min-width: breakpoint.$width-computer-header) {
         margin: 0 auto;
         padding: 20px;
         width: 80px;

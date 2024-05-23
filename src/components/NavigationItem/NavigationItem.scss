@@ -1,7 +1,9 @@
+@use '../../breakpoint';
+
 .navigationItem {
   background-color: #13529e;
 
-  @media (min-width: 740px) {
+  @media (min-width: breakpoint.$width-computer-header) {
     background-color: #ffffff;
     border: none;
     max-width: 320px;
@@ -21,7 +23,7 @@
     &:hover {
       background-color: #1762bc;
 
-      @media (min-width: 740px) {
+      @media (min-width: breakpoint.$width-computer-header) {
 
         &::after {
           content: "";
@@ -39,12 +41,12 @@
     }
 
     &--other {
-      @media (min-width: 740px) {
+      @media (min-width: breakpoint.$width-computer-header) {
         padding: 20px;
         color: #333333;
 
         &:hover {
-          @media (min-width: 740px) {
+          @media (min-width: breakpoint.$width-computer-header) {
             background-color: #ffffff;
             color: #13529e;
           }
@@ -53,14 +55,14 @@
     }
 
     &--last {
-      @media (min-width: 740px) {
+      @media (min-width: breakpoint.$width-computer-header) {
         padding: 6px 20px;
         color: #ffffff;
         background-color: #1762bc;
         border-radius: 4px;
 
         &:hover {
-          @media (min-width: 740px) {
+          @media (min-width: breakpoint.$width-computer-header) {
             background-color: #13529e;
             color: #ffffff;
           }
