@@ -43,12 +43,22 @@ export const About = () => {
       >kurzů
       </Link> mi nejvíce přirostl k srdci React. Pomocí něj můžu programovat weby s dynamickým obsahem.</p>
 
-      <h3 className="about__subtitle">Jak dál?</h3>
-      <p className="about__text">Jsem <a className="link-anchor" href='https://www.linkedin.com/in/vendula-krajickova/'>#opentowork</a> příležitosti, kde chci získávat zkušenosti ve vývoji webů a webových aplikací. Být součástí týmu, kde mohu profesně růst a uplatnit své dovednosti. Oslovil vás můj profil? <Link className="link-anchor"
+      <h3 className="about__subtitle">Kam směřuji?</h3>
+      <p className="about__text">Chci získávat zkušenosti ve vývoji webů a webových aplikací. Jsem <a className="link-anchor" href='https://www.linkedin.com/in/vendula-krajickova/'>#opentowork</a>  a hledám příležitost být součástí týmu, kde mohu profesně růst a uplatnit své dovednosti. Oslovil vás můj profil? <Link className="link-anchor"
         to="#contact"
         onClick={() => handleClick("contact")}
       >Napište mi
       </Link> a pojďme si popovídat. Pouze tak zjistíme, zdali najdeme ideální souhrnu mezi mými dovednostmi a vašimi potřebami.</p>
+
+      <h3 className="about__subtitle">Pokud si plácneme?</h3>
+      <p className="about__text">Získáte ve mně člověka, který je:
+        <ul className="about__list">
+          <li className="about__list--item"><span className="about__list--term">Spolehlivý</span> - dodržuji termíny úkolů a často předkládám výsledky dříve, než je potřeba.</li>
+          <li className="about__list--item"><span className="about__list--term">Pečlivý</span> - mám smysl pro detail s tolerancí na 1px.</li>
+          <li className="about__list--item"><span className="about__list--term">Flexibilní</span> - jako junior se cítím jistější, mám-li po ruce parťáka, ale dokážu pracovat i samostatně.</li>
+          <li className="about__list--item"><span className="about__list--term">Otevřený zpětné vazbě</span> - ráda vyslechnu názory druhých a beru je jako motivaci k rozvoji svých dovedností.</li>
+        </ul>
+      </p>
     </section>
   )
 }
