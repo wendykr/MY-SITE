@@ -2,7 +2,7 @@ import './Projects.scss';
 import { projectsData } from '../../constants/projects';
 import { Project } from '../Project/Project';
 
-export const Projects = () => {
+export const Projects: React.FC = () => {
   return (
     <section id="projects" className="projects">
         <h2 className="title">Projekty</h2>

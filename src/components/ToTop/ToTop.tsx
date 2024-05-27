@@ -3,7 +3,7 @@ import './ToTop.scss';
 import { animateScroll } from 'react-scroll';
 import { RiArrowUpSLine } from "react-icons/ri";
 
-export const ToTop = () => {
+export const ToTop: React.FC = () => {
   const [isDisplay, setIsDisplay] = useState(false);
 
   useEffect(() => {

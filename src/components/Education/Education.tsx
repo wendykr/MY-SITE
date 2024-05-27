@@ -1,6 +1,15 @@
 import './Education.scss';
 
-export const Education = ({ anchor, year, company, name, description, isClicked }) => {
+interface EducationProps {
+  anchor: string;
+  year: string;
+  company: string;
+  name: string;
+  description: string;
+  isClicked: boolean;
+}
+
+export const Education: React.FC<EducationProps> = ({ anchor, year, company, name, description, isClicked }) => {
 
   return (
     <div id={anchor} className="education">

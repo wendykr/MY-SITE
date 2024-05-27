@@ -4,8 +4,8 @@ import { linkMenuData } from '../../constants/linkMenu';
 import { scroller } from 'react-scroll';
 import { Contact } from '../Contact/Contact';
 
-export const Footer = () => {
-  const handleClick = (to) => {
+export const Footer: React.FC = () => {
+  const handleClick = (to: string) => {
     scroller.scrollTo(to, {
       spy: true,
       smooth: true,

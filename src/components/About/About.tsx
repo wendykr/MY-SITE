@@ -2,8 +2,8 @@ import { Link } from 'react-router-dom';
 import { scroller } from 'react-scroll';
 import './About.scss';
 
-export const About = () => {
-  const handleClick = (to) => {
+export const About: React.FC = () => {
+  const handleClick = (to: string) => {
     scroller.scrollTo(to, {
       spy: true,
       smooth: true,

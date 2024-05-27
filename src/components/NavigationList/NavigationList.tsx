@@ -6,7 +6,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross2 } from "react-icons/rx";
 import { useNav } from '../../context/NavContext';
 
-export const NavigationList = () => {
+export const NavigationList: React.FC = () => {
   const { isOpenMenu, setIsOpenMenu } = useNav();
 
   useEffect(() => {
