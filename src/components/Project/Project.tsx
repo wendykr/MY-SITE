@@ -2,16 +2,28 @@ import { useEffect, useRef, useState } from 'react';
 import './Project.scss';
 import { Button } from '../Button/Button';
 
-export const Project = ({ name, skills, description, linkWeb, linkGH, screen, order }) => {
+interface ProjectProps {
+  name: string;
+  skills: string;
+  description: string;
+  linkWeb: string;
+  linkGH: string;
+  screen: string;
+  order: boolean;
+}
+
+export const Project: React.FC<ProjectProps> = ({ name, skills, description, linkWeb, linkGH, screen, order }) => {
   const [isVisible, setIsVisible] = useState(false);
-  const projectRef = useRef(null);
+  const projectRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const showProject = () => {
-      const triggerBottom = window.innerHeight / 5 * 4;
-      const boxTop = projectRef.current.getBoundingClientRect().top;
-      if (boxTop < triggerBottom) {
-        setIsVisible(true);
+      if (projectRef.current) {
+        const triggerBottom = window.innerHeight / 5 * 4;
+        const boxTop = projectRef.current.getBoundingClientRect().top;
+        if (boxTop < triggerBottom) {
+          setIsVisible(true);
+        }
       }
     };
 

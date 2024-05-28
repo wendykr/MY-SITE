@@ -4,11 +4,12 @@ import { coursesData } from '../../constants/courses';
 import { Education } from '../Education/Education';
 import { Link } from 'react-router-dom';
 import { scroller } from 'react-scroll';
+import { CoursersDataStructure } from '../models/Coursers';
 
 export const Educations = () => {
   const [showAll, setShowAll] = useState(false);
-  const [displayedCourses, setDisplayedCourses] = useState([]);
-  const [targetAnchor, setTargetAnchor] = useState(null);
+  const [displayedCourses, setDisplayedCourses] = useState<CoursersDataStructure[]>([]);
+  const [targetAnchor, setTargetAnchor] = useState<string | null>(null);
   const [scroll, setScroll] = useState(false);
 
   const toggleShowAll = () => {
@@ -53,31 +54,32 @@ export const Educations = () => {
     }
   }, [scroll, targetAnchor]);
 
-const handleAnchorClick = (event) => {
-  if (event.target.tagName === 'A' && event.target.getAttribute('href')) {
-    const hrefValue = event.target.getAttribute('href');
-
-    if (hrefValue.includes('#')) {
-      const clickedAnchor = hrefValue.replace('#', '');
-
-      if (event.target.classList.contains('show-edu')) {
-        setTargetAnchor(clickedAnchor);
-
-        if (!showAll) {
-          setShowAll(true);
-          setScroll(true);
-        } else {
-          setScroll(true);
+  const handleAnchorClick = (event: MouseEvent) => {
+    const target = event.target as HTMLElement | null;
+  
+    if (target && target.tagName === 'A' && target.getAttribute('href')) {
+      const hrefValue = target.getAttribute('href');
+  
+      if (hrefValue && hrefValue.includes('#')) {
+        const clickedAnchor = hrefValue.replace('#', '');
+  
+        if (target.classList.contains('show-edu')) {
+          setTargetAnchor(clickedAnchor);
+  
+          if (!showAll) {
+            setShowAll(true);
+            setScroll(true);
+          } else {
+            setScroll(true);
+          }
+          event.preventDefault();
         }
-        event.preventDefault();
       }
     }
-  }
-};
-
+  };
 
   useEffect(() => {
-    document.addEventListener('click', handleAnchorClick);
+    document.addEventListener('click', (handleAnchorClick));
 
     return () => {
       document.removeEventListener('click', handleAnchorClick);

@@ -4,7 +4,12 @@ import { Link, useLocation } from 'react-router-dom';
 import { scroller } from 'react-scroll';
 import { useNav } from '../../context/NavContext';
 
-export const NavigationItem = ({ name, to }) => {
+interface NavigationItemProsp {
+  name: string;
+  to: string;
+}
+
+export const NavigationItem: React.FC<NavigationItemProsp> = ({ name, to }) => {
   const { setIsOpenMenu } = useNav();
   const location = useLocation();
 
