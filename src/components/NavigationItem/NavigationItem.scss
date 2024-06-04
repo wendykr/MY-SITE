@@ -17,30 +17,15 @@
     font-size: 20px;
     font-weight: 500;
     text-decoration: none;
-    transition: color 0.2s linear;
     cursor: pointer;
 
     &:hover {
       background-color: #1762bc;
-
-      @media (min-width: breakpoint.$width-computer-header) {
-
-        &::after {
-          content: "";
-          height: 2px;
-          width: calc(100% - 40px);
-          background-color: #13529e;
-          margin: 1px auto 0 auto;
-          display: block;
-          position: absolute;
-          animation-name: underlineLink;
-          animation-duration: .3s;
-          animation-timing-function: ease;
-        }
-      }
     }
 
     &--other {
+      transition: color 0.2s linear;
+
       @media (min-width: breakpoint.$width-computer-header) {
         padding: 20px;
         color: #333333;
@@ -50,21 +35,37 @@
             background-color: #ffffff;
             color: #13529e;
           }
+
+          &::after {
+            content: "";
+            height: 2px;
+            width: calc(100% - 40px);
+            background-color: #13529e;
+            margin: 1px auto 0 auto;
+            display: block;
+            position: absolute;
+            animation-name: underlineLink;
+            animation-duration: .3s;
+            animation-timing-function: ease;
+          }
         }
       }
     }
 
     &--last {
+      transition: none;
+
       @media (min-width: breakpoint.$width-computer-header) {
         padding: 6px 20px;
         color: #ffffff;
         background-color: #1762bc;
+        border: 1px solid #1762bc;
         border-radius: 4px;
 
         &:hover {
           @media (min-width: breakpoint.$width-computer-header) {
-            background-color: #13529e;
-            color: #ffffff;
+            background-color: #ffffff;
+            color: #1762bc;
           }
         }
       }
