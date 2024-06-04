@@ -4,11 +4,11 @@ import { coursesData } from '../../constants/courses';
 import { Education } from '../Education/Education';
 import { Link } from 'react-router-dom';
 import { scroller } from 'react-scroll';
-import { CoursersDataStructure } from '../models/Coursers';
+import { CoursesDataStructure } from '../../models/Courses';
 
 export const Educations = () => {
   const [showAll, setShowAll] = useState(false);
-  const [displayedCourses, setDisplayedCourses] = useState<CoursersDataStructure[]>([]);
+  const [displayedCourses, setDisplayedCourses] = useState<CoursesDataStructure[]>([]);
   const [targetAnchor, setTargetAnchor] = useState<string | null>(null);
   const [scroll, setScroll] = useState(false);
 

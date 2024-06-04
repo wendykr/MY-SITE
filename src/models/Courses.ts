@@ -1,4 +1,4 @@
-export interface CoursersDataStructure {
+export interface CoursesDataStructure {
   id: number;
   anchor: string;
   year: string;
