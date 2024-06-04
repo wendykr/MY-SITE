@@ -21,16 +21,6 @@ export const projectsData = [
   },
   {
     id: 3,
-    year: '09/2023 - 09/2023',
-    name: 'Personal portfolio',
-    skills: 'Tailwind / JavaScript',
-    description: 'Web s prezentací mých projektů a dovedností vytvořený pomocí HTML a JavaScriptu. Cílem tohoto projektu bylo jej nakódovat pomocí Tailwindu s minimem použití klasického CSS.',
-    linkGH: 'https://github.com/wendykr/RESUME-CV',
-    linkWeb: 'https://wendykr.netlify.app/',
-    screen: '../project/screen-resume-cv.jpg'
-  },
-  {
-    id: 4,
     year: '12/2023 - 12/2023',
     name: 'Filmová databáze',
     skills: 'React / API / Sass / Vite',
@@ -40,7 +30,7 @@ export const projectsData = [
     screen: '../project/screen-filmova-databaze.jpg'
   },
   {
-    id: 5,
+    id: 4,
     year: '10/2023 - 12/2023',
     name: 'Words Game',
     skills: 'React / Supabase / Sass / Vite',
@@ -48,5 +38,15 @@ export const projectsData = [
     linkGH: 'https://github.com/wendykr/WORDS-GAME',
     linkWeb: 'https://words-game.netlify.app/',
     screen: '../project/screen-words-game.jpg'
+  },
+  {
+    id: 5,
+    year: '04/2024 - 05/2025',
+    name: 'Osobní stránky a portfolio',
+    skills: 'React / TypeScript / Vite',
+    description: 'Web s prezentací mých projektů a dovedností naprogramovaný v Reactu v kombinaci TypeScriptu. Cílem tohoto projektu si bylo procvičit znalosti kombinace Reactu s TypeScriptem.',
+    linkGH: 'https://github.com/wendykr/MY-SITE',
+    linkWeb: 'https://www.vendula-krajickova.cz/',
+    screen: '../project/screen-my-site.jpg'
   },
 ]
