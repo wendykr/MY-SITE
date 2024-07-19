@@ -68,7 +68,7 @@ export const coursesData = [
     company: "Czechitas",
     name: "React 2 - Nástroje a techniky",
     description:
-      "Ovládám používat TypeScript při vývoji React aplikacích. Získala jsem hlubší pochopení Reactu a životního cyklu komponenty. Naučila jsem se vytvářet vlastní hooky a pokročilé metody state managementu pomocí useContextu. Zpracovávat formuláře a validovat data přes Formik. Seznámila jsem se s psaním unit testů a end-to-end testováním prostřednictvím Vitest.",
+      "Ovládám používat TypeScript při vývoji React aplikacích. Získala jsem hlubší pochopení Reactu a životního cyklu komponenty. Naučila jsem se vytvářet vlastní hooky a pokročilé metody state managementu pomocí useContextu. Zpracovávat formuláře a validovat data přes Formik. Seznámila jsem se s psaním unit testů a testováním prostřednictvím Vitest.",
     anchor: "react-2",
   },
 ];
