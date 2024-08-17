@@ -45,7 +45,7 @@ export const projectsData = [
   },
   {
     id: 5,
-    year: "04/2024 - 05/2025",
+    year: "04/2024 - 05/2024",
     name: "Osobní stránky a portfolio",
     skills: "React / TypeScript / Vite",
     description:
@@ -56,7 +56,7 @@ export const projectsData = [
   },
   {
     id: 6,
-    year: "05/2024 - 06/2025",
+    year: "05/2024 - 06/2024",
     name: "Superkvíz",
     skills: "React / TypeScript / Supabase / Vite",
     description:
