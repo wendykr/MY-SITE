@@ -26,10 +26,8 @@ export const About: React.FC = () => {
           dovednostmi
         </Link>{" "}
         ve vývoji webu a webových aplikací s technologiemi - React, TypeScript,
-        JavaScript, HTML/CSS. Aktuálně prohlubuji své znalosti v pokročilých
-        technikách Reactu a učím se psát testy pomocí Vitestu. Ty chci aktivně
-        používat ve svých projektech, na kterých současně pracuji. Absolvovala
-        jsem{" "}
+        JavaScript, HTML/CSS. Aktuálně se vzdělávám ve vývoji webových aplikací
+        postavených na Next.js s využitím Reactu. Absolvovala jsem{" "}
         <Link
           className="link-anchor"
           to="#educations"
@@ -45,7 +43,7 @@ export const About: React.FC = () => {
         >
           technologii
         </Link>
-        , kterou si chci rozšířit své dovednosti je Next.js.
+        , kterou si chci rozšířit své dovednosti je Vue.
       </p>
 
       <h3 className="about__subtitle">Proč frontend?</h3>
