@@ -4,6 +4,7 @@ import { Skill } from '../Skill/Skill';
 import { FaReact, FaHtml5, FaSass } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io5";
 import { SiJavascript, SiTypescript, SiTailwindcss, SiVite, SiSupabase, SiEleventy, SiGit, SiVisualstudiocode, SiAdobephotoshop, SiCoreldraw } from "react-icons/si";
+import { SiNextdotjs } from "react-icons/si";
 
 const skillsLanguagesData = [
   {
@@ -23,62 +24,67 @@ const skillsLanguagesData = [
   },
   {
     id: 4,
+    name: "Next.js",
+    icon: <SiNextdotjs />,
+  },
+  {
+    id: 5,
     name: "HTML",
     icon: <FaHtml5 />,
   },
   {
-    id: 5,
+    id: 6,
     name: "CSS",
     icon: <IoLogoCss3 />,
   },
   {
-    id: 6,
+    id: 7,
     name: "Sass",
     icon: <FaSass />,
   },
   {
-    id: 7,
+    id: 8,
     name: "Tailwind",
     icon: <SiTailwindcss />,
-  }
+  },
 ];
 
 const skillsToolsData = [
   {
-    id: 8,
+    id: 9,
     name: "Vite",
     icon: <SiVite />,
   },
   {
-    id: 9,
+    id: 10,
     name: "Supabase",
     icon: <SiSupabase />,
   },
   {
-    id: 10,
+    id: 11,
     name: "Git",
     icon: <SiGit />,
   },
   {
-    id: 11,
+    id: 12,
     name: "Visual Studio Code",
     icon: <SiVisualstudiocode />,
   },
   {
-    id: 12,
+    id: 13,
     name: "11ty",
     icon: <SiEleventy />,
   },
   {
-    id: 13,
+    id: 14,
     name: "Photoshop",
     icon: <SiAdobephotoshop />,
   },
   {
-    id: 14,
+    id: 15,
     name: "Corel",
     icon: <SiCoreldraw />,
-  }
+  },
 ];
 
 export const Skills = () => {
