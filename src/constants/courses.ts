@@ -71,4 +71,13 @@ export const coursesData = [
       "Ovládám používat TypeScript při vývoji React aplikacích. Získala jsem hlubší pochopení Reactu a životního cyklu komponenty. Naučila jsem se vytvářet vlastní hooky a pokročilé metody state managementu pomocí useContextu. Zpracovávat formuláře a validovat data přes Formik. Seznámila jsem se s psaním unit testů a testováním prostřednictvím Vitest.",
     anchor: "react-2",
   },
+  {
+    id: 9,
+    year: "07/2024 - 08/2024",
+    company: "Skillmea",
+    name: "Základy Next.js",
+    description:
+      "Vytváření multi-page aplikací pomocí Pages Router a dynamické segmenty v URL. Metody stylování aplikace: CSS/Sass, Styled Components, Tailwind CSS, CSS-in-JS. Renderování a načítání dat: getServerSideProps (SSR), getStaticPaths (SSG), Automatic Static Optimization. Optimalizace obrázků. Povědomí o vývoji full-stack aplikací přes API Routes a nastavení autentizace.",
+    anchor: "zaklady-next",
+  },
 ];
