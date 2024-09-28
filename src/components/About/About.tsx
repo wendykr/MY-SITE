@@ -26,61 +26,24 @@ export const About: React.FC = () => {
           dovednostmi
         </Link>{" "}
         ve vývoji webu a webových aplikací s technologiemi - React, TypeScript,
-        JavaScript, HTML/CSS. Aktuálně se vzdělávám ve vývoji webových aplikací
-        postavených na Next.js s využitím Reactu. Absolvovala jsem{" "}
-        <Link
-          className="link-anchor"
-          to="#educations"
-          onClick={() => handleClick("educations")}
-        >
-          kurzy
-        </Link>{" "}
-        zaměřené na tvorbu webů. Další{" "}
-        <Link
-          className="link-anchor"
-          to="#skills"
-          onClick={() => handleClick("skills")}
-        >
-          technologii
-        </Link>
-        , kterou si chci rozšířit své dovednosti je Vue.
-      </p>
-
-      <h3 className="about__subtitle">Proč frontend?</h3>
-      <p className="about__text">
-        Po zkušenostech s psaním textů a úpravou obsahu webů v HTML editoru jsem
-        se posunula blíže ke kódu. Získávám tak větší kontrolu nad obsahem
-        webových stránek, které si můžu přizpůsobit svým potřebám bez omezení. S{" "}
-        <Link
-          className="link-anchor"
-          to="#skills"
-          onClick={() => handleClick("skills")}
-        >
-          technologiemi
-        </Link>{" "}
-        se kterými jsem se setkala během{" "}
-        <Link
-          className="link-anchor"
-          to="#educations"
-          onClick={() => handleClick("educations")}
-        >
-          kurzů
-        </Link>{" "}
-        mi nejvíce přirostl k srdci React. Pomocí něj můžu programovat weby s
-        dynamickým obsahem.
+        JavaScript. Mám zkušenosti s kódováním grafických návrhů webů do
+        HTML/CSS. Směřuji k vývoji webových aplikací s dynamickým obsahem
+        postavených na Next.js s využitím Reactu. Své dovednosti si dále plánuji
+        rozšířit o Vue.
       </p>
 
       <h3 className="about__subtitle">Kam směřuji?</h3>
       <p className="about__text">
-        Chci získávat zkušenosti ve vývoji webů a webových aplikací. Jsem{" "}
+        K získávání komerčních zkušenosti ve vývoji webů a webových aplikací.
+        Hledám{" "}
         <a
           className="link-anchor"
           href="https://www.linkedin.com/in/vendula-krajickova/"
         >
           #opentowork
         </a>{" "}
-        a hledám příležitost být součástí týmu, kde mohu profesně růst a
-        uplatnit své dovednosti. Oslovil vás můj profil?{" "}
+        příležitost být součástí týmu, kde mohu uplatnit své dovednosti a
+        profesně růst. Oslovil vás můj profil?{" "}
         <Link
           className="link-anchor"
           to="#contact"
