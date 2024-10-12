@@ -43,7 +43,7 @@ export const Header: React.FC = () => {
             <span className="black">Ahoj 👋, jsem</span> Vendy&nbsp;:)
           </h1>
           <h2 className="header__subtitle">
-            Junior frontend developer & coder
+            Frontend developer
           </h2>
           <p className="header__description">
             Zaměřuji se na front-end vývoj webů a aplikací v Reactu s využitím TypeScriptu.{" "}

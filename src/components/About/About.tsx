@@ -17,19 +17,18 @@ export const About: React.FC = () => {
       <h2 className="title">O mně</h2>
       <h3 className="about__subtitle">Kdo jsem?</h3>
       <p className="about__text">
-        Junior s pokročilými{" "}
+        Front-end vývojářka webů a webových aplikací s{" "}
         <Link
           className="link-anchor"
           to="#skills"
           onClick={() => handleClick("skills")}
         >
-          dovednostmi
+          technologiemi
         </Link>{" "}
-        ve vývoji webu a webových aplikací s technologiemi - React, TypeScript,
-        JavaScript. Mám zkušenosti s kódováním grafických návrhů webů do
-        HTML/CSS. Směřuji k vývoji webových aplikací s dynamickým obsahem
-        postavených na Next.js s využitím Reactu. Své dovednosti si dále plánuji
-        rozšířit o Vue.
+        - React, TypeScript a JavaScript. Mám zkušenosti s kódováním grafických
+        návrhů webů do HTML/CSS. Směřuji k vývoji webových aplikací s dynamickým
+        obsahem postavených na Next.js s využitím Reactu. Své dovednosti si dále
+        plánuji rozšířit o Vue.
       </p>
 
       <h3 className="about__subtitle">Kam směřuji?</h3>
