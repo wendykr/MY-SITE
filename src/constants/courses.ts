@@ -80,4 +80,13 @@ export const coursesData = [
       "Vytváření multi-page aplikací pomocí Pages Router a dynamické segmenty v URL. Metody stylování aplikace: CSS/Sass, Styled Components, Tailwind CSS, CSS-in-JS. Renderování a načítání dat: getServerSideProps (SSR), getStaticPaths (SSG), Automatic Static Optimization. Optimalizace obrázků. Povědomí o vývoji full-stack aplikací přes API Routes a nastavení autentizace.",
     anchor: "zaklady-next",
   },
+  {
+    id: 10,
+    year: "09/2024 - 09/2024",
+    company: "Czechitas",
+    name: "Figma",
+    description:
+      "Seznámila jsem se s prostředím Figmy a jejími základními funkcemi. Orientuji se ve stylování textů, přidávání elementům barvy a stínovací efekty. Pracuji s auto layoutem pro efektivní rozvržení prvků. Vytvářím komponenty a jejich varianty, navrhuji wireframy i funkční prototypy podle zadání. Pro přehlednou správu stylů napříč návrhem využívám Figma Variables.",
+    anchor: "figma",
+  },
 ];
