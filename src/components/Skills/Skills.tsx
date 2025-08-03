@@ -1,9 +1,21 @@
-import './Skills.scss';
-import { Skill } from '../Skill/Skill';
+import "./Skills.scss";
+import { Skill } from "../Skill/Skill";
 
 import { FaReact, FaHtml5, FaSass } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io5";
-import { SiJavascript, SiTypescript, SiTailwindcss, SiVite, SiSupabase, SiEleventy, SiGit, SiVisualstudiocode, SiAdobephotoshop, SiCoreldraw } from "react-icons/si";
+import {
+  SiJavascript,
+  SiTypescript,
+  SiTailwindcss,
+  SiVite,
+  SiSupabase,
+  SiEleventy,
+  SiGit,
+  SiVisualstudiocode,
+  SiAdobephotoshop,
+  SiFigma,
+  SiCoreldraw,
+} from "react-icons/si";
 import { SiNextdotjs } from "react-icons/si";
 
 const skillsLanguagesData = [
@@ -52,36 +64,41 @@ const skillsLanguagesData = [
 const skillsToolsData = [
   {
     id: 9,
-    name: "Vite",
-    icon: <SiVite />,
-  },
-  {
-    id: 10,
-    name: "Supabase",
-    icon: <SiSupabase />,
-  },
-  {
-    id: 11,
     name: "Git",
     icon: <SiGit />,
   },
   {
-    id: 12,
+    id: 10,
     name: "Visual Studio Code",
     icon: <SiVisualstudiocode />,
   },
   {
+    id: 11,
+    name: "Vite",
+    icon: <SiVite />,
+  },
+  {
+    id: 12,
+    name: "Figma",
+    icon: <SiFigma />,
+  },
+  {
     id: 13,
+    name: "Supabase",
+    icon: <SiSupabase />,
+  },
+  {
+    id: 14,
     name: "11ty",
     icon: <SiEleventy />,
   },
   {
-    id: 14,
+    id: 15,
     name: "Photoshop",
     icon: <SiAdobephotoshop />,
   },
   {
-    id: 15,
+    id: 16,
     name: "Corel",
     icon: <SiCoreldraw />,
   },
@@ -92,20 +109,22 @@ export const Skills = () => {
     <div className="bg-white">
       <section id="skills" className="skills">
         <h2 className="title">Dovednosti a nástroje</h2>
-        <p className="description">... se kterými pracuju ve svých projektech.</p>
+        <p className="description">
+          ... se kterými pracuju ve svých projektech.
+        </p>
         <div className="skills__container">
           <div className="skills__languages">
-            {
-              skillsLanguagesData.map(skill => <Skill key={skill.id} name={skill.name} icon={skill.icon} />)
-            }
+            {skillsLanguagesData.map((skill) => (
+              <Skill key={skill.id} name={skill.name} icon={skill.icon} />
+            ))}
           </div>
           <div className="skills__tools">
-            {
-              skillsToolsData.map(skill => <Skill key={skill.id} name={skill.name} icon={skill.icon} />)
-            }
+            {skillsToolsData.map((skill) => (
+              <Skill key={skill.id} name={skill.name} icon={skill.icon} />
+            ))}
           </div>
         </div>
       </section>
     </div>
-  )
-}
+  );
+};
