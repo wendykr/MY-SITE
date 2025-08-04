@@ -65,4 +65,15 @@ export const projectsData = [
     linkWeb: "https://superkviz-app.netlify.app/",
     screen: "../project/screen-superkviz.jpg",
   },
+  {
+    id: 7,
+    year: "08/2024 - 08/2024",
+    name: "XXXMuck",
+    skills: "Next.js / TypeScript / API / Vite",
+    description:
+      "Jednoduchý e-shop s katalogem produktů. Data načítám z API. Každý produkt má vlastní detailní stránku s tlačítkem pro interakci. Aplikaci jsem stylovala pomocí Tailwind CSS a daisyUI. Pro přepínání dark/light režimu jsem využila knihovnu NextUI.",
+    linkGH: "https://github.com/wendykr/xxxmuck-nextjs",
+    linkWeb: "https://xxxmuck.netlify.app/",
+    screen: "../project/screen-xxxmuck.jpg",
+  },
 ];
