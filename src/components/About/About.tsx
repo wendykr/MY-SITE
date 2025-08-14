@@ -18,7 +18,7 @@ export const About: React.FC = () => {
       <h3 className="about__subtitle">Kdo jsem?</h3>
       <p className="about__text">
         <p>
-          Frontend vývojářka, která tvoří weby a webové aplikace v{" "}
+          Frontend vývojářka webů a webových aplikací v{" "}
           <Link
             className="link-anchor"
             to="#skills"
