@@ -17,64 +17,68 @@ export const About: React.FC = () => {
       <h2 className="title">O mně</h2>
       <h3 className="about__subtitle">Kdo jsem?</h3>
       <p className="about__text">
-        Front-end vývojářka webů a webových aplikací s{" "}
-        <Link
-          className="link-anchor"
-          to="#skills"
-          onClick={() => handleClick("skills")}
-        >
-          technologiemi
-        </Link>{" "}
-        - React, TypeScript a JavaScript. Mám zkušenosti s kódováním grafických
-        návrhů webů do HTML/CSS. Směřuji k vývoji webových aplikací s dynamickým
-        obsahem postavených na Next.js s využitím Reactu. Své dovednosti si dále
-        plánuji rozšířit o Vue.
+        <p>
+          Frontend vývojářka webů a webových aplikací v{" "}
+          <Link
+            className="link-anchor"
+            to="#skills"
+            onClick={() => handleClick("skills")}
+          >
+            technologiích
+          </Link>{" "}
+          - React, TypeScript a JavaScript.{" "}
+        </p>
+        <p>
+          Grafické návrhy webů z Figmy kóduji do responsivního HTML/CSS a
+          doplňuji o interaktivní prvky.
+        </p>{" "}
+        <p>
+          Moje další meta? Next.js – přirozené rozšíření toho, co už dobře znám
+          z Reactu.
+        </p>
       </p>
 
-      <h3 className="about__subtitle">Kam směřuji?</h3>
+      <h3 className="about__subtitle">Co mě baví na frontendu?</h3>
       <p className="about__text">
-        K získávání komerčních zkušenosti ve vývoji webů a webových aplikací.
-        Hledám{" "}
-        <a
-          className="link-anchor"
-          href="https://www.linkedin.com/in/vendula-krajickova/"
-        >
-          #opentowork
-        </a>{" "}
-        příležitost být součástí týmu, kde mohu uplatnit své dovednosti a
-        profesně růst. Oslovil vás můj profil?{" "}
-        <Link
-          className="link-anchor"
-          to="#contact"
-          onClick={() => handleClick("contact")}
-        >
-          Napište mi
-        </Link>{" "}
-        a pojďme si popovídat. Pouze tak zjistíme, zdali najdeme ideální souhrnu
-        mezi mými dovednostmi a vašimi potřebami.
+        <p>
+          Vyvíjet funkční a vizuálně přívětivé{" "}
+          <Link
+            className="link-anchor"
+            to="#projects"
+            onClick={() => handleClick("projects")}
+          >
+            webové aplikace
+          </Link>{" "}
+          , které návštěvníci přímo vidí a používají.
+        </p>
+        <p>
+          Navrhovat a tvořit komponenty v Reactu s důrazem na jejich
+          znovupoužitelnost napříč projektem.
+        </p>
+        <p>
+          Kódovat a převádět grafické návrhy z Figmy do podoby s dynamickým
+          obsahem, který následně ožívá v prohlížeči.
+        </p>
       </p>
 
-      <h3 className="about__subtitle">Pokud si plácneme?</h3>
+      <h3 className="about__subtitle">Jaké vlastnosti mě vystihují?</h3>
       <p className="about__text">
-        Získáte ve mně člověka, který je:
         <ul className="about__list">
           <li className="about__list--item">
-            <span className="about__list--term">Spolehlivý</span> - dodržuji
-            termíny úkolů a často předkládám výsledky dříve, než je potřeba.
+            <span className="about__list--term">Spolehlivost:</span> Dodržuji
+            termíny a často předkládám výsledky dříve, než je potřeba.
           </li>
           <li className="about__list--item">
-            <span className="about__list--term">Pečlivý</span> - mám smysl pro
-            detail s tolerancí na 1px.
+            <span className="about__list--term">Pečlivost:</span> Detaily
+            nepřehlížím – toleruju jen 1px!
           </li>
           <li className="about__list--item">
-            <span className="about__list--term">Flexibilní</span> - jako junior
-            se cítím jistější, mám-li po ruce parťáka, ale dokážu pracovat i
-            samostatně.
+            <span className="about__list--term">Flexibilita:</span> Cítím se
+            jistější, mám-li po ruce parťáka, ale dokážu pracovat i samostatně.
           </li>
           <li className="about__list--item">
-            <span className="about__list--term">Otevřený zpětné vazbě</span> -
-            ráda vyslechnu názory druhých a beru je jako motivaci k rozvoji
-            svých dovedností.
+            <span className="about__list--term">Otevřenost:</span> Zpětná vazba?
+            Ráda si vyslechnu, je pro mě motivací k rozvoji svých dovedností.
           </li>
         </ul>
       </p>

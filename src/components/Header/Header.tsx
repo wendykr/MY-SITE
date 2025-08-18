@@ -46,10 +46,9 @@ export const Header: React.FC = () => {
             Frontend developer
           </h2>
           <p className="header__description">
-            Zaměřuji se na front-end vývoj webů a aplikací v Reactu s využitím TypeScriptu.{" "}
+            Vyvíjím weby a aplikace v Reactu s využitím TypeScriptu.{" "}
             <br></br>
-            Mám zkušenosti s kódováním grafických návrhů webů do HTML/CSS s
-            prvky JavaScriptu.
+            Další level ve vývoji? Next.js!
           </p>
           <ul className="header__list">
             <li>
