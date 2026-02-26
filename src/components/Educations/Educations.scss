@@ -1,11 +1,8 @@
 .educations {
+    max-width: $width-2xl;
 
-  @media (min-width: 640px) {
-    max-width: 960px;
-  }
-
-  @media (min-width: 1024px) {
-    max-width: 1440px;
+  @media (min-width: $breakpoint-lg) {
+    max-width: $width-4xl;
   }
 
   &__link {

@@ -1,104 +1,102 @@
-@use '../../style/breakpoint';
-
 .header {
-  margin: 0 auto;
-  max-width: breakpoint.$width-computer-header;
+  margin: $spacing-none auto;
+  max-width: $breakpoint-md;
   text-align: left;
   position: relative;
 
-  @media (min-width: breakpoint.$width-computer-header) {
-    max-width: 960px;
+  @media (min-width: $breakpoint-md) {
+    max-width: $width-2xl;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
-  @media (min-width: 1024px) {
-    max-width: 1440px;
+  @media (min-width: $breakpoint-lg) {
+    max-width: $width-4xl;
   }
 
-  @media (min-width: 2048px) {
+  @media (min-width: $breakpoint-5xl) {
     min-height: auto;
   }
 
   &__cover {
-    margin: 0 auto;
+    margin: $spacing-none auto;
     width: 100%;
-    background-color: #ffffff;
+    background-color: $white;
   }
 
   &__info {
-    margin: 0;
-    padding: 40px;
+    margin: $spacing-none;;
+    padding: $spacing-5xl;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
 
-    @media (min-width: breakpoint.$width-computer-header) {
-      margin: 50px 0;
-      padding: 20px 60px 40px 60px;
+    @media (min-width: $breakpoint-md) {
+      margin: $spacing-6xl $spacing-none;
+      padding: $spacing-2xl $spacing-7xl $spacing-5xl $spacing-7xl;
       text-align: left;
     }
   }
 
   &__title, &__subtitle {
-    margin: 10px 0;
-    color: #13529e;
+    margin: $spacing-md $spacing-none;
+    color: $brand-800;
   }
 
   &__title {
-    font-size: 40px;
-    font-weight: 500;
+    font-size: $font-size-display-md;
+    font-weight: $font-weight-medium;
 
-    @media (min-width: 640px) {
-      font-size: 50px;
+    @media (min-width: $breakpoint-sm) {
+      font-size: $font-size-display-lg;
     }
 
-    @media (min-width: 840px) {
-      font-size: 64px;
+    @media (min-width: $breakpoint-md) {
+      font-size: $font-size-display-xl;
     }
   }
 
   &__subtitle {
-    font-size: 20px;
-    font-weight: 400;
+    font-size: $font-size-display-xs;
+    font-weight: $font-weight-regular;
     text-transform: uppercase;
-    color: #155aad;
+    color: $brand-700;
 
-    @media (min-width: 640px) {
-      font-size: 30px;
+    @media (min-width: $breakpoint-sm) {
+      font-size: $font-size-display-sm;
     }
 
-    @media (min-width: 840px) {
-      font-size: 40px;
+    @media (min-width: $breakpoint-md) {
+      font-size: $font-size-display-md;
     }
   }
 
   &__description {
-    margin: 24px 0;
-    font-size: 16px;
+    margin: $spacing-3xl $spacing-none;
+    font-size: $font-size-md;
 
-    @media (min-width: 640px) {
-      font-size: 18px;
+    @media (min-width: $breakpoint-sm) {
+      font-size: $font-size-lg;
     }
 
-    @media (min-width: 840px) {
-      font-size: 20px;
+    @media (min-width: $breakpoint-md) {
+      font-size: $font-size-xl;
     }
   }
 
   &__list {
-    margin-top: 10px;
+    margin-top: $spacing-md;
     display: flex;
-    gap: 30px;
+    gap: $spacing-4xl;
     justify-content: center;
     list-style: none;
 
-    @media (min-width: breakpoint.$width-computer-header) {
-      margin-top: 50px;
+    @media (min-width: $breakpoint-md) {
+      margin-top: $spacing-6xl;
       justify-content: start;
     }
   }
@@ -106,38 +104,38 @@
   &__icon {
     width: 30px;
     height: 30px;
-    color: #000000;
+    color: $black;
     scale: (1);
-    transition: scale 0.2s linear;
+    transition: scale $transition-sm linear;
     z-index: 1;
 
-    @media (min-width: 640px) {
+    @media (min-width: $breakpoint-sm) {
       width: 36px;
       height: 36px;
     }
 
-    @media (min-width: 840px) {
+    @media (min-width: $breakpoint-md) {
       width: 40px;
       height: 40px;
     }
   
     &:hover {
-      color: #13529e;
+      color: $brand-800;
       scale: (1.2);
     }
 
     &--down {
       display: none;
 
-      @media (min-width: breakpoint.$width-computer-header) {
-        margin: 0 auto;
-        padding: 20px;
+      @media (min-width: $breakpoint-md) {
+        margin: $spacing-none auto;
+        padding: $spacing-2xl;
         width: 80px;
         height: 80px;
-        color: #13529e;
+        color: $brand-800;
         opacity: 0;
         position: absolute;
-        bottom: 10px;
+        bottom: $spacing-md;
         left: calc(50% - 36px);
         display: block;
         z-index: 1;
@@ -146,8 +144,8 @@
         animation-play-state: running;
       }
 
-      @media (min-width: 960px) {
-        bottom: 20px;
+      @media (min-width: $breakpoint-lg) {
+        bottom: $spacing-2xl;
       }
 
       &:hover {
@@ -170,5 +168,5 @@
 }
 
 .black {
-  color: #333333;
+  color: $neutral-800;
 }

@@ -1,16 +1,14 @@
-@use '../../style/breakpoint';
-
 .navigationList {
   width: 100%;
-  font-size: 18px;
+  font-size: $font-size-lg;
   list-style: none;
   position: absolute;
   left: 0;
-  background-color: #ffffff;
+  background-color: $white;
   z-index: 100;
   display: none;
 
-  @media (min-width: breakpoint.$width-computer-header) {
+  @media (min-width: $breakpoint-md) {
     position: relative;
     display: flex;
     justify-content: flex-end;
@@ -26,33 +24,34 @@
 .navigation {
   display: block;
 
-  @media (min-width: breakpoint.$width-computer-header) {
-    padding: 0 40px;
+  @media (min-width: $breakpoint-md) {
+    padding: $spacing-lg $spacing-5xl;
   }
 
   &__icon {
-    font-size: 30px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
-    color: #ffffff;
+    color: $white;
 
-    @media (min-width: breakpoint.$width-computer-header) {
-      color: #333333;
+    @media (min-width: $breakpoint-md) {
+      color: $neutral-800;
     }
   }
 }
 
 #toggler {
-  padding: 22px 40px;
+  padding: $spacing-2xl $spacing-5xl;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: end;
 
   &:hover {
-    background-color: #1762bc;
+    background-color: $brand-600;
   }
 
-  @media (min-width: breakpoint.$width-computer-header) {
+  @media (min-width: $breakpoint-md) {
     display: none;
   }
 }

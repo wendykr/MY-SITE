@@ -1,0 +1,8 @@
+@use "sass:color";
+
+@mixin focus-visible-outline($color, $opacity: 0.5, $width: 2px, $offset: 2px) {
+  &:focus-visible {
+    outline: $width solid color.change($color, $alpha: $opacity);
+    outline-offset: $offset;
+  }
+}

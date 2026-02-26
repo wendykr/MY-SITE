@@ -8,9 +8,8 @@ interface ButtonProps {
 
 export const Button: React.FC<ButtonProps> = ({ link, text, style }) => {
   return (
-    <a className="button__link" href={link}>
-      <button className={`button ${style}`}
-        >{text}</button>
+    <a className={`button ${style}`} href={link} target="_blank" rel="noopener noreferrer">
+      {text}
     </a>
-  )
+  );
 }

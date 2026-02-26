@@ -1,16 +1,13 @@
 .projects {
+    max-width: $width-2xl;
 
-  @media (min-width: 760px) {
-    max-width: 960px;
-  }
-
-  @media (min-width: 1024px) {
-    max-width: 1440px;
+  @media (min-width: $breakpoint-lg) {
+    max-width: $width-4xl;
   }
 
   &__footer {
-    margin-top: 40px;
-    background-color: #f7f9fa;
+    margin-top: $spacing-5xl;
+    background-color: $neutral-50;
     z-index: 2;
     position: relative;
   }

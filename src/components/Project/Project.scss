@@ -1,12 +1,12 @@
 .project {
-  margin-top: 32px;
+  margin-top: $spacing-4xl;
   opacity: 0;
   transform: translateY(100px);
-  transition: opacity 1.7s ease-out, transform 1.7s ease-out;
+  transition: opacity $transition-3xl ease-out, transform $transition-3xl ease-out;
 
-  @media (min-width: 760px) {
+  @media (min-width: $breakpoint-md) {
     display: flex;
-    gap: 56px;
+    gap: $spacing-6xl;
   }
 
   &__container {
@@ -14,9 +14,9 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px -1px rgba($black, 0.1);
 
-    @media (min-width: 760px) {
+    @media (min-width: $breakpoint-md) {
       min-width: 40%;
       justify-content: flex-start;
       align-self: center;
@@ -27,7 +27,7 @@
     width: 100%;
     object-fit: contain;
     transform: scale(1);
-    transition: transform 500ms ease;
+    transition: transform $transition-lg ease;
   
     &:hover {
       transform: scale(1.1);
@@ -42,49 +42,44 @@
   }
 
   &__data {
-    padding-top: 20px;
+    padding-top: $spacing-2xl;
 
-    @media (min-width: 760px) {
+    @media (min-width: $breakpoint-md) {
       width: 60%;
     }
   }
 
   &__skills {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #13529E;
+    margin-top: $spacing-md;
+    font-size: $font-size-sm;
+    color: $brand-800;
   }
   
   &__name {
-    margin: 14px 0;
-    font-size: 18px;
-    font-weight: 400;
+    margin: $spacing-lg $spacing-none;
+    font-size: $font-size-lg;
+    font-weight: $font-weight-regular;
   }
 
   &__link {
-    color: #13529e;
+    color: $brand-800;
     text-decoration: underline;
 
     &:hover {
-      color: #000000;
+      color: $black;
       text-decoration: none;
     }
   }
 
   &__butons {
-    margin-top: 16px;
+    margin-top: $spacing-xl;
     display: flex;
-    flex-direction: column;
-    gap: 16px;
-
-    @media (min-width: 350px) {
-      flex-direction: row;
-    }
+    gap: $spacing-xl;
   }
 }
 
 .order {
-  @media (min-width: 760px) {
+  @media (min-width: $breakpoint-md) {
     order: 2;
   }
 }
