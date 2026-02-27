@@ -1,39 +1,36 @@
 .about {
+    max-width: $width-2xl;
 
-  @media (min-width: 760px) {
-    max-width: 960px;
-  }
-
-  @media (min-width: 1024px) {
-    max-width: 1440px;
+  @media (min-width: $breakpoint-lg) {
+    max-width: $width-4xl;
   }
 
   &__subtitle {
-    margin: 32px 0 16px 0;
-    font-size: 18px;
-    color: #13529e;
-    font-weight: 400;
+    margin: $spacing-4xl $spacing-none $spacing-xl $spacing-none;
+    font-size: $font-size-lg;
+    color: $brand-800;
+    font-weight: $font-weight-regular;
   }
 
   &__text {
-    margin-bottom: 16px;
+    margin-bottom: $spacing-xl;
   }
 
   &__link {
     text-decoration: underline;
-    color: #13529e;
+    color: $brand-800;
 
     &:hover {
       text-decoration: none;
-      color: #000000;
+      color: $black;
     }
   }
 
   &__list {
-    margin-left: 30px;
+    margin-left: $spacing-4xl;
 
     &--term {
-      color: #13529e;
+      color: $brand-800;
     }
   }
 }

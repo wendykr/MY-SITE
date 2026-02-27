@@ -1,23 +1,23 @@
 .education {
-  margin: 24px 0;
+  margin: $spacing-3xl $spacing-none;
 
-  @media (min-width: 640px) {
+  @media (min-width: $breakpoint-sm) {
     display: flex;
-    gap: 32px;
+    gap: $spacing-4xl;
   }
 
-  @media (min-width: 760px) {
-    margin: 32px 0 24px 0;
+  @media (min-width: $breakpoint-md) {
+    margin: $spacing-4xl $spacing-none $spacing-3xl $spacing-none;
   }
 
   &__info {
-    padding: 20px;
-    background-color: #13529E;
-    color: #ffffff;
+    padding: $spacing-2xl;
+    background-color: $brand-800;
+    color: $white;
     text-align: center;
 
-    @media (min-width: 640px) {
-      padding: 60px 20px;
+    @media (min-width: $breakpoint-sm) {
+      padding: $spacing-7xl $spacing-2xl;
       width: 40%;
       display: flex;
       flex-direction: column;
@@ -25,54 +25,54 @@
       align-items: center;
     }
 
-    @media (min-width: 1024px) {
+    @media (min-width: $breakpoint-lg) {
       width: 30%;
     }
   }
 
   &__text {
-    padding: 0 0 20px 0;
+    padding: $spacing-none $spacing-none $spacing-2xl $spacing-none;
 
-    @media (min-width: 640px) {
-      padding: 20px;
+    @media (min-width: $breakpoint-sm) {
+      padding: $spacing-2xl;
       width: 60%;
     }
 
-    @media (min-width: 1024px) {
+    @media (min-width: $breakpoint-lg) {
       width: 70%;
     }
 
     &.highlight {
-      color: #13529e;
+      color: $brand-800;
     }
   }
 
   &__name {
-    margin: 16px 0;
-    font-size: 18px;
-    font-weight: 400;
+    margin: $spacing-xl $spacing-none;
+    font-size: $font-size-lg;
+    font-weight: $font-weight-regular;
 
-    @media (min-width: 640px) {
-      margin: 0 0 16px 0;
+    @media (min-width: $breakpoint-sm) {
+      margin: $spacing-none $spacing-none $spacing-xl $spacing-none;
     }
   }
 
   &__year {
-    margin-bottom: 10px;
-    font-size: 14px;
+    margin-bottom: $spacing-md;
+    font-size: $font-size-sm;
   }
 
   &__company {
-    font-size: 18px;
+    font-size: $font-size-lg;
     text-transform: uppercase;
   }
 
   &__title {
-    margin-top: 14px;
-    font-size: 18px;
+    margin-top: $spacing-lg;
+    font-size: $font-size-lg;
 
-    @media (min-width: 640px) {
-      margin-top: 0;
+    @media (min-width: $breakpoint-sm) {
+      margin-top: $spacing-none;
     }
   }
 }

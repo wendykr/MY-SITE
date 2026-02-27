@@ -1,25 +1,20 @@
-@use '../../style/breakpoint';
-
 .navigation {
-  margin: 0 auto;
-  color: #ffffff;
+  margin: $spacing-none auto;
+  color: $white;
   text-align: center;
+  max-width: $width-2xl;
 
-  @media (min-width: breakpoint.$width-computer-header) {
-    max-width: 960px;
-  }
-
-  @media (min-width: 1024px) {
-    max-width: 1440px;
+  @media (min-width: $breakpoint-lg) {
+    max-width: $width-4xl;
   }
 
   &__container {
-  margin: 0 auto;
+  margin: $spacing-none auto;
   width: 100%;
-  background-color: #13529e;
+  background-color: $brand-800;
 
-    @media (min-width: breakpoint.$width-computer-header) {
-      background-color: #ffffff;
+    @media (min-width: $breakpoint-md) {
+      background-color: $white;
       position: absolute;
     }
   }

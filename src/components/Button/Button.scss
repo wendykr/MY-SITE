@@ -1,44 +1,37 @@
 .button {
-  padding: 24px 0;
+  padding: $spacing-3xl $spacing-none;
   width: 120px;
   height: 32px;
-  font-size: 16px;
-  border-radius: 4px;
+  font-size: $font-size-md;
+  border-radius: $radius-sm;
   border: none;
-  transition-property: background-color;
-  transition-duration: 300ms;
-  transition-timing-function: ease-linear;
+  transition: background-color $transition-md ease-linear;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  &:hover {
-    background-color: #406fa8;
-    cursor: pointer;
-  }
-
-  &__link {
-    display: inline-block;
-    text-decoration: none;
-  }
+  text-decoration: none;
 }
 
 .primary {
-  background-color: #13529e;
-  color: #ffffff;
-  transition: background-color 300ms linear;
+  background-color: $brand-800;
+  color: $white;
+  transition: background-color $transition-md linear;
 
   &:hover {
-    background-color: #406fa8;
+    background-color: $brand-400;
   }
+
+  @include focus-visible-outline($brand-800, 0.5);
 }
 
 .secondary {
-  background-color: #cbd8eb;
-  color: #13529e;
-  transition: background-color 300ms linear;
+  background-color: $brand-300;
+  color: $brand-800;
+  transition: background-color $transition-md linear;
 
   &:hover {
-    background-color: #e6edf7;
+    background-color: $neutral-200;
   }
+
+  @include focus-visible-outline($brand-300, 0.5);
 }

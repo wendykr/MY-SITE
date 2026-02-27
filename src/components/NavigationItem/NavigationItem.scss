@@ -1,47 +1,48 @@
-@use '../../style/breakpoint';
-
 .navigationItem {
-  background-color: #13529e;
+  background-color: $brand-800;
 
-  @media (min-width: breakpoint.$width-computer-header) {
-    background-color: #ffffff;
+  @media (min-width: $breakpoint-md) {
+    background-color: $white;
     border: none;
-    max-width: 320px;
+    max-width: $width-xxs;
   }
 
   &__link {
     position: relative;
     display: block;
-    padding: 20px 40px;
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: 500;
+    padding: $spacing-2xl $spacing-5xl;
+    color: $white;
+    font-size: $font-size-xl;
+    font-weight: $font-weight-medium;
     text-decoration: none;
     cursor: pointer;
 
     &:hover {
-      background-color: #1762bc;
+      background-color: $brand-600;
     }
 
-    &--other {
-      transition: color 0.2s linear;
+    @include focus-visible-outline($brand-800, 0.5);
 
-      @media (min-width: breakpoint.$width-computer-header) {
-        padding: 20px;
-        color: #333333;
+    &--other {
+      transition: color $transition-sm linear;
+
+      @media (min-width: $breakpoint-md) {
+        padding: $spacing-sm $spacing-2xl;
+        color: $neutral-800;
+        border-radius: $radius-sm;
 
         &:hover {
-          @media (min-width: breakpoint.$width-computer-header) {
-            background-color: #ffffff;
-            color: #13529e;
+          @media (min-width: $breakpoint-md) {
+            background-color: $white;
+            color: $brand-800;
           }
 
           &::after {
             content: "";
-            height: 2px;
+            height: 1px;
             width: calc(100% - 40px);
-            background-color: #13529e;
-            margin: 1px auto 0 auto;
+            background-color: $brand-800;
+            margin: 1px auto $spacing-none auto;
             display: block;
             position: absolute;
             animation-name: underlineLink;
@@ -49,25 +50,29 @@
             animation-timing-function: ease;
           }
         }
+
+        @include focus-visible-outline($neutral-800, 0.5);
       }
     }
 
     &--last {
       transition: none;
 
-      @media (min-width: breakpoint.$width-computer-header) {
-        padding: 6px 20px;
-        color: #ffffff;
-        background-color: #1762bc;
-        border: 1px solid #1762bc;
-        border-radius: 4px;
+      @media (min-width: $breakpoint-md) {
+        padding: $spacing-sm $spacing-2xl;
+        color: $white;
+        background-color: $brand-600;
+        border: 1px solid $brand-600;
+        border-radius: $radius-sm;
 
         &:hover {
-          @media (min-width: breakpoint.$width-computer-header) {
-            background-color: #ffffff;
-            color: #1762bc;
+          @media (min-width: $breakpoint-md) {
+            background-color: $white;
+            color: $brand-600;
           }
         }
+
+        @include focus-visible-outline($brand-600, 0.5);
       }
     }
   }

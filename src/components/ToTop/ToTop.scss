@@ -1,12 +1,12 @@
 .ToTop {
-  background-color: #050e19;
-  color: #ffffff;
+  background-color: $neutral-950;
+  color: $white;
   position: fixed;
   bottom: 0;
   right: 0;
   z-index: 50;
   cursor: pointer;
-  transition: background-color 200ms ease-linear;
+  transition: background-color $transition-sm ease-linear;
   display: none;
 
   &.display {
@@ -16,14 +16,16 @@
   }
 
   &:hover {
-    background-color: #357ed7;
+    background-color: $brand-500;
   }
 
   &__button {
-    font-size: 40px;
+      width: 40px;
+      height: 40px;
 
-    @media (min-width: 640px) {
-      font-size: 60px;
+    @media (min-width: $breakpoint-sm) {
+      width: 60px;
+      height: 60px;
     }
   }
 }

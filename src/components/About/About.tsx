@@ -16,7 +16,7 @@ export const About: React.FC = () => {
     <section id="about" className="about">
       <h2 className="title">O mně</h2>
       <h3 className="about__subtitle">Kdo jsem?</h3>
-      <p className="about__text">
+      <div className="about__text">
         <p>
           Frontend vývojářka webů a webových aplikací v{" "}
           <Link
@@ -36,10 +36,10 @@ export const About: React.FC = () => {
           Moje další meta? Next.js – přirozené rozšíření toho, co už dobře znám
           z Reactu.
         </p>
-      </p>
+      </div>
 
       <h3 className="about__subtitle">Co mě baví na frontendu?</h3>
-      <p className="about__text">
+      <div className="about__text">
         <p>
           Vyvíjet funkční a vizuálně přívětivé{" "}
           <Link
@@ -59,10 +59,10 @@ export const About: React.FC = () => {
           Kódovat a převádět grafické návrhy z Figmy do podoby s dynamickým
           obsahem, který následně ožívá v prohlížeči.
         </p>
-      </p>
+      </div>
 
       <h3 className="about__subtitle">Jaké vlastnosti mě vystihují?</h3>
-      <p className="about__text">
+      <div className="about__text">
         <ul className="about__list">
           <li className="about__list--item">
             <span className="about__list--term">Spolehlivost:</span> Dodržuji
@@ -81,7 +81,7 @@ export const About: React.FC = () => {
             Ráda si vyslechnu, je pro mě motivací k rozvoji svých dovedností.
           </li>
         </ul>
-      </p>
+      </div>
     </section>
   );
 };

@@ -1,53 +1,58 @@
 .contact {
 
   &__text {
-    font-size: 16px;
-    color: #ffffff;
+    font-size: $font-size-md;
+    color: $white;
     text-align: center;
   }
 
   &__container {
-    margin-top: 32px;
+    margin-top: $spacing-4xl;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
+    gap: $spacing-2xl;
 
-    @media (min-width: 580px) {
+    @media (min-width: $breakpoint-xs) {
+      margin: $spacing-4xl auto $spacing-none auto;
       flex-direction: row;
-      gap: 120px;
+      gap: $spacing-none;
+      justify-content: space-between;
+      max-width: $width-md;
     }
   }
 
   &__button {
-    padding: 8px 16px;
-    background-color: #ffffff;
-    color: #13529e;
-    font-size: 16px;
-    font-weight: 600;
+    padding: $spacing-md $spacing-xl;
+    background-color: $white;
+    color: $brand-800;
+    font-size: $font-size-md;
+    font-weight: $font-weight-semibold;
     text-decoration: none;
-    border: 1px solid #13529e;
-    border-radius: 4px;
+    border: 1px solid $brand-800;
+    border-radius: $radius-sm;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: $spacing-md;
 
     &:hover {
-      color: #ffffff;
-      background-color: #13529e;
-      border: 1px solid #ffffff;
+      color: $white;
+      background-color: $brand-800;
+      border: 1px solid $white;
 
       .contact__icon {
-        color: #ffffff;
+        color: $white;
       }
     }
+
+    @include focus-visible-outline($white, 0.5);
   }
 
   &__icon {
     width: 20px;
     height: 20px;
-    color: #13529e;
+    color: $brand-800;
   }
 }
