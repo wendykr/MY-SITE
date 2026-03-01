@@ -1,27 +1,27 @@
 export const linkMenuData = [
   {
     id: 1,
-    name: 'O mně',
+    name: 'nav.about',
     url: 'about',
   },
   {
     id: 2,
-    name: 'Dovednosti',
+    name: 'nav.skills',
     url: 'skills',
   },
   {
     id: 3,
-    name: 'Projekty',
+    name: 'nav.projects',
     url: 'projects',
   },
   {
     id: 4,
-    name: 'Vzdělávání',
+    name: 'nav.educations',
     url: 'educations',
   },
   {
     id: 5,
-    name: 'Kontakt',
+    name: 'nav.contact',
     url: 'contact',
   },
-]
+];

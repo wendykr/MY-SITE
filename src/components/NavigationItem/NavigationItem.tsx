@@ -1,8 +1,9 @@
-import { useEffect } from 'react';
-import './NavigationItem.scss';
-import { Link, useLocation } from 'react-router-dom';
-import { scroller } from 'react-scroll';
-import { useNav } from '../../context/NavContext';
+import { useEffect } from "react";
+import "./NavigationItem.scss";
+import { Link } from "react-router-dom";
+import { scroller } from "react-scroll";
+import { useNav } from "../../context/NavContext";
+import { useTranslation } from "react-i18next";
 
 interface NavigationItemProsp {
   name: string;
@@ -11,7 +12,7 @@ interface NavigationItemProsp {
 
 export const NavigationItem: React.FC<NavigationItemProsp> = ({ name, to }) => {
   const { setIsOpenMenu } = useNav();
-  const location = useLocation();
+  const { t } = useTranslation();
 
   const handleClick = () => {
     setIsOpenMenu(false);
@@ -27,10 +28,10 @@ export const NavigationItem: React.FC<NavigationItemProsp> = ({ name, to }) => {
     const { hash } = location;
 
     if (hash === `#${to}`) {
-      window.addEventListener('load', () => {
+      window.addEventListener("load", () => {
         const targetElement = document.getElementById(to);
         if (targetElement) {
-          targetElement.scrollIntoView({ behavior: 'auto', block: 'start' });
+          targetElement.scrollIntoView({ behavior: "auto", block: "start" });
         }
       });
     }
@@ -39,11 +40,11 @@ export const NavigationItem: React.FC<NavigationItemProsp> = ({ name, to }) => {
   return (
     <li className="navigationItem">
       <Link
-        className={`navigationItem__link ${(name=== 'Kontakt') ? 'navigationItem__link--last' : 'navigationItem__link--other' }`}
+        className={`navigationItem__link ${to === "contact" ? "navigationItem__link--last" : "navigationItem__link--other"}`}
         to={`#${to}`}
         onClick={handleClick}
       >
-        {name}
+        {t(name)}
       </Link>
     </li>
   );
