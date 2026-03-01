@@ -1,13 +1,15 @@
-import { useState, useEffect } from 'react';
-import './Header.scss';
+import { useTranslation } from "react-i18next";
+import { useState, useEffect } from "react";
+import "./Header.scss";
 import { FaEnvelope } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaAngleDoubleDown } from "react-icons/fa";
-import { Link } from 'react-router-dom';
-import { scroller } from 'react-scroll';
+import { Link } from "react-router-dom";
+import { scroller } from "react-scroll";
 
 export const Header: React.FC = () => {
+  const { t } = useTranslation();
   const [isDisplay, setIsDisplay] = useState(true);
 
   useEffect(() => {
@@ -19,10 +21,10 @@ export const Header: React.FC = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -40,15 +42,12 @@ export const Header: React.FC = () => {
       <header className="header">
         <div className="header__info">
           <h1 className="header__title">
-            <span className="black">Ahoj 👋, jsem</span> Vendy&nbsp;:)
+            <span className="black">{t("hero.title")}</span> {t("hero.name")}
           </h1>
-          <p className="header__subtitle">
-            Frontend developer
-          </p>
+          <p className="header__subtitle">{t("hero.subtitle")}</p>
           <p className="header__description">
-            Vyvíjím weby a aplikace v Reactu s využitím TypeScriptu.{" "}
-            <br></br>
-            Další level ve vývoji? Next.js!
+            {t("hero.descriptionRowFirst")} <br />
+            {t("hero.descriptionRowSecond")}
           </p>
           <ul className="header__list">
             <li>
@@ -89,4 +88,4 @@ export const Header: React.FC = () => {
       </header>
     </div>
   );
-}
+};

@@ -6,11 +6,13 @@ import { Navigation } from './components/Navigation/Navigation';
 import { Projects } from './components/Projects/Projects';
 import { Skills } from './components/Skills/Skills';
 import { ToTop } from './components/ToTop/ToTop';
+import { Seo } from './Seo';
 
 function App() {
 
   return (
     <>
+      <Seo />
       <Navigation />
       <Header />
       <About />

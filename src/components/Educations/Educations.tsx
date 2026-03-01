@@ -1,14 +1,18 @@
-import { useState, useEffect } from 'react';
-import './Educations.scss';
-import { coursesData } from '../../constants/courses';
-import { Education } from '../Education/Education';
-import { Link } from 'react-router-dom';
-import { scroller } from 'react-scroll';
-import { CoursesDataStructure } from '../../models/Courses';
+import { useState, useEffect } from "react";
+import "./Educations.scss";
+import { coursesData } from "../../constants/courses";
+import { Education } from "../Education/Education";
+import { Link } from "react-router-dom";
+import { scroller } from "react-scroll";
+import { CoursesDataStructure } from "../../models/Courses";
+import { useTranslation } from "react-i18next";
 
 export const Educations = () => {
+  const { t } = useTranslation();
   const [showAll, setShowAll] = useState(false);
-  const [displayedCourses, setDisplayedCourses] = useState<CoursesDataStructure[]>([]);
+  const [displayedCourses, setDisplayedCourses] = useState<
+    CoursesDataStructure[]
+  >([]);
   const [targetAnchor, setTargetAnchor] = useState<string | null>(null);
   const [scroll, setScroll] = useState(false);
 
@@ -19,7 +23,7 @@ export const Educations = () => {
         setShowAll(false);
       }, 1300);
       setTimeout(() => {
-        scroller.scrollTo('educations', {
+        scroller.scrollTo("educations", {
           spy: true,
           smooth: true,
           offset: 0,
@@ -45,27 +49,27 @@ export const Educations = () => {
         const targetElement = document.getElementById(targetAnchor);
         if (targetElement) {
           targetElement.scrollIntoView({
-            behavior: 'smooth',
+            behavior: "smooth",
           });
         }
       }, 500);
-  
+
       return () => clearTimeout(timeout);
     }
   }, [scroll, targetAnchor]);
 
   const handleAnchorClick = (event: MouseEvent) => {
     const target = event.target as HTMLElement | null;
-  
-    if (target && target.tagName === 'A' && target.getAttribute('href')) {
-      const hrefValue = target.getAttribute('href');
-  
-      if (hrefValue && hrefValue.includes('#')) {
-        const clickedAnchor = hrefValue.replace('#', '');
-  
-        if (target.classList.contains('show-edu')) {
+
+    if (target && target.tagName === "A" && target.getAttribute("href")) {
+      const hrefValue = target.getAttribute("href");
+
+      if (hrefValue && hrefValue.includes("#")) {
+        const clickedAnchor = hrefValue.replace("#", "");
+
+        if (target.classList.contains("show-edu")) {
           setTargetAnchor(clickedAnchor);
-  
+
           if (!showAll) {
             setShowAll(true);
             setScroll(true);
@@ -79,19 +83,19 @@ export const Educations = () => {
   };
 
   useEffect(() => {
-    document.addEventListener('click', (handleAnchorClick));
+    document.addEventListener("click", handleAnchorClick);
 
     return () => {
-      document.removeEventListener('click', handleAnchorClick);
+      document.removeEventListener("click", handleAnchorClick);
     };
   }, []);
 
   return (
     <div className="bg-white">
       <section id="educations" className="educations">
-        <h2 className="title">Kurzy a certifikáty</h2>
-        <p className="description">... vzdělávám se a rozšiřuju si své dovednosti.</p>
-        {displayedCourses.map(course => (
+        <h2 className="title">{t("educations.title")}</h2>
+        <p className="description">{t("educations.description")}</p>
+        {displayedCourses.map((course) => (
           <Education
             key={course.id}
             year={course.year}
@@ -102,18 +106,24 @@ export const Educations = () => {
             isClicked={course.anchor === targetAnchor}
           />
         ))}
-        {coursesData.length > 3 && (
-          showAll ?
+        {coursesData.length > 3 &&
+          (showAll ? (
             <Link
               className="link-anchor show-edu"
               onClick={toggleShowAll}
-              to="#educations">Skrýt</Link>
-              :
+              to="#educations"
+            >
+              {t("educations.textButtonShowLess")}
+            </Link>
+          ) : (
             <button
               className="link-anchor button-reset-style"
-              onClick={toggleShowAll}>Zobrazit další</button>
-        )}
+              onClick={toggleShowAll}
+            >
+              {t("educations.textButtonShowAll")}
+            </button>
+          ))}
       </section>
     </div>
-  )
-}
+  );
+};

@@ -1,10 +1,12 @@
-import './Footer.scss';
-import { Link, NavLink } from 'react-router-dom';
-import { linkMenuData } from '../../constants/linkMenu';
-import { scroller } from 'react-scroll';
-import { Contact } from '../Contact/Contact';
+import "./Footer.scss";
+import { Link, NavLink } from "react-router-dom";
+import { linkMenuData } from "../../constants/linkMenu";
+import { scroller } from "react-scroll";
+import { Contact } from "../Contact/Contact";
+import { useTranslation } from "react-i18next";
 
 export const Footer: React.FC = () => {
+  const { t } = useTranslation();
   const handleClick = (to: string) => {
     scroller.scrollTo(to, {
       spy: true,
@@ -27,13 +29,17 @@ export const Footer: React.FC = () => {
               to={`#${link.url}`}
               onClick={() => handleClick(link.url)}
             >
-              {link.name}
+              {t(link.name)}
             </Link>
           ))}
         </p>
         <p className="footer__text">
-          © 2024{' '}
-          <NavLink target="_blank" to="https://github.com/wendykr/" className="footer__link">
+          © 2024{" "}
+          <NavLink
+            target="_blank"
+            to="https://github.com/wendykr/"
+            className="footer__link"
+          >
             Vendula Krajíčková
           </NavLink>
         </p>

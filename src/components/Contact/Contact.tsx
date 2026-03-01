@@ -1,20 +1,17 @@
-import './Contact.scss';
+import "./Contact.scss";
 import { FaLinkedin } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 export const Contact: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <>
-      <h2 className="title">
-        Aktuálně nejsem na lovu, ale odvážní mohou zaklepat.
-      </h2>
-      <p className="contact__text">
-        ... zapojení do krátkodobého projektu nebo nové propojení z oboru?
-        Sem s tím!
-      </p>
+      <h2 className="title">{t("contact.title")}</h2>
+      <p className="contact__text">{t("contact.text")}</p>
       <div className="contact__container">
         <a
           href="mailto:vendysacek@seznam.cz"
-          aria-label="Kontaktovat Vendulu"
+          aria-label={t("contact.ariaLabelEmail")}
           className="contact__button"
         >
           vendysacek@seznam.cz
@@ -22,11 +19,11 @@ export const Contact: React.FC = () => {
         <a
           href="https://www.linkedin.com/in/vendula-krajickova/"
           className="contact__button"
-          aria-label="Profil na LinkedInu"
+          aria-label={t("contact.ariaLabelLinkedIn")}
         >
           <FaLinkedin className="contact__icon" /> LinkedIn
         </a>
       </div>
     </>
   );
-}
+};

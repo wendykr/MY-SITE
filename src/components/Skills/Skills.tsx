@@ -1,5 +1,6 @@
 import "./Skills.scss";
 import { Skill } from "../Skill/Skill";
+import { useTranslation } from "react-i18next";
 
 import { FaReact, FaHtml5, FaSass } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io5";
@@ -105,13 +106,12 @@ const skillsToolsData = [
 ];
 
 export const Skills = () => {
+  const { t } = useTranslation();
   return (
     <div className="bg-white">
       <section id="skills" className="skills">
-        <h2 className="title">Dovednosti a nástroje</h2>
-        <p className="description">
-          ... se kterými pracuju ve svých projektech.
-        </p>
+        <h2 className="title">{t("skills.title")}</h2>
+        <p className="description">{t("skills.description")}</p>
         <div className="skills__container">
           <div className="skills__languages">
             {skillsLanguagesData.map((skill) => (

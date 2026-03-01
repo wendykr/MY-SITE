@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import { scroller } from "react-scroll";
 import "./About.scss";
+import { useTranslation } from "react-i18next";
 
 export const About: React.FC = () => {
+  const { t } = useTranslation();
   const handleClick = (to: string) => {
     scroller.scrollTo(to, {
       spy: true,
@@ -14,71 +16,67 @@ export const About: React.FC = () => {
 
   return (
     <section id="about" className="about">
-      <h2 className="title">O mně</h2>
-      <h3 className="about__subtitle">Kdo jsem?</h3>
+      <h2 className="title">{t("about.title")}</h2>
+      <h3 className="about__subtitle">{t("about.subtitle.who")}</h3>
       <div className="about__text">
         <p>
-          Frontend vývojářka webů a webových aplikací v{" "}
+          {t("about.text.p1.pre")}{" "}
           <Link
             className="link-anchor"
             to="#skills"
             onClick={() => handleClick("skills")}
           >
-            technologiích
+            {t("about.text.p1.link")}
           </Link>{" "}
-          - React, TypeScript a JavaScript.{" "}
+          {t("about.text.p1.post")}
         </p>
-        <p>
-          Grafické návrhy webů z Figmy kóduji do responsivního HTML/CSS a
-          doplňuji o interaktivní prvky.
-        </p>{" "}
-        <p>
-          Moje další meta? Next.js – přirozené rozšíření toho, co už dobře znám
-          z Reactu.
-        </p>
+        <p>{t("about.text.p2")}</p>
+        <p>{t("about.text.p3")}</p>
       </div>
 
-      <h3 className="about__subtitle">Co mě baví na frontendu?</h3>
+      <h3 className="about__subtitle">{t("about.subtitle.what")}</h3>
       <div className="about__text">
         <p>
-          Vyvíjet funkční a vizuálně přívětivé{" "}
+          {t("about.text2.p1.pre")}{" "}
           <Link
             className="link-anchor"
             to="#projects"
             onClick={() => handleClick("projects")}
           >
-            webové aplikace
+            {t("about.text2.p1.link")}
           </Link>{" "}
-          , které návštěvníci přímo vidí a používají.
+          {t("about.text2.p1.post")}
         </p>
-        <p>
-          Navrhovat a tvořit komponenty v Reactu s důrazem na jejich
-          znovupoužitelnost napříč projektem.
-        </p>
-        <p>
-          Kódovat a převádět grafické návrhy z Figmy do podoby s dynamickým
-          obsahem, který následně ožívá v prohlížeči.
-        </p>
+        <p>{t("about.text2.p2")}</p>
+        <p>{t("about.text2.p3")}</p>
       </div>
 
-      <h3 className="about__subtitle">Jaké vlastnosti mě vystihují?</h3>
+      <h3 className="about__subtitle">{t("about.subtitle.traits")}</h3>
       <div className="about__text">
         <ul className="about__list">
           <li className="about__list--item">
-            <span className="about__list--term">Spolehlivost:</span> Dodržuji
-            termíny a často předkládám výsledky dříve, než je potřeba.
+            <span className="about__list--term">
+              {t("about.traits.1.term")}
+            </span>{" "}
+            {t("about.traits.1.desc")}
           </li>
           <li className="about__list--item">
-            <span className="about__list--term">Pečlivost:</span> Detaily
-            nepřehlížím – toleruju jen 1px!
+            <span className="about__list--term">
+              {t("about.traits.2.term")}
+            </span>{" "}
+            {t("about.traits.2.desc")}
           </li>
           <li className="about__list--item">
-            <span className="about__list--term">Flexibilita:</span> Cítím se
-            jistější, mám-li po ruce parťáka, ale dokážu pracovat i samostatně.
+            <span className="about__list--term">
+              {t("about.traits.3.term")}
+            </span>{" "}
+            {t("about.traits.3.desc")}
           </li>
           <li className="about__list--item">
-            <span className="about__list--term">Otevřenost:</span> Zpětná vazba?
-            Ráda si vyslechnu, je pro mě motivací k rozvoji svých dovedností.
+            <span className="about__list--term">
+              {t("about.traits.4.term")}
+            </span>{" "}
+            {t("about.traits.4.desc")}
           </li>
         </ul>
       </div>
