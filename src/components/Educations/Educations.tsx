@@ -92,7 +92,7 @@ export const Educations = () => {
 
   return (
     <div className="bg-white">
-      <section id="educations" className="educations">
+      <section id={t("educations.id")} className="educations">
         <h2 className="title">{t("educations.title")}</h2>
         <p className="description">{t("educations.description")}</p>
         {displayedCourses.map((course) => (
@@ -102,8 +102,8 @@ export const Educations = () => {
             company={course.company}
             name={course.name}
             description={course.description}
-            anchor={course.anchor}
-            isClicked={course.anchor === targetAnchor}
+            anchor={t(course.anchor)}
+            isClicked={t(course.anchor) === targetAnchor}
           />
         ))}
         {coursesData.length > 3 &&

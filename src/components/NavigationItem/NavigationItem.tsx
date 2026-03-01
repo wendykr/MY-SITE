@@ -16,7 +16,7 @@ export const NavigationItem: React.FC<NavigationItemProsp> = ({ name, to }) => {
 
   const handleClick = () => {
     setIsOpenMenu(false);
-    scroller.scrollTo(to, {
+    scroller.scrollTo(t(to), {
       spy: true,
       smooth: true,
       offset: 0,
@@ -27,21 +27,21 @@ export const NavigationItem: React.FC<NavigationItemProsp> = ({ name, to }) => {
   useEffect(() => {
     const { hash } = location;
 
-    if (hash === `#${to}`) {
+    if (hash === `#${t(to)}`) {
       window.addEventListener("load", () => {
-        const targetElement = document.getElementById(to);
+        const targetElement = document.getElementById(t(to));
         if (targetElement) {
           targetElement.scrollIntoView({ behavior: "auto", block: "start" });
         }
       });
     }
-  }, [location, to]);
+  }, [location, to, t]);
 
   return (
     <li className="navigationItem">
       <Link
-        className={`navigationItem__link ${to === "contact" ? "navigationItem__link--last" : "navigationItem__link--other"}`}
-        to={`#${to}`}
+        className={`navigationItem__link ${t(to) === t("contact.id") || t(to) === t("kontakt.id") ? "navigationItem__link--last" : "navigationItem__link--other"}`}
+        to={`#${t(to)}`}
         onClick={handleClick}
       >
         {t(name)}
