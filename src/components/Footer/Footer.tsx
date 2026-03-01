@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 export const Footer: React.FC = () => {
   const { t } = useTranslation();
   const handleClick = (to: string) => {
-    scroller.scrollTo(to, {
+    scroller.scrollTo(t(to), {
       spy: true,
       smooth: true,
       offset: 0,
@@ -17,7 +17,7 @@ export const Footer: React.FC = () => {
   };
 
   return (
-    <footer id="contact" className="footer">
+    <footer id={t("contact.id")} className="footer">
       <Contact />
       <hr className="footer__line" />
       <div className="footer__content">
@@ -26,7 +26,7 @@ export const Footer: React.FC = () => {
             <Link
               key={link.id}
               className="footer__navigation--link"
-              to={`#${link.url}`}
+              to={`#${t(link.url)}`}
               onClick={() => handleClick(link.url)}
             >
               {t(link.name)}
@@ -40,7 +40,7 @@ export const Footer: React.FC = () => {
             to="https://github.com/wendykr/"
             className="footer__link"
           >
-            Vendula Krajíčková
+            {t("footer.author")}
           </NavLink>
         </p>
       </div>

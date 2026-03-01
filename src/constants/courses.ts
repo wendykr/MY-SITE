@@ -5,7 +5,7 @@ export const coursesData = [
     company: "Czechitas",
     name: "courses.1.name",
     description: "courses.1.description",
-    anchor: "jak-na-web",
+    anchor: "courses.1.anchor",
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ export const coursesData = [
     company: "Czechitas",
     name: "courses.2.name",
     description: "courses.2.description",
-    anchor: "stan-se-koderkou",
+    anchor: "courses.2.anchor",
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ export const coursesData = [
     company: "Czechitas",
     name: "courses.3.name",
     description: "courses.3.description",
-    anchor: "javascript-1",
+    anchor: "courses.3.anchor",
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ export const coursesData = [
     company: "Czechitas",
     name: "courses.4.name",
     description: "courses.4.description",
-    anchor: "javascript-2",
+    anchor: "courses.4.anchor",
   },
   {
     id: 5,
@@ -37,7 +37,7 @@ export const coursesData = [
     company: "ReactGirls",
     name: "courses.5.name",
     description: "courses.5.description",
-    anchor: "rg-mentoring",
+    anchor: "courses.5.anchor",
   },
   {
     id: 6,
@@ -45,7 +45,7 @@ export const coursesData = [
     company: "Czechitas",
     name: "courses.6.name",
     description: "courses.6.description",
-    anchor: "react-1",
+    anchor: "courses.6.anchor",
   },
   {
     id: 7,
@@ -53,7 +53,7 @@ export const coursesData = [
     company: "Kódím.cz",
     name: "courses.7.name",
     description: "courses.7.description",
-    anchor: "zaklady-ts",
+    anchor: "courses.7.anchor",
   },
   {
     id: 8,
@@ -61,7 +61,7 @@ export const coursesData = [
     company: "Czechitas",
     name: "courses.8.name",
     description: "courses.8.description",
-    anchor: "react-2",
+    anchor: "courses.8.anchor",
   },
   {
     id: 9,
@@ -69,7 +69,7 @@ export const coursesData = [
     company: "Skillmea",
     name: "courses.9.name",
     description: "courses.9.description",
-    anchor: "zaklady-next",
+    anchor: "courses.9.anchor",
   },
   {
     id: 10,
@@ -77,6 +77,6 @@ export const coursesData = [
     company: "Czechitas",
     name: "courses.10.name",
     description: "courses.10.description",
-    anchor: "figma",
+    anchor: "courses.10.anchor",
   },
 ];

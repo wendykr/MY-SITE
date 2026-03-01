@@ -8,11 +8,26 @@
     "ogImage": "https://www.vendula-krajickova.cz/socials/og-soc.jpg"
   },
   "nav": {
-    "about": "O mně",
-    "skills": "Dovednosti",
-    "projects": "Projekty",
-    "educations": "Vzdělávání",
-    "contact": "Kontakt"
+    "1" : {
+      "name": "O mně",
+      "url": "o-mne"
+    },
+    "2" : {
+      "name": "Dovednosti",
+      "url": "dovednosti"
+    },
+    "3" : {
+      "name": "Projekty",
+      "url": "projekty"
+    },
+    "4" : {
+      "name": "Vzdělávání",
+      "url": "vzdelavani"
+    },
+    "5" : {
+      "name": "Kontakt",
+      "url": "kontakt"
+    }
   },
   "hero": {
     "title": "Ahoj 👋, jsem",
@@ -22,6 +37,7 @@
     "descriptionRowSecond": "Další level ve vývoji? Next.js!"
   },
   "about": {
+    "id": "o-mne",
     "title": "O mně",
     "subtitle": {
       "who": "Kdo jsem?",
@@ -66,18 +82,21 @@
     }
   },
   "contact": {
+    "id": "kontakt",
     "title": "Aktuálně nejsem na lovu, ale odvážní mohou zaklepat.",
     "text": "... zapojení do krátkodobého projektu nebo nové propojení z oboru? Sem s tím!",
     "ariaLabelEmail": "Kontaktovat Vendy e-mailem",
     "ariaLabelLinkedIn": "Navštívit Vendy LinkedIn profil"
   },
   "educations": {
+    "id": "vzdelavani",
     "title": "Kurzy a certifikáty",
     "description": "... vzdělávám se a rozšiřuju si své dovednosti.",
     "textButtonShowAll": "Zobrazit další",
     "textButtonShowLess": "Skrýt"
   },
   "projects": {
+    "id": "projekty",
     "title": "Projekty",
     "description": "... na kterých získávám praktické zkušenosti.",
     "footer": {
@@ -87,6 +106,7 @@
     }
   },
   "skills": {
+    "id": "dovednosti",
     "title": "Dovednosti a nástroje",
     "description": "... se kterými pracuju ve svých projektech."
   },
@@ -126,43 +146,56 @@
   "courses": {
     "1": {
       "name": "Jak na web",
-      "description": "Na fiktivním projektu jsem si zrekapitulovala základy HTML a CSS. Dále jsem se naučila pracovat s Developer tools. Používat a vykreslovat SVG ikony pomocí techniky sprite. Nakódovat responzivní web napříč různými zařízeními. Rozložení layoutu webu pomocí flexboxu a organizovat CSS pomocí Sass vč. rozdělení kódu na menší kousky."
+      "description": "Na fiktivním projektu jsem si zrekapitulovala základy HTML a CSS. Dále jsem se naučila pracovat s Developer tools. Používat a vykreslovat SVG ikony pomocí techniky sprite. Nakódovat responzivní web napříč různými zařízeními. Rozložení layoutu webu pomocí flexboxu a organizovat CSS pomocí Sass vč. rozdělení kódu na menší kousky.",
+      "anchor": "jak-na-web"
     },
     "2": {
       "name": "Staň se kodérkou",
-      "description": "Naučila jsem se vytvářet responzivní stránky, používat pokročilé techniky pro tvorbu layoutu – flexbox a CSS grid, organizovat CSS pomocí preprocesoru Sass a rozdělení kódu na menší kousky a vytvářet obsah stránek pomocí generátoru statických webů Eleventy s použitím šablon."
+      "description": "Naučila jsem se vytvářet responzivní stránky, používat pokročilé techniky pro tvorbu layoutu – flexbox a CSS grid, organizovat CSS pomocí preprocesoru Sass a rozdělení kódu na menší kousky a vytvářet obsah stránek pomocí generátoru statických webů Eleventy s použitím šablon.",
+      "anchor": "stan-se-koderkou"
     },
     "3": {
       "name": "JavaScript 1",
-      "description": "Základy programování, umím manipulovat s elementy v DOM, využít principů události a reakcí na vstup uživatele a pracovat s médií na stránce. Jsem schopna vytvořit jednoduchou aplikaci a tu následně publikovat prostřednictvím svého GitHub účtu."
+      "description": "Základy programování, umím manipulovat s elementy v DOM, využít principů události a reakcí na vstup uživatele a pracovat s médií na stránce. Jsem schopna vytvořit jednoduchou aplikaci a tu následně publikovat prostřednictvím svého GitHub účtu.",
+      "anchor": "javascript-1"
     },
     "4": {
       "name": "JavaScript 2",
-      "description": "Ovládám základy tvorby frontendových aplikací v čistém JavaScriptu. Mám praktické znalosti komunikace s REST API. Umím používat základní stavební prvky jako komponenty, autentizace a client-side routing. Jsem schopna tvořit projekty založené na Webpacku."
+      "description": "Ovládám základy tvorby frontendových aplikací v čistém JavaScriptu. Mám praktické znalosti komunikace s REST API. Umím používat základní stavební prvky jako komponenty, autentizace a client-side routing. Jsem schopna tvořit projekty založené na Webpacku.",
+      "anchor": "javascript-2"
     },
     "5": {
       "name": "ReactGirls Mentoringový program",
-      "description": "Programování vlastního projektu, na kterém jsem posunula své dovednosti programovat aplikace v Reactu. Během tvorby projektu jsem měla přiděleného svého mentora, který mi poskytoval cenné rady a pravidelně uděloval code review."
+      "description": "Programování vlastního projektu, na kterém jsem posunula své dovednosti programovat aplikace v Reactu. Během tvorby projektu jsem měla přiděleného svého mentora, který mi poskytoval cenné rady a pravidelně uděloval code review.",
+      "anchor": "rg-mentoring"
     },
     "6": {
       "name": "React 1 - Základy",
       "description": "Zopakovala jsem si základy JavaScriptu a zapisování ve formátu ES6 a vyšší. Ovládám základní principy fungování Reactu. Dokážu vytvořit jednoduchou aplikaci složenou z komponent, která načítá data z API, pracuje s useState, useEffect a React Routerem."
+      ,"anchor": "react-1"
     },
     "7": {
       "name": "Základy TypeScriptu",
-      "description": "Ovládám základy Typescriptu a jeho typového systému, jednoduché datové modelování, nastavení projektu v TypeScriptu vč. bundlování, základy parametrických typů (generik) a doporučené postupy pro vývoj webových aplikací v TypeScriptu a Reactu."
+      "description": "Ovládám základy Typescriptu a jeho typového systému, jednoduché datové modelování, nastavení projektu v TypeScriptu vč. bundlování, základy parametrických typů (generik) a doporučené postupy pro vývoj webových aplikací v TypeScriptu a Reactu.",
+      "anchor": "zaklady-typescriptu"
     },
     "8": {
       "name": "React 2 - Nástroje a techniky",
-      "description": "Ovládám používat TypeScript při vývoji React aplikacích. Získala jsem hlubší pochopení Reactu a životního cyklu komponenty. Naučila jsem se vytvářet vlastní hooky a pokročilé metody state managementu pomocí useContextu. Zpracovávat formuláře a validovat data přes Formik. Seznámila jsem se s psaním unit testů a testováním prostřednictvím Vitest."
+      "description": "Ovládám používat TypeScript při vývoji React aplikacích. Získala jsem hlubší pochopení Reactu a životního cyklu komponenty. Naučila jsem se vytvářet vlastní hooky a pokročilé metody state managementu pomocí useContextu. Zpracovávat formuláře a validovat data přes Formik. Seznámila jsem se s psaním unit testů a testováním prostřednictvím Vitest.",
+      "anchor": "react-2"
     },
     "9": {
       "name": "Základy Next.js",
-      "description": "Vytváření multi-page aplikací pomocí Pages Router a dynamické segmenty v URL. Metody stylování aplikace: CSS/Sass, Styled Components, Tailwind CSS, CSS-in-JS. Renderování a načítání dat: getServerSideProps (SSR), getStaticPaths (SSG), Automatic Static Optimization. Optimalizace obrázků. Povědomí o vývoji full-stack aplikací přes API Routes a nastavení autentizace."
+      "description": "Vytváření multi-page aplikací pomocí Pages Router a dynamické segmenty v URL. Metody stylování aplikace: CSS/Sass, Styled Components, Tailwind CSS, CSS-in-JS. Renderování a načítání dat: getServerSideProps (SSR), getStaticPaths (SSG), Automatic Static Optimization. Optimalizace obrázků. Povědomí o vývoji full-stack aplikací přes API Routes a nastavení autentizace.",
+      "anchor": "zaklady-next"
     },
     "10": {
       "name": "Figma",
-      "description": "Seznámila jsem se s prostředím Figmy a jejími základními funkcemi. Orientuji se ve stylování textů, přidávání elementům barvy a stínovací efekty. Pracuji s auto layoutem pro efektivní rozvržení prvků. Vytvářím komponenty a jejich varianty, navrhuji wireframy i funkční prototypy podle zadání. Pro přehlednou správu stylů napříč návrhem využívám Figma Variables."
+      "description": "Seznámila jsem se s prostředím Figmy a jejími základními funkcemi. Orientuji se ve stylování textů, přidávání elementům barvy a stínovací efekty. Pracuji s auto layoutem pro efektivní rozvržení prvků. Vytvářím komponenty a jejich varianty, navrhuji wireframy i funkční prototypy podle zadání. Pro přehlednou správu stylů napříč návrhem využívám Figma Variables.",
+      "anchor": "figma"
     }
+  },
+  "footer": {
+    "author": "Vendula Krajíčková"
   }
 }

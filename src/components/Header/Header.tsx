@@ -78,7 +78,7 @@ export const Header: React.FC = () => {
         </div>
         {isDisplay && (
           <Link
-            to="#about"
+            to={`#${t("about.id")}`}
             onClick={() => handleClick("about")}
             aria-label="Přejít na sekci 'O mně'"
           >

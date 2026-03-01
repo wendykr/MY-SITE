@@ -15,7 +15,7 @@ export const About: React.FC = () => {
   };
 
   return (
-    <section id="about" className="about">
+    <section id={t("about.id")} className="about">
       <h2 className="title">{t("about.title")}</h2>
       <h3 className="about__subtitle">{t("about.subtitle.who")}</h3>
       <div className="about__text">
@@ -23,7 +23,7 @@ export const About: React.FC = () => {
           {t("about.text.p1.pre")}{" "}
           <Link
             className="link-anchor"
-            to="#skills"
+            to={`#${t("skills.id")}`}
             onClick={() => handleClick("skills")}
           >
             {t("about.text.p1.link")}
@@ -40,7 +40,7 @@ export const About: React.FC = () => {
           {t("about.text2.p1.pre")}{" "}
           <Link
             className="link-anchor"
-            to="#projects"
+            to={`#${t("projects.id")}`}
             onClick={() => handleClick("projects")}
           >
             {t("about.text2.p1.link")}

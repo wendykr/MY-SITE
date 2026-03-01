@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 export const Projects: React.FC = () => {
   const { t } = useTranslation();
   return (
-    <section id="projects" className="projects">
+    <section id={t("projects.id")} className="projects">
       <h2 className="title">{t("projects.title")}</h2>
       <p className="description">{t("projects.description")}</p>
       {projectsData

@@ -1,27 +1,27 @@
 export const linkMenuData = [
   {
     id: 1,
-    name: 'nav.about',
-    url: 'about',
+    name: 'nav.1.name',
+    url: 'nav.1.url',
   },
   {
     id: 2,
-    name: 'nav.skills',
-    url: 'skills',
+    name: 'nav.2.name',
+    url: 'nav.2.url',
   },
   {
     id: 3,
-    name: 'nav.projects',
-    url: 'projects',
+    name: 'nav.3.name',
+    url: 'nav.3.url',
   },
   {
     id: 4,
-    name: 'nav.educations',
-    url: 'educations',
+    name: 'nav.4.name',
+    url: 'nav.4.url',
   },
   {
     id: 5,
-    name: 'nav.contact',
-    url: 'contact',
+    name: 'nav.5.name',
+    url: 'nav.5.url',
   },
 ];

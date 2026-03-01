@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Vendula Krajíčková | Front-end developer - React, TypeScript, JavaScript and Next.js, Prague",
+    "title": "Vendula Krajickova | Front-end developer - React, TypeScript, JavaScript and Next.js, Prague",
     "description": "I'm Vendy :), a frontend developer building websites and web apps in React using TypeScript, JavaScript and Next.js.",
     "ogTitle": "Front-end developer - React, TypeScript, JavaScript and Next.js, Prague",
     "ogDescription": "I develop websites and web applications in React using TypeScript. I code Figma designs into HTML/CSS with JavaScript elements.",
@@ -8,11 +8,26 @@
     "ogImage": "https://www.vendula-krajickova.cz/socials/og-soc.jpg"
   },
   "nav": {
-    "about": "About",
-    "skills": "Skills",
-    "projects": "Projects",
-    "educations": "Educations",
-    "contact": "Contact"
+    "1": {
+      "name": "About",
+      "url": "about"
+    },
+    "2": {
+      "name": "Skills",
+      "url": "skills"
+    },
+    "3": {
+      "name": "Projects",
+      "url": "projects"
+    },
+    "4": {
+      "name": "Educations",
+      "url": "educations"
+    },
+    "5": {
+      "name": "Contact",
+      "url": "contact"
+    }
   },
   "hero": {
     "title": "Hi 👋, I'm",
@@ -22,6 +37,7 @@
     "descriptionRowSecond": "Next level in development? Next.js!"
   },
   "about": {
+    "id": "about",
     "title": "About",
     "subtitle": {
       "who": "Who am I?",
@@ -66,18 +82,21 @@
     }
   },
   "contact": {
+    "id": "contact",
     "title": "Currently not hunting, but the brave can knock.",
     "text": "... involvement in a short-term project or a new connection in the field? Bring it on!",
     "ariaLabelEmail": "Contact Vendy via email",
     "ariaLabelLinkedIn": "Visit Vendy's LinkedIn profile"
   },
   "educations": {
+    "id": "educations",
     "title": "Courses and Certificates",
     "description": "... I continue to educate myself and expand my skills.",
     "textButtonShowAll": "Show more",
     "textButtonShowLess": "Show less"
   },
   "projects": {
+    "id": "projects",
     "title": "Projects",
     "description": "... where I gain practical experience.",
     "footer": {
@@ -87,6 +106,7 @@
     }
   },
   "skills": {
+    "id": "skills",
     "title": "Skills and Tools",
     "description": "... that I use in my projects."
   },
@@ -96,7 +116,7 @@
     "textButtonLive": "Visit website",
     "1": {
       "name": "Expo burza Pardubice",
-      "description": "Web with information about a one-day event, coded using HTML and Sass. I used the Eleventy templating system to generate static pages. The project is the final work of the <a class=\"link-anchor show-edu\" href=\"#stan-se-koderkou\">Become a Coder</a> course."
+      "description": "Web with information about a one-day event, coded using HTML and Sass. I used the Eleventy templating system to generate static pages. The project is the final work of the <a class=\"link-anchor show-edu\" href=\"#become-a-coder\">Become a Coder</a> course."
     },
     "2": {
       "name": "Winery",
@@ -126,43 +146,56 @@
   "courses": {
     "1": {
       "name": "How to Web",
-      "description": "In a fictional project I refreshed the basics of HTML and CSS. I learned to use Developer tools, render SVG icons via sprite technique, build responsive layouts across devices using flexbox and organize CSS with Sass by splitting code into smaller parts."
+      "description": "In a fictional project I refreshed the basics of HTML and CSS. I learned to use Developer tools, render SVG icons via sprite technique, build responsive layouts across devices using flexbox and organize CSS with Sass by splitting code into smaller parts.",
+      "anchor": "how-to-web"
     },
     "2": {
       "name": "Become a Coder",
-      "description": "I learned to create responsive pages, use advanced layout techniques – flexbox and CSS grid, organize CSS with the Sass preprocessor and split code into smaller parts, and create site content using the Eleventy static site generator with templates."
+      "description": "I learned to create responsive pages, use advanced layout techniques – flexbox and CSS grid, organize CSS with the Sass preprocessor and split code into smaller parts, and create site content using the Eleventy static site generator with templates.",
+      "anchor": "become-a-coder"
     },
     "3": {
       "name": "JavaScript 1",
-      "description": "Basics of programming, I can manipulate elements in the DOM, use event principles and respond to user input, and work with media on the page. I am capable of creating a simple application and subsequently publishing it through my GitHub account."
+      "description": "Basics of programming, I can manipulate elements in the DOM, use event principles and respond to user input, and work with media on the page. I am capable of creating a simple application and subsequently publishing it through my GitHub account.",
+      "anchor": "javascript-1"
     },
     "4": {
       "name": "JavaScript 2",
-      "description": "I mastered the basics of creating frontend applications in pure JavaScript. I have practical knowledge of communicating with REST APIs. I can use basic building blocks such as components, authentication, and client-side routing. I am capable of creating projects based on Webpack."
+      "description": "I mastered the basics of creating frontend applications in pure JavaScript. I have practical knowledge of communicating with REST APIs. I can use basic building blocks such as components, authentication, and client-side routing. I am capable of creating projects based on Webpack.",
+      "anchor": "javascript-2"
     },
     "5": {
       "name": "ReactGirls Mentoring Program",
-      "description": "Programming my own project, where I advanced my skills in developing applications in React. During the project, I had an assigned mentor who provided valuable advice and regularly conducted code reviews."
+      "description": "Programming my own project, where I advanced my skills in developing applications in React. During the project, I had an assigned mentor who provided valuable advice and regularly conducted code reviews.",
+      "anchor": "rg-mentoring"
     },
     "6": {
       "name": "React 1 - Basics",
-      "description": "I refreshed the basics of JavaScript and ES6+ syntax. I understand the fundamental principles of React. I can create a simple application composed of components that fetch data from an API, and work with useState, useEffect, and React Router."
+      "description": "I refreshed the basics of JavaScript and ES6+ syntax. I understand the fundamental principles of React. I can create a simple application composed of components that fetch data from an API, and work with useState, useEffect, and React Router.",
+      "anchor": "react-1"
     },
     "7": {
       "name": "Basics of TypeScript",
-      "description": "I mastered the basics of TypeScript and its type system, simple data modeling, project setup in TypeScript including bundling, basics of parametric types (generics), and recommended practices for developing web applications in TypeScript and React."
+      "description": "I mastered the basics of TypeScript and its type system, simple data modeling, project setup in TypeScript including bundling, basics of parametric types (generics), and recommended practices for developing web applications in TypeScript and React.",
+      "anchor": "basics-typescript"
     },
     "8": {
       "name": "React 2 - Tools and Techniques",
-      "description": "I mastered using TypeScript in React applications. I gained a deeper understanding of React and the component lifecycle. I learned to create custom hooks and advanced state management methods using useContext. I can handle forms and validate data using Formik. I became familiar with writing unit tests and testing through Vitest."
+      "description": "I mastered using TypeScript in React applications. I gained a deeper understanding of React and the component lifecycle. I learned to create custom hooks and advanced state management methods using useContext. I can handle forms and validate data using Formik. I became familiar with writing unit tests and testing through Vitest.",
+      "anchor": "react-2"
     },
     "9": {
       "name": "Basics of Next.js",
-      "description": "Creating multi-page applications using the Pages Router and dynamic segments in the URL. Styling methods: CSS/Sass, Styled Components, Tailwind CSS, CSS-in-JS. Data rendering and fetching: getServerSideProps (SSR), getStaticPaths (SSG), Automatic Static Optimization. Image optimization. Awareness of full-stack application development through API Routes and authentication setup."
+      "description": "Creating multi-page applications using the Pages Router and dynamic segments in the URL. Styling methods: CSS/Sass, Styled Components, Tailwind CSS, CSS-in-JS. Data rendering and fetching: getServerSideProps (SSR), getStaticPaths (SSG), Automatic Static Optimization. Image optimization. Awareness of full-stack application development through API Routes and authentication setup.",
+      "anchor": "basics-next"
     },
     "10": {
       "name": "Figma",
-      "description": "I familiarized myself with the Figma environment and its basic features. I understand text styling, adding colors and shadow effects to elements. I work with auto layout for efficient element arrangement. I create components and their variants, design wireframes and functional prototypes according to specifications. For clear style management across the design, I use Figma Variables."
+      "description": "I familiarized myself with the Figma environment and its basic features. I understand text styling, adding colors and shadow effects to elements. I work with auto layout for efficient element arrangement. I create components and their variants, design wireframes and functional prototypes according to specifications. For clear style management across the design, I use Figma Variables.",
+      "anchor": "figma"
     }
+  },
+  "footer": {
+    "author": "Vendula Krajickova"
   }
 }
