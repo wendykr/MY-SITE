@@ -9,7 +9,7 @@ export const Projects: React.FC = () => {
     <section id={t("projects.id")} className="projects">
       <h2 className="title">{t("projects.title")}</h2>
       <p className="description">{t("projects.description")}</p>
-      {projectsData
+      {[...projectsData]
         .sort((a, b) => b.id - a.id)
         .map((project) => (
           <Project
@@ -25,7 +25,12 @@ export const Projects: React.FC = () => {
         ))}
       <p className="projects__footer">
         {t("projects.footer.paragraphStart")}{" "}
-        <a className="link-anchor" href="https://github.com/wendykr/">
+        <a
+          className="link-anchor"
+          href="https://github.com/wendykr/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           {t("projects.footer.link")}
         </a>
         {t("projects.footer.paragraphEnd")}

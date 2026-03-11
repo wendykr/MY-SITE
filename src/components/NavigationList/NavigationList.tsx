@@ -28,7 +28,7 @@ export const NavigationList: React.FC = () => {
   };
 
   return (
-    <nav>
+    <>
       <div id="toggler" onClick={handleClick}>
         {isOpenMenu ? (
           <RxCross2 className="navigation__icon" />
@@ -41,6 +41,6 @@ export const NavigationList: React.FC = () => {
           <NavigationItem key={link.id} name={link.name} to={link.url} />
         ))}
       </ul>
-    </nav>
+    </>
   );
 };

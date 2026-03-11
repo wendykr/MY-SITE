@@ -34,7 +34,11 @@
     "name": "Vendy :)",
     "subtitle": "Frontend developer",
     "descriptionRowFirst": "Vyvíjím weby a aplikace v Reactu s využitím TypeScriptu.",
-    "descriptionRowSecond": "Další level ve vývoji? Next.js!"
+    "descriptionRowSecond": "Další level ve vývoji? Next.js!",
+    "ariaLabelButtonGH": "Otevřít Vendy GitHub profil",
+    "ariaLabelButtonLI": "Otevřít Vendy LinkedIn profil",
+    "ariaLabelButtonMail": "Otevřít e-mailový klient pro kontaktování Vendy",
+    "ariaLabelButtonAbout": "Přejít na sekci O mně"
   },
   "about": {
     "id": "o-mne",

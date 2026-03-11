@@ -53,7 +53,7 @@ export const Header: React.FC = () => {
             <li>
               <a
                 href="https://github.com/wendykr/"
-                aria-label="Profil na GitHubu"
+                aria-label={t("hero.ariaLabelButtonGH")}
               >
                 <FaGithub className="header__icon" />
               </a>
@@ -61,7 +61,7 @@ export const Header: React.FC = () => {
             <li>
               <a
                 href="https://www.linkedin.com/in/vendula-krajickova/"
-                aria-label="Profil na LinkedInu"
+                aria-label={t("hero.ariaLabelButtonLI")}
               >
                 <FaLinkedinIn className="header__icon" />
               </a>
@@ -69,7 +69,7 @@ export const Header: React.FC = () => {
             <li>
               <a
                 href="mailto:vendysacek@seznam.cz"
-                aria-label="Kontaktovat Vendulu"
+                aria-label={t("hero.ariaLabelButtonMail")}
               >
                 <FaEnvelope className="header__icon" />
               </a>
@@ -79,8 +79,8 @@ export const Header: React.FC = () => {
         {isDisplay && (
           <Link
             to={`#${t("about.id")}`}
-            onClick={() => handleClick("about")}
-            aria-label="Přejít na sekci 'O mně'"
+            onClick={() => handleClick(`${t("about.id")}`)}
+            aria-label={t("hero.ariaLabelButtonAbout")}
           >
             <FaAngleDoubleDown className="header__icon--down" />
           </Link>
