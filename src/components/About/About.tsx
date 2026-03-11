@@ -24,7 +24,7 @@ export const About: React.FC = () => {
           <Link
             className="link-anchor"
             to={`#${t("skills.id")}`}
-            onClick={() => handleClick("skills")}
+            onClick={() => handleClick(`${t("skills.id")}`)}
           >
             {t("about.text.p1.link")}
           </Link>{" "}
@@ -41,7 +41,7 @@ export const About: React.FC = () => {
           <Link
             className="link-anchor"
             to={`#${t("projects.id")}`}
-            onClick={() => handleClick("projects")}
+            onClick={() => handleClick(`${t("projects.id")}`)}
           >
             {t("about.text2.p1.link")}
           </Link>{" "}

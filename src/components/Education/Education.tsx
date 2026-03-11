@@ -20,7 +20,7 @@ export const Education: React.FC<EducationProps> = ({
 }) => {
   const { t } = useTranslation();
   return (
-    <div id={t(anchor)} className="education">
+    <div id={anchor} className="education">
       <div className="education__info">
         <p className="education__year">{year}</p>
         <p className="education__company">{company}</p>

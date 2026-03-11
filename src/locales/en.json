@@ -34,7 +34,11 @@
     "name": "Vendy :)",
     "subtitle": "Frontend developer",
     "descriptionRowFirst": "I develop websites and applications in React using TypeScript.",
-    "descriptionRowSecond": "Next level in development? Next.js!"
+    "descriptionRowSecond": "Next level in development? Next.js!",
+    "ariaLabelButtonGH": "Open Vendy's GitHub profile",
+    "ariaLabelButtonLI": "Open Vendy's LinkedIn profile",
+    "ariaLabelButtonMail": "Open email client to contact Vendy",
+    "ariaLabelButtonAbout": "Go to the About section"
   },
   "about": {
     "id": "about",

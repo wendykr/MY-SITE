@@ -5,12 +5,12 @@ import { scroller } from "react-scroll";
 import { useNav } from "../../context/NavContext";
 import { useTranslation } from "react-i18next";
 
-interface NavigationItemProsp {
+interface NavigationItemProps {
   name: string;
   to: string;
 }
 
-export const NavigationItem: React.FC<NavigationItemProsp> = ({ name, to }) => {
+export const NavigationItem: React.FC<NavigationItemProps> = ({ name, to }) => {
   const { setIsOpenMenu } = useNav();
   const { t } = useTranslation();
 
@@ -40,7 +40,7 @@ export const NavigationItem: React.FC<NavigationItemProsp> = ({ name, to }) => {
   return (
     <li className="navigationItem">
       <Link
-        className={`navigationItem__link ${t(to) === t("contact.id") || t(to) === t("kontakt.id") ? "navigationItem__link--last" : "navigationItem__link--other"}`}
+        className={`navigationItem__link ${t(to) === t("contact.id") ? "navigationItem__link--last" : "navigationItem__link--other"}`}
         to={`#${t(to)}`}
         onClick={handleClick}
       >

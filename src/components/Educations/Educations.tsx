@@ -23,7 +23,7 @@ export const Educations = () => {
         setShowAll(false);
       }, 1300);
       setTimeout(() => {
-        scroller.scrollTo("educations", {
+        scroller.scrollTo(t("educations.id"), {
           spy: true,
           smooth: true,
           offset: 0,
@@ -88,7 +88,7 @@ export const Educations = () => {
     return () => {
       document.removeEventListener("click", handleAnchorClick);
     };
-  }, []);
+  }, [showAll]);
 
   return (
     <div className="bg-white">
@@ -111,7 +111,7 @@ export const Educations = () => {
             <Link
               className="link-anchor show-edu"
               onClick={toggleShowAll}
-              to="#educations"
+              to={`#${t("educations.id")}`}
             >
               {t("educations.textButtonShowLess")}
             </Link>

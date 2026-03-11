@@ -1,5 +1,5 @@
 import "./Footer.scss";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { linkMenuData } from "../../constants/linkMenu";
 import { scroller } from "react-scroll";
 import { Contact } from "../Contact/Contact";
@@ -7,6 +7,8 @@ import { useTranslation } from "react-i18next";
 
 export const Footer: React.FC = () => {
   const { t } = useTranslation();
+  const currentYear = new Date().getFullYear();
+
   const handleClick = (to: string) => {
     scroller.scrollTo(t(to), {
       spy: true,
@@ -34,14 +36,14 @@ export const Footer: React.FC = () => {
           ))}
         </p>
         <p className="footer__text">
-          © 2024{" "}
-          <NavLink
+          © {currentYear}{" "}
+          <a
             target="_blank"
-            to="https://github.com/wendykr/"
+            href="https://github.com/wendykr/"
             className="footer__link"
           >
             {t("footer.author")}
-          </NavLink>
+          </a>
         </p>
       </div>
     </footer>
