@@ -197,6 +197,11 @@
       "name": "Figma",
       "description": "I familiarized myself with the Figma environment and its basic features. I understand text styling, adding colors and shadow effects to elements. I work with auto layout for efficient element arrangement. I create components and their variants, design wireframes and functional prototypes according to specifications. For clear style management across the design, I use Figma Variables.",
       "anchor": "figma"
+    },
+    "11": {
+      "name": "Figma Advanced",
+      "description": "I expanded my knowledge of responsive design principles and designing interfaces for different breakpoints. I utilized Figma Variables to maintain consistency across the project and to organize styles clearly. I mastered the principles of microinteractions and their importance for UX, enabling me to design functional and user-friendly interfaces.",
+      "anchor": "figma-advanced"
     }
   },
   "footer": {

@@ -79,4 +79,12 @@ export const coursesData = [
     description: "courses.10.description",
     anchor: "courses.10.anchor",
   },
+  {
+    id: 11,
+    year: "11/2025 - 11/2025",
+    company: "Czechitas",
+    name: "courses.11.name",
+    description: "courses.11.description",
+    anchor: "courses.11.anchor",
+  },
 ];
