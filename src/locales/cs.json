@@ -175,8 +175,8 @@
     },
     "6": {
       "name": "React 1 - Základy",
-      "description": "Zopakovala jsem si základy JavaScriptu a zapisování ve formátu ES6 a vyšší. Ovládám základní principy fungování Reactu. Dokážu vytvořit jednoduchou aplikaci složenou z komponent, která načítá data z API, pracuje s useState, useEffect a React Routerem."
-      ,"anchor": "react-1"
+      "description": "Zopakovala jsem si základy JavaScriptu a zapisování ve formátu ES6 a vyšší. Ovládám základní principy fungování Reactu. Dokážu vytvořit jednoduchou aplikaci složenou z komponent, která načítá data z API, pracuje s useState, useEffect a React Routerem.",
+      "anchor": "react-1"
     },
     "7": {
       "name": "Základy TypeScriptu",
@@ -197,6 +197,11 @@
       "name": "Figma",
       "description": "Seznámila jsem se s prostředím Figmy a jejími základními funkcemi. Orientuji se ve stylování textů, přidávání elementům barvy a stínovací efekty. Pracuji s auto layoutem pro efektivní rozvržení prvků. Vytvářím komponenty a jejich varianty, navrhuji wireframy i funkční prototypy podle zadání. Pro přehlednou správu stylů napříč návrhem využívám Figma Variables.",
       "anchor": "figma"
+    },
+    "11": {
+      "name": "Figma pokračování",
+      "description": "Rozšířila jsem své znalosti o principy responzivního designu a navrhování rozhraní pro různé breakpointy. Využila jsem Figma Variables k udržení konzistence napříč projektem a k přehlednému uspořádání stylů. Osvojila jsem si principy mikrointerakcí a jejich význam pro UX, pro navrhování funkčního a uživatelsky přívětivého rozhraní.",
+      "anchor": "figma-pokracovani"
     }
   },
   "footer": {
