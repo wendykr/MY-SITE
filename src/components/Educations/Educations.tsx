@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import "./Educations.scss";
 import { coursesData } from "../../constants/courses";
 import { Education } from "../Education/Education";
-import { Link } from "react-router-dom";
 import { scroller } from "react-scroll";
 import { CoursesDataStructure } from "../../models/Courses";
 import { useTranslation } from "react-i18next";
@@ -19,6 +18,7 @@ export const Educations = () => {
   const toggleShowAll = () => {
     if (showAll) {
       setTargetAnchor(null);
+      window.history.pushState(null, "", `#${t("educations.id")}`);
       setTimeout(() => {
         setShowAll(false);
       }, 1300);
@@ -108,13 +108,12 @@ export const Educations = () => {
         ))}
         {coursesData.length > 3 &&
           (showAll ? (
-            <Link
-              className="link-anchor show-edu"
+            <button
+              className="link-anchor button-reset-style show-edu"
               onClick={toggleShowAll}
-              to={`#${t("educations.id")}`}
             >
               {t("educations.textButtonShowLess")}
-            </Link>
+            </button>
           ) : (
             <button
               className="link-anchor button-reset-style"
