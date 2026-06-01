@@ -202,6 +202,11 @@
       "name": "Figma pokračování",
       "description": "Rozšířila jsem své znalosti o principy responzivního designu a navrhování rozhraní pro různé breakpointy. Využila jsem Figma Variables k udržení konzistence napříč projektem a k přehlednému uspořádání stylů. Osvojila jsem si principy mikrointerakcí a jejich význam pro UX, pro navrhování funkčního a uživatelsky přívětivého rozhraní.",
       "anchor": "figma-pokracovani"
+    },
+    "12": {
+      "name": "React akademie",
+      "description": "Zaměření na vývoj aplikací v Reactu a TypeScriptu, práci s komponentovou architekturou, správou stavu, formuláři a komunikací s REST API. Součástí byla také práce s Gitem pro verzování kódu a týmovou spolupráci na společných projektech.",
+      "anchor": "reactgirls-react-akademie"
     }
   },
   "footer": {

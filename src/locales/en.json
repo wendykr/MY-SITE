@@ -202,6 +202,11 @@
       "name": "Figma Advanced",
       "description": "I expanded my knowledge of responsive design principles and designing interfaces for different breakpoints. I utilized Figma Variables to maintain consistency across the project and to organize styles clearly. I mastered the principles of microinteractions and their importance for UX, enabling me to design functional and user-friendly interfaces.",
       "anchor": "figma-advanced"
+    },
+    "12": {
+      "name": "React Academy",
+      "description": "Focus on developing applications in React and TypeScript, working with component architecture, state management, forms, and communication with REST API. It also included working with Git for code versioning and team collaboration on joint projects.",
+      "anchor": "reactgirls-react-akademie"
     }
   },
   "footer": {
