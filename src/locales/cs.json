@@ -68,20 +68,20 @@
     },
     "traits": {
       "1": {
-        "term": "Spolehlivost:",
-        "desc": "Dodržuji termíny a často předkládám výsledky dříve, než je potřeba."
+        "term": "Komunikace:",
+        "desc": "Tým má vždy přehled o tom, na čem pracuju a v jakém je to stavu."
       },
       "2": {
-        "term": "Pečlivost:",
-        "desc": "Detaily nepřehlížím – toleruju jen 1px!"
+        "term": "Nasazení:",
+        "desc": "Práci beru jako závazek, ne jen jako jednotlivé úkoly."
       },
       "3": {
-        "term": "Flexibilita:",
-        "desc": "Cítím se jistější, mám-li po ruce parťáka, ale dokážu pracovat i samostatně."
+        "term": "Spolehlivost:",
+        "desc": "Dodržuji termíny a dodávám práci v dohodnuté kvalitě."
       },
       "4": {
-        "term": "Otevřenost:",
-        "desc": "Zpětná vazba? Ráda si vyslechnu, je pro mě motivací k rozvoji svých dovedností."
+        "term": "Flexibilita:",
+        "desc": "Kombinuji samostatnou práci s efektivní spoluprací v týmu."
       }
     }
   },
