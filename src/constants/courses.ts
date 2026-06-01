@@ -87,4 +87,12 @@ export const coursesData = [
     description: "courses.11.description",
     anchor: "courses.11.anchor",
   },
+  {
+    id: 12,
+    year: "03/2026 - 04/2026",
+    company: "ReactGirls",
+    name: "courses.12.name",
+    description: "courses.12.description",
+    anchor: "courses.12.anchor",
+  },
 ];
