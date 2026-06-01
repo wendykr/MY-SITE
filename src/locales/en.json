@@ -68,20 +68,20 @@
     },
     "traits": {
       "1": {
-        "term": "Reliability:",
-        "desc": "I meet deadlines and often deliver results earlier than required."
+        "term": "Communication:",
+        "desc": "The team always has an overview of what I'm working on and its status."
       },
       "2": {
-        "term": "Thoroughness:",
-        "desc": "I don't overlook details – I tolerate only 1px!"
+        "term": "Commitment:",
+        "desc": "I treat work as a commitment, not just individual tasks."
       },
       "3": {
-        "term": "Flexibility:",
-        "desc": "I feel more confident with a teammate, but I can also work independently."
+        "term": "Reliability:",
+        "desc": "I meet deadlines and deliver work in the agreed quality."
       },
       "4": {
-        "term": "Openness:",
-        "desc": "Feedback? I like to listen, it's a motivation to improve my skills."
+        "term": "Flexibility:",
+        "desc": "I combine independent work with effective collaboration in a team."
       }
     }
   },
