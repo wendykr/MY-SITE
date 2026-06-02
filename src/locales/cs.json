@@ -1,9 +1,9 @@
 {
   "meta": {
-    "title": "Vendula Krajíčková | Front-end developer - React, TypeScript, JavaScript a Next.js, Praha",
-    "description": "Jsem Vendy :), frontend vývojářka webů a webových aplikací v Reactu s využitím TypeScriptu, JavaScriptu a Next.js.",
-    "ogTitle": "Front-end developer - React, TypeScript, JavaScript a Next.js, Praha",
-    "ogDescription": "Vyvíjím weby a webové aplikace v Reactu s využitím TypeScriptu. Kóduju grafické návrhy webů z Figmy do HTML/CSS s prvky JavaScriptu.",
+    "title": "Vendula Krajíčková | Front-end developer - React, Next.js, TypeScript a JavaScript, Praha",
+    "description": "Jsem Vendy :), frontend vývojářka webů a webových aplikací v Reactu a Next.js s využitím TypeScriptu.",
+    "ogTitle": "Front-end developer - React, Next.js, TypeScript a JavaScript, Praha",
+    "ogDescription": "Vyvíjím weby a webové aplikace v Reactu a Next.js s využitím TypeScriptu. Kóduju grafické návrhy webů z Figmy do HTML/CSS s prvky JavaScriptu.",
     "canonical": "https://www.vendula-krajickova.cz/",
     "ogImage": "https://www.vendula-krajickova.cz/socials/og-soc.jpg"
   },
@@ -33,8 +33,8 @@
     "title": "Ahoj 👋, jsem",
     "name": "Vendy :)",
     "subtitle": "Frontend developer",
-    "descriptionRowFirst": "Vyvíjím weby a aplikace v Reactu s využitím TypeScriptu.",
-    "descriptionRowSecond": "Další level ve vývoji? Next.js!",
+    "descriptionRowFirst": "Vyvíjím webové aplikace v Reactu, Next.js a TypeScriptu.",
+    "descriptionRowSecond": "Od UI komponent přes Storybook dokumentaci, až po napojení API.",
     "ariaLabelButtonGH": "Otevřít Vendy GitHub profil",
     "ariaLabelButtonLI": "Otevřít Vendy LinkedIn profil",
     "ariaLabelButtonMail": "Otevřít e-mailový klient pro kontaktování Vendy",
@@ -52,10 +52,12 @@
       "p1": {
         "pre": "Frontend vývojářka webů a webových aplikací v",
         "link": "technologiích",
-        "post": "- React, TypeScript a JavaScript."
+        "post": "- React, Next.js a TypeScript."
       },
-      "p2": "Grafické návrhy webů z Figmy kóduji do responsivního HTML/CSS a doplňuji o interaktivní prvky.",
-      "p3": "Moje další meta? Next.js – přirozené rozšíření toho, co už dobře znám z Reactu."
+      "p2": "UI komponenty vyvíjím a dokumentuji ve Storybooku.",
+      "p3": "Napojuji API podle OpenAPI specifikace a spravuji data přes TanStack Query.",
+      "p4": "Grafické návrhy z Figmy kóduji do responzivního HTML/CSS s interaktivními prvky."
+
     },
     "text2": {
       "p1": {
