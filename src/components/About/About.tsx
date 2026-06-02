@@ -32,6 +32,7 @@ export const About: React.FC = () => {
         </p>
         <p>{t("about.text.p2")}</p>
         <p>{t("about.text.p3")}</p>
+        <p>{t("about.text.p4")}</p>
       </div>
 
       <h3 className="about__subtitle">{t("about.subtitle.what")}</h3>

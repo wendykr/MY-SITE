@@ -1,9 +1,9 @@
 {
   "meta": {
-    "title": "Vendula Krajickova | Front-end developer - React, TypeScript, JavaScript and Next.js, Prague",
-    "description": "I'm Vendy :), a frontend developer building websites and web apps in React using TypeScript, JavaScript and Next.js.",
-    "ogTitle": "Front-end developer - React, TypeScript, JavaScript and Next.js, Prague",
-    "ogDescription": "I develop websites and web applications in React using TypeScript. I code Figma designs into HTML/CSS with JavaScript elements.",
+    "title": "Vendula Krajickova | Front-end developer - React, Next.js, TypeScript and JavaScript, Prague",
+    "description": "I'm Vendy :), a frontend developer building websites and web apps in React and Next.js using TypeScript.",
+    "ogTitle": "Front-end developer - React, Next.js, TypeScript and JavaScript, Prague",
+    "ogDescription": "I develop websites and web applications in React and Next.js using TypeScript. I code Figma designs into HTML/CSS with JavaScript elements.",
     "canonical": "https://www.vendula-krajickova.cz/",
     "ogImage": "https://www.vendula-krajickova.cz/socials/og-soc.jpg"
   },
@@ -33,8 +33,8 @@
     "title": "Hi 👋, I'm",
     "name": "Vendy :)",
     "subtitle": "Frontend developer",
-    "descriptionRowFirst": "I develop websites and applications in React using TypeScript.",
-    "descriptionRowSecond": "Next level in development? Next.js!",
+    "descriptionRowFirst": "I develop web applications in React, Next.js, and TypeScript.",
+    "descriptionRowSecond": "From UI components to Storybook documentation, to API integration.",
     "ariaLabelButtonGH": "Open Vendy's GitHub profile",
     "ariaLabelButtonLI": "Open Vendy's LinkedIn profile",
     "ariaLabelButtonMail": "Open email client to contact Vendy",
@@ -52,10 +52,11 @@
       "p1": {
         "pre": "Frontend developer of websites and web applications in",
         "link": "technologies",
-        "post": "- React, TypeScript and JavaScript."
+        "post": "- React, Next.js and TypeScript."
       },
-      "p2": "I code Figma designs into responsive HTML/CSS and add interactive features.",
-      "p3": "My next goal? Next.js – a natural extension of what I already know well from React."
+      "p2": "I develop and document UI components in Storybook.",
+      "p3": "I integrate APIs according to the OpenAPI specification and manage data using TanStack Query.",
+      "p4": "I code Figma designs into responsive HTML/CSS with interactive elements."
     },
     "text2": {
       "p1": {
