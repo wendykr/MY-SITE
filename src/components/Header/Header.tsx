@@ -29,10 +29,12 @@ export const Header: React.FC = () => {
   }, []);
 
   const handleClick = (to: string) => {
+    const nav = document.querySelector('.navigation__container') as HTMLElement;
+    const navOffset = nav ? -nav.offsetHeight : 0;
     scroller.scrollTo(to, {
       spy: true,
       smooth: true,
-      offset: 0,
+      offset: navOffset,
       duration: 1000,
     });
   };

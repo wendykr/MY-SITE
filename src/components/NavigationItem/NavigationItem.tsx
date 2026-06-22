@@ -10,6 +10,11 @@ interface NavigationItemProps {
   to: string;
 }
 
+const getNavOffset = (): number => {
+  const nav = document.querySelector('.navigation__container') as HTMLElement;
+  return nav ? -nav.offsetHeight : 0;
+};
+
 export const NavigationItem: React.FC<NavigationItemProps> = ({ name, to }) => {
   const { setIsOpenMenu } = useNav();
   const { t } = useTranslation();
@@ -22,7 +27,7 @@ export const NavigationItem: React.FC<NavigationItemProps> = ({ name, to }) => {
     scroller.scrollTo(translatedId, {
       spy: true,
       smooth: true,
-      offset: 0,
+      offset: getNavOffset(),
       duration: 1000,
     });
   };
@@ -32,10 +37,8 @@ export const NavigationItem: React.FC<NavigationItemProps> = ({ name, to }) => {
       const targetElement = document.getElementById(translatedId);
 
       if (targetElement) {
-        targetElement.scrollIntoView({
-          behavior: "auto",
-          block: "start",
-        });
+        const y = targetElement.getBoundingClientRect().top + window.pageYOffset + getNavOffset();
+        window.scrollTo({ top: y, behavior: 'auto' });
       }
     }
   }, [location.hash, translatedId]);

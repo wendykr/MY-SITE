@@ -9,13 +9,15 @@
   }
 
   &__container {
-  margin: $spacing-none auto;
-  width: 100%;
-  background-color: $brand-800;
+    margin: $spacing-none auto;
+    width: 100%;
+    background-color: $brand-800;
+    position: sticky;
+    top: 0;
+    z-index: 150;
 
     @media (min-width: $breakpoint-md) {
       background-color: $white;
-      position: absolute;
     }
   }
 }
