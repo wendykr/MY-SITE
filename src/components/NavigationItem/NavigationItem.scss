@@ -2,7 +2,7 @@
   background-color: $brand-800;
 
   @media (min-width: $breakpoint-md) {
-    background-color: $white;
+    background-color: transparent;
     border: none;
     max-width: $width-xxs;
   }
@@ -33,7 +33,7 @@
 
         &:hover {
           @media (min-width: $breakpoint-md) {
-            background-color: $white;
+            background-color: transparent;
             color: $brand-800;
           }
 

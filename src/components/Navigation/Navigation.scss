@@ -15,9 +15,21 @@
     position: sticky;
     top: 0;
     z-index: 150;
+    transition: background-color $transition-sm linear;
 
     @media (min-width: $breakpoint-md) {
       background-color: $white;
+    }
+
+    &--scrolled {
+      background-color: rgba($brand-800, 0.75);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(8px);
+
+      @media (min-width: $breakpoint-md) {
+        background-color: rgba($white, 0.75);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      }
     }
   }
 }
