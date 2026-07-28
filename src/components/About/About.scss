@@ -33,4 +33,22 @@
       color: $brand-800;
     }
   }
+
+  &__skills {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: $spacing-3xl;
+  }
+
+  &__skills--row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: $spacing-2xl;
+
+    @media (min-width: $breakpoint-lg) {
+      gap: $spacing-4xl;
+    }
+  }
 }

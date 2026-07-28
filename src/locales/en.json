@@ -45,27 +45,13 @@
     "title": "About",
     "subtitle": {
       "who": "Who am I?",
-      "what": "What I enjoy about frontend?",
-      "traits": "Which traits describe me?"
+      "tech": "Skills and tools",
+      "traits": "Traits that describe me"
     },
     "text": {
-      "p1": {
-        "pre": "Frontend developer of websites and web applications in",
-        "link": "technologies",
-        "post": "- React, Next.js and TypeScript."
-      },
-      "p2": "I develop and document UI components in Storybook.",
-      "p3": "I integrate APIs according to the OpenAPI specification and manage data using TanStack Query.",
-      "p4": "I code Figma designs into responsive HTML/CSS with interactive elements."
-    },
-    "text2": {
-      "p1": {
-        "pre": "Building functional and visually pleasing",
-        "link": "web applications",
-        "post": ", that visitors directly see and use."
-      },
-      "p2": "Designing and creating React components with emphasis on reusability across the project.",
-      "p3": "Coding and converting Figma designs into dynamic content that comes alive in the browser."
+      "p1": "Frontend developer of websites and web applications focused on React, Next.js and TypeScript.",
+      "p2": "I have a year of experience in an agency environment and 9 years of experience managing and creating web content.",
+      "p3": "Through self-study, I gradually moved from working with content to developing web applications."
     },
     "traits": {
       "1": {
@@ -77,11 +63,11 @@
         "desc": "I treat work as a commitment, not just individual tasks."
       },
       "3": {
-        "term": "Reliability:",
-        "desc": "I meet deadlines and deliver work in the agreed quality."
+        "term": "Consistency:",
+        "desc": "I keep track of work in progress and follow it through to the final result."
       },
       "4": {
-        "term": "Flexibility:",
+        "term": "Collaboration:",
         "desc": "I combine independent work with effective collaboration in a team."
       }
     }

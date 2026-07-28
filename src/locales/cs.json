@@ -45,28 +45,13 @@
     "title": "O mně",
     "subtitle": {
       "who": "Kdo jsem?",
-      "what": "Co mě baví na frontendu?",
-      "traits": "Jaké vlastnosti mě vystihují?"
+      "tech": "Dovednosti a nástroje",
+      "traits": "Vlastnosti, které mě vystihují"
     },
     "text": {
-      "p1": {
-        "pre": "Frontend vývojářka webů a webových aplikací v",
-        "link": "technologiích",
-        "post": "- React, Next.js a TypeScript."
-      },
-      "p2": "UI komponenty vyvíjím a dokumentuji ve Storybooku.",
-      "p3": "Napojuji API podle OpenAPI specifikace a spravuji data přes TanStack Query.",
-      "p4": "Grafické návrhy z Figmy kóduji do responzivního HTML/CSS s interaktivními prvky."
-
-    },
-    "text2": {
-      "p1": {
-        "pre": "Vyvíjet funkční a vizuálně přívětivé",
-        "link": "webové aplikace",
-        "post": ", které návštěvníci přímo vidí a používají."
-      },
-      "p2": "Navrhovat a tvořit komponenty v Reactu s důrazem na jejich znovupoužitelnost napříč projektem.",
-      "p3": "Kódovat a převádět grafické návrhy z Figmy do podoby s dynamickým obsahem, který následně ožívá v prohlížeči."
+      "p1": "Frontend vývojářka webů a webových aplikací se zaměřením na React, Next.js a TypeScript.",
+      "p2": "Mám roční praxi v agenturním prostředí a 9 let zkušeností se správou a obsahem webů.",
+      "p3": "Během samostudia jsem se postupně posunula od práce s obsahem k vývoji webových aplikací."
     },
     "traits": {
       "1": {
@@ -78,11 +63,11 @@
         "desc": "Práci beru jako závazek, ne jen jako jednotlivé úkoly."
       },
       "3": {
-        "term": "Spolehlivost:",
-        "desc": "Dodržuji termíny a dodávám práci v dohodnuté kvalitě."
+        "term": "Důslednost:",
+        "desc": "Hlídám si rozpracovanou práci a dotahuji ji až do finálního výsledku."
       },
       "4": {
-        "term": "Flexibilita:",
+        "term": "Spolupráce:",
         "desc": "Kombinuji samostatnou práci s efektivní spoluprací v týmu."
       }
     }
