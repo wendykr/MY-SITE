@@ -6,7 +6,7 @@ import {
   SiFigma,
   SiStorybook,
 } from "react-icons/si";
-import { VscVscode } from "react-icons/vsc";
+import { BiLogoVisualStudio } from "react-icons/bi";
 
 export const skillsToolsData = [
   {
@@ -17,7 +17,7 @@ export const skillsToolsData = [
   {
     id: 2,
     name: "Visual Studio Code",
-    icon: VscVscode,
+    icon: BiLogoVisualStudio,
   },
   {
     id: 3,
