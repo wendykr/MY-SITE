@@ -12,10 +12,10 @@ import {
   SiStorybook,
   SiGit,
   SiFigma,
-  SiClaudecode,
+  SiClaude,
 } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
-import { VscVscode } from "react-icons/vsc";
+import { BiLogoVisualStudio } from "react-icons/bi";
 
 export const skillGroups = [
   {
@@ -46,8 +46,8 @@ export const skillGroups = [
     id: 3,
     items: [
       { name: "Git", icon: SiGit },
-      { name: "Visual Studio Code", icon: VscVscode },
-      { name: "Claude Code", icon: SiClaudecode },
+      { name: "Visual Studio Code", icon: BiLogoVisualStudio },
+      { name: "Claude Code", icon: SiClaude },
       { name: "Figma", icon: SiFigma },
     ],
   },
