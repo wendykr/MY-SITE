@@ -17,14 +17,18 @@
       "url": "skills"
     },
     "3": {
+      "name": "Experience",
+      "url": "experience"
+    },
+    "4": {
       "name": "Projects",
       "url": "projects"
     },
-    "4": {
+    "5": {
       "name": "Educations",
       "url": "educations"
     },
-    "5": {
+    "6": {
       "name": "Contact",
       "url": "contact"
     }
@@ -85,6 +89,10 @@
     "description": "... I continue to educate myself and expand my skills.",
     "textButtonShowAll": "Show more",
     "textButtonShowLess": "Show less"
+  },
+  "experience": {
+    "id": "experience",
+    "title": "Work Experience"
   },
   "projects": {
     "id": "projects",
@@ -194,6 +202,28 @@
       "name": "React Academy",
       "description": "Focus on developing applications in React and TypeScript, working with component architecture, state management, forms, and communication with REST API. It also included working with Git for code versioning and team collaboration on joint projects.",
       "anchor": "reactgirls-react-akademie"
+    }
+  },
+  "experienceEntries": {
+    "1": {
+      "position": "Web content editor",
+      "period": "01/2016 – 07/2025",
+      "description": [
+        "Managing and creating web content: listing products, updating data, marketing support.",
+        "Working with HTML/CSS code: styling and positioning text content in an HTML editor.",
+        "Creating graphic designs: marketing brochures, catalogs, newsletters."
+      ]
+    },
+    "2": {
+      "position": "Frontend Developer",
+      "period": "08/2025 – present",
+      "description": [
+        "Frontend development of an e-commerce platform and auction portal in Next.js as part of project teams",
+        "Development of an internal component library, including component documentation in Storybook",
+        "Version control with Git, including branch management, conflict resolution, and team collaboration",
+        "Working with Jira and Trello for organizing work and managing tasks, and Toggl Track for tracking time during development",
+        "Using AI tools as part of the development workflow for implementation, refactoring, and working with the codebase"
+      ]
     }
   },
   "footer": {

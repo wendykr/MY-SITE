@@ -17,14 +17,18 @@
       "url": "dovednosti"
     },
     "3" : {
+      "name": "Zkušenosti",
+      "url": "zkusenosti"
+    },
+    "4" : {
       "name": "Projekty",
       "url": "projekty"
     },
-    "4" : {
+    "5" : {
       "name": "Vzdělávání",
       "url": "vzdelavani"
     },
-    "5" : {
+    "6" : {
       "name": "Kontakt",
       "url": "kontakt"
     }
@@ -85,6 +89,10 @@
     "description": "... vzdělávám se a rozšiřuju si své dovednosti.",
     "textButtonShowAll": "Zobrazit další",
     "textButtonShowLess": "Skrýt"
+  },
+  "experience": {
+    "id": "zkusenosti",
+    "title": "Pracovní zkušenosti"
   },
   "projects": {
     "id": "projekty",
@@ -194,6 +202,28 @@
       "name": "React akademie",
       "description": "Zaměření na vývoj aplikací v Reactu a TypeScriptu, práci s komponentovou architekturou, správou stavu, formuláři a komunikací s REST API. Součástí byla také práce s Gitem pro verzování kódu a týmovou spolupráci na společných projektech.",
       "anchor": "reactgirls-react-akademie"
+    }
+  },
+  "experienceEntries": {
+    "1": {
+      "position": "Web content editor",
+      "period": "01/2016 – 07/2025",
+      "description": [
+        "Správa a tvorba webového obsahu: zalistovávání produktů, aktualizace dat, marketingová podpora.",
+        "Práce s HTML/CSS kódem: stylování a pozicování textového obsahu v HTML editoru.",
+        "Tvorba grafických návrhů: marketingové prospekty, katalogy, newslettery."
+      ]
+    },
+    "2": {
+      "position": "Frontend Developer",
+      "period": "08/2025 – současnost",
+      "description": [
+        "Vývoj frontendové části e-commerce platformy a aukčního portálu v Next.js v rámci projektových týmů",
+        "Rozvoj interní komponentové knihovny včetně dokumentace komponent ve Storybooku",
+        "Verzování kódu pomocí Gitu, správa větví, řešení konfliktů a týmová spolupráce",
+        "Práce s nástroji Jira, Trello pro organizaci práce, správu úkolů a Toggl Track pro sledování času v rámci vývoje",
+        "Využívání AI nástrojů jako součást vývojového workflow při implementaci, refactoringu a práci s codebase"
+      ]
     }
   },
   "footer": {

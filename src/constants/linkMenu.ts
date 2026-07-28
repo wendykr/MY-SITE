@@ -4,11 +4,11 @@ export const linkMenuData = [
     name: 'nav.1.name',
     url: 'nav.1.url',
   },
-  {
-    id: 2,
-    name: 'nav.2.name',
-    url: 'nav.2.url',
-  },
+  // {
+  //   id: 2,
+  //   name: 'nav.2.name',
+  //   url: 'nav.2.url',
+  // },
   {
     id: 3,
     name: 'nav.3.name',
@@ -23,5 +23,10 @@ export const linkMenuData = [
     id: 5,
     name: 'nav.5.name',
     url: 'nav.5.url',
+  },
+  {
+    id: 6,
+    name: 'nav.6.name',
+    url: 'nav.6.url',
   },
 ];

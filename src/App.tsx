@@ -1,28 +1,27 @@
-import { About } from './components/About/About';
-import { Educations } from './components/Educations/Educations';
-import { Footer } from './components/Footer/Footer';
-import { Header } from './components/Header/Header';
-import { Navigation } from './components/Navigation/Navigation';
-import { Projects } from './components/Projects/Projects';
-import { Skills } from './components/Skills/Skills';
-import { ToTop } from './components/ToTop/ToTop';
-import { Seo } from './Seo';
+import { About } from "./components/About/About";
+import { Educations } from "./components/Educations/Educations";
+import { Experiences } from "./components/Experiences/Experiences";
+import { Footer } from "./components/Footer/Footer";
+import { Header } from "./components/Header/Header";
+import { Navigation } from "./components/Navigation/Navigation";
+import { Projects } from "./components/Projects/Projects";
+import { ToTop } from "./components/ToTop/ToTop";
+import { Seo } from "./Seo";
 
 function App() {
-
   return (
     <>
       <Seo />
       <Navigation />
       <Header />
       <About />
-      <Skills />
+      <Experiences />
       <Projects />
       <Educations />
       <Footer />
       <ToTop />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
