@@ -5,6 +5,13 @@
     max-width: $width-4xl;
   }
 
+  &__subtitle {
+    margin-bottom: $spacing-xl;
+    font-size: $font-size-lg;
+    color: $brand-800;
+    font-weight: $font-weight-regular;
+  }
+
   &__footer {
     margin-top: $spacing-5xl;
     background-color: $neutral-50;

@@ -1,6 +1,5 @@
 import "./Experience.scss";
 import { useTranslation } from "react-i18next";
-import { FaCheck } from "react-icons/fa";
 
 interface ExperienceProps {
   company: string;
@@ -33,8 +32,8 @@ export const Experience: React.FC<ExperienceProps> = ({
       </div>
       <ul className="experience__description">
         {descriptionItems.map((item, index) => (
-          <li key={index} className="experience__description-item">
-            <FaCheck className="experience__check-icon" aria-hidden="true" />
+          <li key={index} className="experience__description--item">
+            <span className="experience__bullet" aria-hidden="true" />
             <span>{item}</span>
           </li>
         ))}

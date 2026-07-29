@@ -96,12 +96,50 @@
   },
   "projects": {
     "id": "projekty",
-    "title": "Projekty",
-    "description": "... na kterých získávám praktické zkušenosti.",
+    "title": "Komerční projekty",
+    "description": "... spolupráce na vývoji frontendu.",
+    "subtitleCommercial": "Komerční projekty",
+    "commercialNote": "Vzhledem k NDA nemohu sdílet názvy klientů, screenshoty ani odkazy – zde je přehled mé role a použitých technologií.",
+    "subtitlePersonal": "Osobní projekty",
     "footer": {
       "paragraphStart": "Neusínám na vavřínech a věnuji se i menším projektům. Podívejte se na můj",
       "link": "GitHub",
       "paragraphEnd": ", kde mám tyto projekty připnuté."
+    }
+  },
+  "commercialProjects": {
+    "1": {
+      "name": "Aukční portál",
+      "description": [
+        "Vývoj webové platformy pro online aukce napojené na Symfony backend.",
+        "Implementace klíčových stránek platformy jako detail předmětu, aukce a prodejce.",
+        "Tvorba UI komponent v souladu s design systémem projektu jako Badge, Tag nebo Headline.",
+        "Vývoj uživatelské zóny se sidebarem, podstránkami oblíbených položek a nastavení účtu.",
+        "Návrh a implementace skeleton loading stavů pro plynulé načítání dat.",
+        "Opravy UI chyb a ladění responzivního layoutu napříč platformou."
+      ]
+    },
+    "2": {
+      "name": "Komponentová knihovna",
+      "description": [
+        "Vývoj interní sdílené React komponentové knihovny pro více projektů.",
+        "Návrh a implementace znovupoužitelných komponent postavených na design systému.",
+        "Tvorba komplexních komponent jako Select, MultiSelect, SubNavigation, Badge.",
+        "Důraz na typovou bezpečnost, přístupnost a dokumentaci ve Storybooku.",
+        "Lokální testování knihovny v konzumující aplikaci před publikací na npm."
+      ]
+    },
+    "3": {
+      "name": "E-commerce platforma",
+      "description": [
+        "Vývoj produkčního B2C e-shopu napojeného na Symfony backend.",
+        "Tvorba UI jednotlivých stránek a komponent podle návrhů ve Figmě.",
+        "Implementace klíčových částí e-shopu včetně nákupního košíku, slevového modulu a dárků k objednávce.",
+        "Vytvoření responzivního mobilního menu s víceúrovňovou navigací kategorií.",
+        "Realizace UI správy uživatelského účtu včetně vícekrokových formulářů.",
+        "Integrace REST API dle OpenAPI specifikace pomocí Kubb a TanStack Query.",
+        "Tvorba formulářů pomocí React Hook Form a Zod."
+      ]
     }
   },
   "skills": {

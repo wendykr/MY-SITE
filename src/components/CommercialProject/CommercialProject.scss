@@ -1,0 +1,93 @@
+.commercial-project {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: $spacing-xl;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity $transition-3xl ease-out, transform $transition-3xl ease-out;
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  &__header {
+    display: flex;
+    align-items: flex-start;
+    gap: $spacing-lg;
+  }
+
+  &__icon {
+    flex-shrink: 0;
+    font-size: $font-size-display-md;
+    color: $brand-500;
+  }
+
+  &__heading {
+    min-width: 0;
+  }
+
+  &__content {
+    min-width: 0;
+    flex: 1;
+    max-width: $width-xl;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-3xl;
+  }
+
+  &__name {
+    font-size: $font-size-display-xs;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: $brand-800;
+  }
+
+  &__company {
+    font-size: $font-size-sm;
+    font-weight: $font-weight-regular;
+    color: $neutral-600;
+  }
+
+  &__technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-sm $spacing-sm;
+    row-gap: $spacing-md;
+  }
+
+  &__tech-item {
+    padding: $spacing-xs $spacing-md;
+    border-radius: $radius-md;
+    background-color: $neutral-200;
+    color: $brand-800;
+    font-size: $font-size-xs;
+    font-weight: $font-weight-regular;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-sm;
+
+    &--item {
+      display: flex;
+      align-items: flex-start;
+      gap: $spacing-md;
+      color: $neutral-600;
+      font-size: $font-size-md;
+    }
+  }
+
+  &__bullet {
+    flex-shrink: 0;
+    width: 8px;
+    height: 8px;
+    margin-top: 10px;
+    border-radius: 50%;
+    background-color: $brand-500;
+  }
+}
