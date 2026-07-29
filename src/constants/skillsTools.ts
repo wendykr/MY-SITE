@@ -3,10 +3,10 @@ import {
   SiSupabase,
   SiEleventy,
   SiGit,
-  SiVisualstudiocode,
   SiFigma,
   SiStorybook,
 } from "react-icons/si";
+import { BiLogoVisualStudio } from "react-icons/bi";
 
 export const skillsToolsData = [
   {
@@ -17,7 +17,7 @@ export const skillsToolsData = [
   {
     id: 2,
     name: "Visual Studio Code",
-    icon: SiVisualstudiocode,
+    icon: BiLogoVisualStudio,
   },
   {
     id: 3,
