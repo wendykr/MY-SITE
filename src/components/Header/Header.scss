@@ -6,7 +6,7 @@
 
   @media (min-width: $breakpoint-md) {
     max-width: $width-2xl;
-    min-height: 100vh;
+    min-height: calc(100vh - #{$nav-height-desktop});
     display: flex;
     flex-direction: column;
     justify-content: center;
