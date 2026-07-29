@@ -1,0 +1,26 @@
+.commercial-projects {
+
+  &__subtitle {
+    margin-bottom: $spacing-md;
+    font-size: $font-size-lg;
+    color: $brand-800;
+    font-weight: $font-weight-regular;
+  }
+
+  &__note {
+    margin-bottom: $spacing-2xl;
+    color: $neutral-600;
+    font-size: $font-size-sm;
+  }
+
+  &__grid {
+    margin-top: $spacing-3xl;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-7xl;
+
+    @media (min-width: $breakpoint-md) {
+      margin-top: $spacing-4xl;
+    }
+  }
+}

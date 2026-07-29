@@ -96,12 +96,50 @@
   },
   "projects": {
     "id": "projects",
-    "title": "Projects",
-    "description": "... where I gain practical experience.",
+    "title": "Commercial Projects",
+    "description": "... collaboration on frontend development.",
+    "subtitleCommercial": "Commercial projects",
+    "commercialNote": "Due to NDA I can't share client names, screenshots or links – here's an overview of my role and the technologies used.",
+    "subtitlePersonal": "Personal projects",
     "footer": {
       "paragraphStart": "I don't rest on my laurels and also engage in smaller projects. Check out my",
       "link": "GitHub",
       "paragraphEnd": ", where I have these projects pinned."
+    }
+  },
+  "commercialProjects": {
+    "1": {
+      "name": "Auction Portal",
+      "description": [
+        "Development of a web platform for online auctions connected to a Symfony backend.",
+        "Implementing key platform pages such as item detail, auction, and seller pages.",
+        "Building UI components in line with the project's design system, such as Badge, Tag, and Headline.",
+        "Developing a user zone with a sidebar, favorites subpages, and account settings.",
+        "Designing and implementing skeleton loading states for smooth data loading.",
+        "Fixing UI bugs and refining the responsive layout across the platform."
+      ]
+    },
+    "2": {
+      "name": "Component Library",
+      "description": [
+        "Developing an internal shared React component library used across multiple projects.",
+        "Designing and implementing reusable components built on a design system.",
+        "Building complex components such as Select, MultiSelect, SubNavigation, and Badge.",
+        "Focus on type safety, accessibility, and documentation in Storybook.",
+        "Local testing of the library in a consuming application before publishing to npm."
+      ]
+    },
+    "3": {
+      "name": "E-commerce Platform",
+      "description": [
+        "Development of a production B2C e-shop connected to a Symfony backend.",
+        "Building UI for individual pages and components based on Figma designs.",
+        "Implementing key parts of the e-shop, including the shopping cart, discount module, and order gifts.",
+        "Creating a responsive mobile menu with multi-level category navigation.",
+        "Building the user account management UI, including multi-step forms.",
+        "Integrating REST APIs according to the OpenAPI specification using Kubb and TanStack Query.",
+        "Building forms with React Hook Form and Zod."
+      ]
     }
   },
   "skills": {
