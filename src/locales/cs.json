@@ -3,7 +3,7 @@
     "title": "Vendula Krajíčková | Front-end developer - React, Next.js, TypeScript a JavaScript, Praha",
     "description": "Jsem Vendy :), frontend vývojářka webů a webových aplikací v Reactu a Next.js s využitím TypeScriptu.",
     "ogTitle": "Front-end developer - React, Next.js, TypeScript a JavaScript, Praha",
-    "ogDescription": "Vyvíjím weby a webové aplikace v Reactu a Next.js s využitím TypeScriptu. Kóduju grafické návrhy webů z Figmy do HTML/CSS s prvky JavaScriptu.",
+    "ogDescription": "Vyvíjím frontend webových aplikací v Reactu, Next.js a TypeScriptu. Tvořím UI komponenty, pracuji s API a podílím se na vývoji aplikací v týmu.",
     "canonical": "https://www.vendula-krajickova.cz/",
     "ogImage": "https://www.vendula-krajickova.cz/socials/og-soc.jpg"
   },
@@ -50,7 +50,7 @@
     "subtitle": {
       "who": "Kdo jsem?",
       "tech": "Dovednosti a nástroje",
-      "traits": "Vlastnosti, které mě vystihují"
+      "traits": "Můj přístup k práci"
     },
     "text": {
       "p1": "Frontend vývojářka webů a webových aplikací se zaměřením na React, Next.js a TypeScript.",
