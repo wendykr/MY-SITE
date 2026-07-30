@@ -3,7 +3,7 @@
     "title": "Vendula Krajickova | Front-end developer - React, Next.js, TypeScript and JavaScript, Prague",
     "description": "I'm Vendy :), a frontend developer building websites and web apps in React and Next.js using TypeScript.",
     "ogTitle": "Front-end developer - React, Next.js, TypeScript and JavaScript, Prague",
-    "ogDescription": "I develop websites and web applications in React and Next.js using TypeScript. I code Figma designs into HTML/CSS with JavaScript elements.",
+    "ogDescription": "I build frontend web applications in React, Next.js, and TypeScript. I create UI components, work with APIs, and collaborate on application development within a team.",
     "canonical": "https://www.vendula-krajickova.cz/",
     "ogImage": "https://www.vendula-krajickova.cz/socials/og-soc.jpg"
   },
@@ -50,7 +50,7 @@
     "subtitle": {
       "who": "Who am I?",
       "tech": "Skills and tools",
-      "traits": "Traits that describe me"
+      "traits": "My approach to work"
     },
     "text": {
       "p1": "Frontend developer of websites and web applications focused on React, Next.js and TypeScript.",
