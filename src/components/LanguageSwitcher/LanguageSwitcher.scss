@@ -1,0 +1,83 @@
+.navigationItem--lang {
+  padding-top: $spacing-lg;
+  border-top: 1px solid rgba($white, 0.15);
+
+  @media (min-width: $breakpoint-md) {
+    order: 1;
+    padding-top: $spacing-none;
+    border-top: none;
+  }
+}
+
+.languageSwitcher {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: $spacing-2xl $spacing-5xl;
+
+  @media (min-width: $breakpoint-md) {
+    padding: $spacing-sm $spacing-2xl;
+  }
+
+  &::before {
+    content: "";
+    display: none;
+
+    @media (min-width: $breakpoint-md) {
+      display: block;
+      width: 1px;
+      height: $spacing-2xl;
+      margin-right: $spacing-lg;
+      background-color: rgba($neutral-600, 0.35);
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__button {
+    background: none;
+    border: none;
+    padding: $spacing-none;
+    font-size: $font-size-xl;
+    font-weight: $font-weight-medium;
+    color: rgba($white, 0.6);
+    cursor: pointer;
+    transition: color $transition-sm linear;
+
+    @media (min-width: $breakpoint-md) {
+      font-size: $font-size-md;
+      color: $neutral-600;
+    }
+
+    &:hover {
+      color: $white;
+
+      @media (min-width: $breakpoint-md) {
+        color: $brand-600;
+      }
+    }
+
+    &--active {
+      color: $white;
+      font-weight: $font-weight-semibold;
+
+      @media (min-width: $breakpoint-md) {
+        color: $brand-600;
+      }
+    }
+
+    @include focus-visible-outline($white, 0.5);
+  }
+
+  &__separator {
+    margin: $spacing-none $spacing-sm;
+    color: rgba($white, 0.4);
+
+    @media (min-width: $breakpoint-md) {
+      color: $neutral-200;
+    }
+  }
+}

@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import "./NavigationList.scss";
 import { linkMenuData } from "../../constants/linkMenu";
 import { NavigationItem } from "../NavigationItem/NavigationItem";
+import { LanguageSwitcher } from "../LanguageSwitcher/LanguageSwitcher";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross2 } from "react-icons/rx";
 import { useNav } from "../../context/NavContext";
@@ -40,6 +41,9 @@ export const NavigationList: React.FC = () => {
         {linkMenuData.map((link) => (
           <NavigationItem key={link.id} name={link.name} to={link.url} />
         ))}
+        <li className="navigationItem navigationItem--lang">
+          <LanguageSwitcher />
+        </li>
       </ul>
     </>
   );
