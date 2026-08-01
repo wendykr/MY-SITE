@@ -43,10 +43,12 @@ export const NavigationItem: React.FC<NavigationItemProps> = ({ name, to }) => {
     }
   }, [location.hash, translatedId]);
 
+  const isLast = translatedId === t("contact.id");
+
   return (
-    <li className="navigationItem">
+    <li className={`navigationItem ${isLast ? "navigationItem--last" : ""}`}>
       <Link
-        className={`navigationItem__link ${translatedId === t("contact.id") ? "navigationItem__link--last" : "navigationItem__link--other"}`}
+        className={`navigationItem__link ${isLast ? "navigationItem__link--last" : "navigationItem__link--other"}`}
         to={`#${translatedId}`}
         onClick={handleClick}
       >

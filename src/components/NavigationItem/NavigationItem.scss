@@ -7,6 +7,12 @@
     max-width: $width-xxs;
   }
 
+  &--last {
+    @media (min-width: $breakpoint-md) {
+      order: 2;
+    }
+  }
+
   &__link {
     position: relative;
     display: block;
@@ -16,6 +22,10 @@
     font-weight: $font-weight-medium;
     text-decoration: none;
     cursor: pointer;
+
+    @media (min-width: $breakpoint-md) {
+      font-size: $font-size-md;
+    }
 
     &:hover {
       background-color: $brand-600;
