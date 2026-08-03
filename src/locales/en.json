@@ -1,8 +1,8 @@
 {
   "meta": {
-    "title": "Vendula Krajickova | Front-end developer - React, Next.js, TypeScript and JavaScript, Prague",
+    "title": "Vendula Krajickova | Front-end developer - React, Next.js, TypeScript, and JavaScript, Prague",
     "description": "I'm Vendy :), a frontend developer building websites and web apps in React and Next.js using TypeScript.",
-    "ogTitle": "Front-end developer - React, Next.js, TypeScript and JavaScript, Prague",
+    "ogTitle": "Front-end developer - React, Next.js, TypeScript, and JavaScript, Prague",
     "ogDescription": "I build frontend web applications in React, Next.js, and TypeScript. I create UI components, work with APIs, and collaborate on application development within a team.",
     "canonical": "https://www.vendula-krajickova.cz/",
     "ogImage": "https://www.vendula-krajickova.cz/socials/og-soc.jpg"
@@ -37,8 +37,8 @@
     "title": "Hi 👋, I'm",
     "name": "Vendy :)",
     "subtitle": "Frontend developer",
-    "descriptionRowFirst": "I develop web applications in React, Next.js, and TypeScript.",
-    "descriptionRowSecond": "From UI components to Storybook documentation, to API integration.",
+    "descriptionRowFirst": "I build web applications using React, Next.js, and TypeScript.",
+    "descriptionRowSecond": "From UI components to Storybook documentation to API integration.",
     "ariaLabelButtonGH": "Open Vendy's GitHub profile",
     "ariaLabelButtonLI": "Open Vendy's LinkedIn profile",
     "ariaLabelButtonMail": "Open email client to contact Vendy",
@@ -55,30 +55,30 @@
     "text": {
       "p1": "Frontend developer of websites and web applications focused on React, Next.js and TypeScript.",
       "p2": "I have a year of experience in an agency environment and 9 years of experience managing and creating web content.",
-      "p3": "Through self-study, I gradually moved from working with content to developing web applications."
+      "p3": "Through self-study, I gradually transitioned from working with content to developing web applications."
     },
     "traits": {
       "1": {
         "term": "Communication:",
-        "desc": "The team always has an overview of what I'm working on and its status."
+        "desc": "The team is always kept up to date of what I'm working on and its current status."
       },
       "2": {
         "term": "Commitment:",
-        "desc": "I treat work as a commitment, not just individual tasks."
+        "desc": "I take ownership of my work rather than just completing isolated tasks."
       },
       "3": {
         "term": "Consistency:",
-        "desc": "I keep track of work in progress and follow it through to the final result."
+        "desc": "I keep track of work in progress and follow tasks through to completion."
       },
       "4": {
         "term": "Collaboration:",
-        "desc": "I combine independent work with effective collaboration in a team."
+        "desc": "I balance independent problem-solving with effective collaboration in a team."
       }
     }
   },
   "contact": {
     "id": "contact",
-    "title": "Did my profile catch your attention? Let's meet in Prague!",
+    "title": "Did my profile catch your interest? Let's meet in Prague!",
     "text": "... let's see if we can find the perfect match between my skills and your needs.",
     "ariaLabelEmail": "Contact Vendy via email",
     "ariaLabelLinkedIn": "Visit Vendy's LinkedIn profile"
@@ -86,7 +86,7 @@
   "educations": {
     "id": "educations",
     "title": "Courses and Certificates",
-    "description": "... I continue to educate myself and expand my skills.",
+    "description": "... I'm advancing my skills in frontend development.",
     "textButtonShowAll": "Show more",
     "textButtonShowLess": "Show less"
   },
@@ -102,7 +102,7 @@
     "commercialNote": "Due to NDA I can't share client names, screenshots or links – here's an overview of my role and the technologies used.",
     "subtitlePersonal": "Personal projects",
     "footer": {
-      "paragraphStart": "I don't rest on my laurels and also engage in smaller projects. Check out my",
+      "paragraphStart": "I continuously work on expanding my skills with smaller side projects. Check out my",
       "link": "GitHub",
       "paragraphEnd": ", where I have these projects pinned."
     }
@@ -111,11 +111,11 @@
     "1": {
       "name": "Auction Portal",
       "description": [
-        "Development of a web platform for online auctions connected to a Symfony backend.",
+        "Developing a web platform for online auctions connected to a Symfony backend.",
         "Implementing key platform pages such as item detail, auction, and seller pages.",
         "Building UI components in line with the project's design system, such as Badge, Tag, and Headline.",
-        "Developing a user zone with a sidebar, favorites subpages, and account settings.",
-        "Designing and implementing skeleton loading states for smooth data loading.",
+        "Developing a user zone with a sidebar, favorite items subpages, and account settings.",
+        "Designing and implementing skeleton loading states for smooth data fetching.",
         "Fixing UI bugs and refining the responsive layout across the platform."
       ]
     },
@@ -132,13 +132,13 @@
     "3": {
       "name": "E-commerce Platform",
       "description": [
-        "Development of a production B2C e-shop connected to a Symfony backend.",
+        "Developing a production B2C e-commerce platform connected to a Symfony backend.",
         "Building UI for individual pages and components based on Figma designs.",
-        "Implementing key parts of the e-shop, including the shopping cart, discount module, and order gifts.",
+        "Implementing key parts of the e-commerce functionality, including the shopping cart, discount module, and order gifts.",
         "Creating a responsive mobile menu with multi-level category navigation.",
         "Building the user account management UI, including multi-step forms.",
         "Integrating REST APIs according to the OpenAPI specification using Kubb and TanStack Query.",
-        "Building forms with React Hook Form and Zod."
+        "Handling form implementation with React Hook Form and Zod."
       ]
     }
   },
@@ -153,23 +153,23 @@
     "textButtonLive": "Visit website",
     "1": {
       "name": "Expo burza Pardubice",
-      "description": "Web with information about a one-day event, coded using HTML and Sass. I used the Eleventy templating system to generate static pages. The project is the final work of the <a class=\"link-anchor show-edu\" href=\"#become-a-coder\">Become a Coder</a> course."
+      "description": "Website with information about a one-day event, coded using HTML and Sass. I used the Eleventy templating system to generate static pages. The project is the final work of the <a class=\"link-anchor show-edu\" href=\"#become-a-coder\">Become a Coder</a> course."
     },
     "2": {
       "name": "Winery",
-      "description": "Web with a wine catalog, where users can filter products and submit a reservation form. I programmed the web in JavaScript and used Webpack for its build. The catalog data is stored in a separate file as an array of objects. I worked on this project as part of the <a class=\"link-anchor show-edu\" href=\"#javascript-2\">JavaScript 2</a> course."
+      "description": "Website with a wine catalog, where users can filter products and submit a reservation form. Built in JavaScript using Webpack for bundling. The catalog data is stored in a separate file as an array of objects. I worked on this project as part of the <a class=\"link-anchor show-edu\" href=\"#javascript-2\">JavaScript 2</a> course."
     },
     "3": {
       "name": "Movie Database",
-      "description": "Web with a movie database, allowing users to search and view movie details. I programmed the application in React and fetch data from a publicly available API. I developed this project as part of the ReactGirls Advent Coding Challenge in collaboration with Lenovo."
+      "description": "Website with a movie database, allowing users to search and view movie details. I programmed the application in React and fetch data from a publicly available API. I developed this project as part of the ReactGirls Advent Coding Challenge in collaboration with Lenovo."
     },
     "4": {
       "name": "Words Game",
-      "description": "Web for practicing English vocabulary with a choice of 3 modules and the ability to change their default settings. I programmed the application in React and used Supabase for data management. This project was realized as part of the <a class=\"link-anchor show-edu\" href=\"#rg-mentoring\">ReactGirls Mentoring Program</a>."
+      "description": "English vocabulary practice app with a choice of 3 modules and the ability to change their default settings. I programmed the application in React and used Supabase for data management. This project was realized as part of the <a class=\"link-anchor show-edu\" href=\"#rg-mentoring\">ReactGirls Mentoring Program</a>."
     },
     "5": {
       "name": "Personal Website and Portfolio",
-      "description": "Website showcasing my projects and skills. I initially converted the static HTML/Tailwind CSS version into React with dynamic content. In the next phase, I added TypeScript to the existing project."
+      "description": "Website showcasing my projects and skills. I initially refactored the static HTML/Tailwind CSS version into React with dynamic content. In the next phase, I added TypeScript to the existing project."
     },
     "6": {
       "name": "Superquiz",
@@ -183,22 +183,22 @@
   "courses": {
     "1": {
       "name": "How to Web",
-      "description": "In a fictional project I refreshed the basics of HTML and CSS. I learned to use Developer tools, render SVG icons via sprite technique, build responsive layouts across devices using flexbox and organize CSS with Sass by splitting code into smaller parts.",
+      "description": "I refreshed the basics of HTML and CSS in a fictional project. I learned to use Developer tools, render SVG icons via sprite technique, build responsive layouts across devices using flexbox and organize CSS with Sass by splitting code into smaller parts.",
       "anchor": "how-to-web"
     },
     "2": {
       "name": "Become a Coder",
-      "description": "I learned to create responsive pages, use advanced layout techniques – flexbox and CSS grid, organize CSS with the Sass preprocessor and split code into smaller parts, and create site content using the Eleventy static site generator with templates.",
+      "description": "Learned to create responsive pages, use advanced layout techniques – flexbox and CSS grid, organize CSS with the Sass preprocessor and split code into smaller parts, and create site content using the Eleventy static site generator with templates.",
       "anchor": "become-a-coder"
     },
     "3": {
       "name": "JavaScript 1",
-      "description": "Basics of programming, I can manipulate elements in the DOM, use event principles and respond to user input, and work with media on the page. I am capable of creating a simple application and subsequently publishing it through my GitHub account.",
+      "description": "Basics of programming, DOM manipulation, use event principles and respond to user input, and work with media on the page. Capable of creating a simple application and subsequently publishing it through my GitHub account.",
       "anchor": "javascript-1"
     },
     "4": {
       "name": "JavaScript 2",
-      "description": "I mastered the basics of creating frontend applications in pure JavaScript. I have practical knowledge of communicating with REST APIs. I can use basic building blocks such as components, authentication, and client-side routing. I am capable of creating projects based on Webpack.",
+      "description": "Mastered the basics of creating frontend applications in pure JavaScript. Practical knowledge of communicating with REST APIs. I can use basic building blocks such as components, authentication, and client-side routing. Capable of creating projects based on Webpack.",
       "anchor": "javascript-2"
     },
     "5": {
@@ -208,7 +208,7 @@
     },
     "6": {
       "name": "React 1 - Basics",
-      "description": "I refreshed the basics of JavaScript and ES6+ syntax. I understand the fundamental principles of React. I can create a simple application composed of components that fetch data from an API, and work with useState, useEffect, and React Router.",
+      "description": "Refreshed the basics of JavaScript and ES6+ syntax. Understanding of the fundamental principles of React. I can create a simple application composed of components that fetch data from an API, and work with useState, useEffect, and React Router.",
       "anchor": "react-1"
     },
     "7": {
@@ -218,7 +218,7 @@
     },
     "8": {
       "name": "React 2 - Tools and Techniques",
-      "description": "I mastered using TypeScript in React applications. I gained a deeper understanding of React and the component lifecycle. I learned to create custom hooks and advanced state management methods using useContext. I can handle forms and validate data using Formik. I became familiar with writing unit tests and testing through Vitest.",
+      "description": "Mastered using TypeScript in React applications. I gained a deeper understanding of React and the component lifecycle and learned to create custom hooks and advanced state management methods using useContext. I can handle forms and validate data using Formik. I became familiar with writing unit tests and testing through Vitest.",
       "anchor": "react-2"
     },
     "9": {
@@ -228,7 +228,7 @@
     },
     "10": {
       "name": "Figma",
-      "description": "I familiarized myself with the Figma environment and its basic features. I understand text styling, adding colors and shadow effects to elements. I work with auto layout for efficient element arrangement. I create components and their variants, design wireframes and functional prototypes according to specifications. For clear style management across the design, I use Figma Variables.",
+      "description": "Familiarized myself with the Figma environment and its basic features. I understand text styling, adding colors and shadow effects to elements. Work with auto layout for efficient element arrangement. I create components and their variants, design wireframes and functional prototypes according to specifications. Using Figma Variables for clear style management across the design.",
       "anchor": "figma"
     },
     "11": {
@@ -247,8 +247,8 @@
       "position": "Web content editor",
       "period": "01/2016 – 07/2025",
       "description": [
-        "Managing and creating web content: listing products, updating data, marketing support.",
-        "Working with HTML/CSS code: styling and positioning text content in an HTML editor.",
+        "Managing and creating web content: product listing, data updates, marketing support.",
+        "Working with HTML/CSS code: styling and structuring text content using an HTML editor.",
         "Creating graphic designs: marketing brochures, catalogs, newsletters."
       ]
     },
@@ -256,11 +256,11 @@
       "position": "Frontend Developer",
       "period": "08/2025 – present",
       "description": [
-        "Frontend development of an e-commerce platform and auction portal in Next.js as part of project teams",
+        "Frontend development of an e-commerce platform and auction portal using Next.js as part of project teams",
         "Development of an internal component library, including component documentation in Storybook",
-        "Version control with Git, including branch management, conflict resolution, and team collaboration",
-        "Working with Jira and Trello for organizing work and managing tasks, and Toggl Track for tracking time during development",
-        "Using AI tools as part of the development workflow for implementation, refactoring, and working with the codebase"
+        "Version control with Git, including branch management, merge conflict resolution, and team collaboration",
+        "Utilizing Jira and Trello for work organization and task management, and Toggl Track for time tracking during development",
+        "Using AI tools as part of the development workflow for implementation, refactoring, and codebase navigation"
       ]
     }
   },
