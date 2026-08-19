@@ -1,5 +1,4 @@
 import { About } from "./components/About/About";
-import { Educations } from "./components/Educations/Educations";
 import { Experiences } from "./components/Experiences/Experiences";
 import { Footer } from "./components/Footer/Footer";
 import { Header } from "./components/Header/Header";
@@ -18,7 +17,6 @@ function App() {
       <About />
       <Experiences />
       <Projects />
-      <Educations />
       <Recommendations />
       <Footer />
       <ToTop />
