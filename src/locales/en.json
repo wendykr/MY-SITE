@@ -31,6 +31,10 @@
     "6": {
       "name": "Contact",
       "url": "contact"
+    },
+    "7": {
+      "name": "Recommendations",
+      "url": "recommendations"
     }
   },
   "hero": {
@@ -146,6 +150,21 @@
     "id": "skills",
     "title": "Skills and Tools",
     "description": "... that I use in my projects."
+  },
+  "recommendations": {
+    "id": "recommendations",
+    "title": "What people say about me",
+    "description": "... colleagues and mentors I've collaborated with.",
+    "1": {
+      "name": "Julian Xu",
+      "role": "IT Manager, Gen",
+      "text": "As Vendy’s mentor, I saw her exceed all my expectations. She learned React from scratch within the first month, something many people cannot achieve, and invested more than 100% in everything she did."
+    },
+    "2": {
+      "name": "Karel Kutchan",
+      "role": "Lead Frontend Engineer, BlueGhost",
+      "text": "I had the opportunity to lead Vendula and appreciated her responsible approach, attention to detail, and willingness to take feedback on board. I particularly valued her commitment to quality results and motivation to continue developing professionally."
+    }
   },
   "project": {
     "imgAlt": "Website preview",
