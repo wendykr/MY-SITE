@@ -21,7 +21,7 @@
   }
 
   &:last-child::before {
-    display: none;
+    bottom: 0;
   }
 
   &__dot {
@@ -40,7 +40,7 @@
       left: -1.5px;
       width: 19px;
       height: 19px;
-      background-color: $brand-800;
+      background-color: $white;
     }
   }
 
