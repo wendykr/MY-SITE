@@ -1,0 +1,21 @@
+.recommendations {
+  max-width: $width-2xl;
+
+  @media (min-width: $breakpoint-lg) {
+    max-width: $width-4xl;
+  }
+
+  &__container {
+    margin-top: $spacing-3xl;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: $spacing-6xl;
+
+    @media (min-width: $breakpoint-md) {
+      grid-template-columns: repeat(auto-fit, minmax(0, $width-xs));
+      justify-content: center;
+      gap: $spacing-5xl;
+    }
+  }
+}

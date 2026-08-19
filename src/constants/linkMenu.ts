@@ -25,6 +25,11 @@ export const linkMenuData = [
     url: 'nav.5.url',
   },
   {
+    id: 7,
+    name: 'nav.7.name',
+    url: 'nav.7.url',
+  },
+  {
     id: 6,
     name: 'nav.6.name',
     url: 'nav.6.url',

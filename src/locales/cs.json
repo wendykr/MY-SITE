@@ -31,6 +31,10 @@
     "6" : {
       "name": "Kontakt",
       "url": "kontakt"
+    },
+    "7" : {
+      "name": "Doporučení",
+      "url": "doporuceni"
     }
   },
   "hero": {
@@ -146,6 +150,21 @@
     "id": "dovednosti",
     "title": "Dovednosti a nástroje",
     "description": "... se kterými pracuju ve svých projektech."
+  },
+  "recommendations": {
+    "id": "doporuceni",
+    "title": "Co o mně říkají",
+    "description": "... kolegové a mentoři, se kterými jsem spolupracovala.",
+    "1": {
+      "name": "Julian Xu",
+      "role": "IT Manager, Gen",
+      "text": "Jako Vendy mentor jsem měl možnost sledovat, jak překonává všechna moje očekávání. React se naučila od základů během prvního měsíce, což zvládne jen málokdo, a do všeho, co dělala, investovala více než 100 %."
+    },
+    "2": {
+      "name": "Karel Kutchan",
+      "role": "Lead Frontend Engineer, BlueGhost",
+      "text": "Měl jsem příležitost vést Vendulu a oceňoval jsem její zodpovědný přístup, smysl pro detail a ochotu přijímat zpětnou vazbu. Velmi jsem si cenil jejího nasazení pro kvalitní výsledky a motivace dále se profesně rozvíjet."
+    }
   },
   "project": {
     "imgAlt": "Náhled webu",
