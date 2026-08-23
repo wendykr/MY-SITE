@@ -3,13 +3,15 @@
   font-size: $font-size-lg;
   list-style: none;
   position: absolute;
+  top: 100%;
   left: 0;
   background-color: $white;
   z-index: 100;
   display: none;
 
-  @media (min-width: $breakpoint-md) {
+  @media (min-width: $breakpoint-lg) {
     position: relative;
+    top: auto;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -23,9 +25,12 @@
 }
 
 .navigation {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: $spacing-2xl;
 
-  @media (min-width: $breakpoint-md) {
+  @media (min-width: $breakpoint-lg) {
     padding: $spacing-lg $spacing-5xl;
   }
 
@@ -35,14 +40,14 @@
     cursor: pointer;
     color: $white;
 
-    @media (min-width: $breakpoint-md) {
+    @media (min-width: $breakpoint-lg) {
       color: $neutral-800;
     }
   }
 }
 
 #toggler {
-  padding: $spacing-2xl $spacing-5xl;
+  padding: $spacing-2xl $spacing-2xl;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -52,7 +57,11 @@
     background-color: $brand-600;
   }
 
-  @media (min-width: $breakpoint-md) {
+  @media (min-width: $breakpoint-lg) {
+    padding: $spacing-2xl $spacing-5xl;
+  }
+
+  @media (min-width: $breakpoint-lg) {
     display: none;
   }
 }

@@ -9,12 +9,12 @@ interface RecommendationProps {
   photo?: string;
 }
 
-export const Recommendation: React.FC<RecommendationProps> = ({
+export const Recommendation = ({
   name,
   role,
   text,
   photo,
-}) => {
+}: RecommendationProps) => {
   const { t } = useTranslation();
   const translatedName = t(name);
   const initials = translatedName

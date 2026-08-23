@@ -1,14 +1,14 @@
 .navigationItem {
   background-color: $brand-800;
 
-  @media (min-width: $breakpoint-md) {
+  @media (min-width: $breakpoint-lg) {
     background-color: transparent;
     border: none;
     max-width: $width-xxs;
   }
 
   &--last {
-    @media (min-width: $breakpoint-md) {
+    @media (min-width: $breakpoint-lg) {
       order: 2;
     }
   }
@@ -23,8 +23,9 @@
     text-decoration: none;
     cursor: pointer;
 
-    @media (min-width: $breakpoint-md) {
+    @media (min-width: $breakpoint-lg) {
       font-size: $font-size-md;
+      white-space: nowrap;
     }
 
     &:hover {
@@ -36,13 +37,13 @@
     &--other {
       transition: color $transition-sm linear;
 
-      @media (min-width: $breakpoint-md) {
+      @media (min-width: $breakpoint-lg) {
         padding: $spacing-sm $spacing-2xl;
         color: $neutral-800;
         border-radius: $radius-sm;
 
         &:hover {
-          @media (min-width: $breakpoint-md) {
+          @media (min-width: $breakpoint-lg) {
             background-color: transparent;
             color: $brand-800;
           }
@@ -65,10 +66,16 @@
       }
     }
 
+    &--active {
+      @media (min-width: $breakpoint-lg) {
+        color: $brand-800;
+      }
+    }
+
     &--last {
       transition: none;
 
-      @media (min-width: $breakpoint-md) {
+      @media (min-width: $breakpoint-lg) {
         padding: $spacing-sm $spacing-2xl;
         color: $white;
         background-color: $brand-600;
@@ -76,7 +83,7 @@
         border-radius: $radius-sm;
 
         &:hover {
-          @media (min-width: $breakpoint-md) {
+          @media (min-width: $breakpoint-lg) {
             background-color: $white;
             color: $brand-600;
           }

@@ -1,4 +1,5 @@
 .navigation {
+  position: relative;
   margin: $spacing-none auto;
   color: $white;
   text-align: center;
@@ -6,6 +7,42 @@
 
   @media (min-width: $breakpoint-lg) {
     max-width: $width-4xl;
+  }
+
+  &__brand {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: $spacing-md;
+    transition: transform $transition-sm ease;
+
+    &:hover {
+      transform: scale(1.03);
+    }
+
+    @include focus-visible-outline($brand-800, 0.5);
+  }
+
+  &__logo {
+    flex-shrink: 0;
+    width: 48px;
+    height: 34px;
+
+    &--dark {
+      display: none;
+
+      @media (min-width: $breakpoint-lg) {
+        display: block;
+      }
+    }
+
+    &--light {
+      display: block;
+
+      @media (min-width: $breakpoint-lg) {
+        display: none;
+      }
+    }
   }
 
   &__container {
@@ -17,7 +54,7 @@
     z-index: 150;
     transition: background-color $transition-sm linear;
 
-    @media (min-width: $breakpoint-md) {
+    @media (min-width: $breakpoint-lg) {
       background-color: $white;
     }
 
@@ -26,7 +63,7 @@
       backdrop-filter: blur(6px);
       -webkit-backdrop-filter: blur(8px);
 
-      @media (min-width: $breakpoint-md) {
+      @media (min-width: $breakpoint-lg) {
         background-color: rgba($white, 0.75);
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
       }

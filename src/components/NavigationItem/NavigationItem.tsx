@@ -1,55 +1,33 @@
-import { useEffect } from "react";
 import "./NavigationItem.scss";
 import { Link, useLocation } from "react-router-dom";
-import { scroller } from "react-scroll";
 import { useNav } from "../../context/NavContext";
 import { useTranslation } from "react-i18next";
+import { getSectionPath, SectionKey } from "../../constants/sectionRoutes";
 
 interface NavigationItemProps {
   name: string;
-  to: string;
+  sectionKey: SectionKey;
 }
 
-const getNavOffset = (): number => {
-  const nav = document.querySelector('.navigation__container') as HTMLElement;
-  return nav ? -nav.offsetHeight : 0;
-};
-
-export const NavigationItem: React.FC<NavigationItemProps> = ({ name, to }) => {
+export const NavigationItem = ({ name, sectionKey }: NavigationItemProps) => {
   const { setIsOpenMenu } = useNav();
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const location = useLocation();
 
-  const translatedId = t(to);
+  const lang = i18n.language.slice(0, 2);
+  const path = getSectionPath(sectionKey, lang);
+  const isActive = location.pathname === path;
+  const isLast = sectionKey === "contact";
 
   const handleClick = () => {
     setIsOpenMenu(false);
-    scroller.scrollTo(translatedId, {
-      spy: true,
-      smooth: true,
-      offset: getNavOffset(),
-      duration: 1000,
-    });
   };
-
-  useEffect(() => {
-    if (location.hash === `#${translatedId}`) {
-      const targetElement = document.getElementById(translatedId);
-
-      if (targetElement) {
-        const y = targetElement.getBoundingClientRect().top + window.pageYOffset + getNavOffset();
-        window.scrollTo({ top: y, behavior: 'auto' });
-      }
-    }
-  }, [location.hash, translatedId]);
-
-  const isLast = translatedId === t("contact.id");
 
   return (
     <li className={`navigationItem ${isLast ? "navigationItem--last" : ""}`}>
       <Link
-        className={`navigationItem__link ${isLast ? "navigationItem__link--last" : "navigationItem__link--other"}`}
-        to={`#${translatedId}`}
+        className={`navigationItem__link ${isLast ? "navigationItem__link--last" : "navigationItem__link--other"} ${isActive ? "navigationItem__link--active" : ""}`}
+        to={path}
         onClick={handleClick}
       >
         {t(name)}

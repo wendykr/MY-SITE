@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { ElementType } from "react";
 import "./CommercialProject.scss";
 import { useTranslation } from "react-i18next";
 
@@ -6,64 +6,41 @@ interface CommercialProjectProps {
   name: string;
   description: string;
   company: string;
-  icon: React.ElementType;
+  icon: ElementType;
   technologies: string[];
 }
 
-export const CommercialProject: React.FC<CommercialProjectProps> = ({
+export const CommercialProject = ({
   name,
   description,
   company,
   icon: Icon,
   technologies,
-}) => {
+}: CommercialProjectProps) => {
   const { t } = useTranslation();
   const descriptionItems = t(description, { returnObjects: true }) as string[];
-  const [isVisible, setIsVisible] = useState(false);
-  const projectRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const showProject = () => {
-      if (projectRef.current) {
-        const triggerBottom = (window.innerHeight / 5) * 4;
-        const boxTop = projectRef.current.getBoundingClientRect().top;
-        if (boxTop < triggerBottom) {
-          setIsVisible(true);
-        }
-      }
-    };
-
-    window.addEventListener("scroll", showProject);
-
-    return () => {
-      window.removeEventListener("scroll", showProject);
-    };
-  }, []);
 
   return (
-    <div
-      ref={projectRef}
-      className={`commercial-project ${isVisible ? "visible" : ""}`}
-    >
-      <div className="commercial-project__header">
-        <Icon className="commercial-project__icon" aria-hidden="true" />
-        <div className="commercial-project__heading">
-          <h3 className="commercial-project__name">{t(name)}</h3>
-          <p className="commercial-project__company">{company}</p>
+    <div className="commercialProject">
+      <div className="commercialProject__header">
+        <Icon className="commercialProject__icon" aria-hidden="true" />
+        <div className="commercialProject__heading">
+          <h3 className="commercialProject__name">{t(name)}</h3>
+          <p className="commercialProject__company">{company}</p>
         </div>
       </div>
-      <div className="commercial-project__content">
-        <div className="commercial-project__technologies">
+      <div className="commercialProject__content">
+        <div className="commercialProject__technologies">
           {technologies.map((technology) => (
-            <span key={technology} className="commercial-project__tech-item">
+            <span key={technology} className="commercialProject__techItem">
               {technology}
             </span>
           ))}
         </div>
-        <ul className="commercial-project__list">
+        <ul className="commercialProject__list">
           {descriptionItems.map((item, itemIndex) => (
-            <li key={itemIndex} className="commercial-project__list--item">
-              <span className="commercial-project__bullet" aria-hidden="true" />
+            <li key={itemIndex} className="commercialProject__list--item">
+              <span className="commercialProject__bullet" aria-hidden="true" />
               <span>{item}</span>
             </li>
           ))}

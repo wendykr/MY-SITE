@@ -6,7 +6,7 @@ interface ButtonProps {
   style: "primary" | "secondary";
 }
 
-export const Button: React.FC<ButtonProps> = ({ link, text, style }) => {
+export const Button = ({ link, text, style }: ButtonProps) => {
   return (
     <a
       className={`button ${style}`}

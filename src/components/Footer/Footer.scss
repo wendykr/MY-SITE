@@ -1,16 +1,16 @@
 .footer {
   margin: $spacing-none auto;
-  padding: $spacing-5xl;
+  padding: $spacing-2xl $spacing-5xl;
   width: 100%;
   background-color: $brand-800;
   color: $white;
 
   @media (min-width: $breakpoint-sm) {
-    padding: $spacing-5xl $spacing-7xl;
+    padding: $spacing-2xl $spacing-7xl;
   }
 
   @media (min-width: $breakpoint-2xl) {
-    padding: $spacing-7xl;
+    padding: $spacing-2xl $spacing-7xl;
   }
 
   &__content {
@@ -43,18 +43,6 @@
     &:hover {
       text-decoration: none;
       color: $brand-300;
-    }
-  }
-
-  &__line {
-    margin: $spacing-5xl auto;
-    border: 1px solid rgba($brand-200, 0.3);
-    max-width: $width-3xl;
-
-    @media (min-width: $breakpoint-2xl) {
-      display: flex;
-      flex-direction: row;
-      max-width: $width-4xl;
     }
   }
 

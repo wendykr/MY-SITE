@@ -1,0 +1,62 @@
+  .pageHero {
+    width: 100%;
+    background: $neutral-100;
+    padding: $spacing-6xl $spacing-none;
+
+    @media (min-width: $breakpoint-lg) {
+      padding: $spacing-8xl $spacing-none;
+    }
+
+    &__inner {
+      max-width: $width-4xl;
+      margin: $spacing-none auto;
+      padding: $spacing-none $spacing-5xl;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: $spacing-md;
+      animation-name: fadeInUp;
+      animation-duration: 1.5s;
+      animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+      animation-fill-mode: both;
+
+      @media (min-width: $breakpoint-lg) {
+        padding: $spacing-none $spacing-8xl;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        animation: none;
+      }
+    }
+
+    &__title {
+      font-size: $font-size-display-xs;
+      color: $neutral-950;
+
+      @media (min-width: $breakpoint-lg) {
+        font-size: $font-size-display-md;
+      }
+    }
+
+    &__subtitle {
+      margin: $spacing-none;
+      color: $neutral-600;
+      font-size: $font-size-sm;
+
+      @media (min-width: $breakpoint-lg) {
+        font-size: $font-size-lg;
+      }
+    }
+  }
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY($spacing-8xl);
+    }
+
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }

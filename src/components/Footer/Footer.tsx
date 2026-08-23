@@ -1,35 +1,23 @@
 import "./Footer.scss";
 import { Link } from "react-router-dom";
 import { linkMenuData } from "../../constants/linkMenu";
-import { scroller } from "react-scroll";
-import { Contact } from "../Contact/Contact";
+import { getSectionPath } from "../../constants/sectionRoutes";
 import { useTranslation } from "react-i18next";
 
-export const Footer: React.FC = () => {
-  const { t } = useTranslation();
+export const Footer = () => {
+  const { t, i18n } = useTranslation();
   const currentYear = new Date().getFullYear();
-
-  const handleClick = (to: string) => {
-    scroller.scrollTo(t(to), {
-      spy: true,
-      smooth: true,
-      offset: 0,
-      duration: 1000,
-    });
-  };
+  const lang = i18n.language.slice(0, 2);
 
   return (
-    <footer id={t("contact.id")} className="footer">
-      <Contact />
-      <hr className="footer__line" />
+    <footer className="footer">
       <div className="footer__content">
         <p className="footer__navigation">
           {linkMenuData.map((link) => (
             <Link
               key={link.id}
               className="footer__navigation--link"
-              to={`#${t(link.url)}`}
-              onClick={() => handleClick(link.url)}
+              to={getSectionPath(link.sectionKey, lang)}
             >
               {t(link.name)}
             </Link>

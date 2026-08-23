@@ -18,7 +18,7 @@ Jednostránková aplikace představuje digitální verzi mého CV, na které se 
 - **Informace o mě**, současnost a mé další cíle
 - **Dovednosti a nástroje**, se kterými pracuji na projektech
 - **Ukázku vybraných projektů**, na kterých získávám praktické zkušenosti
-- **Vzdělávání**, co mám za sebou, na co se chystám
+- **Doporučení**, co o mně říkají kolegové a mentoři
 - **Kontaktní údaje**
 
 

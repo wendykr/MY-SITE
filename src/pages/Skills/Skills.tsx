@@ -1,5 +1,5 @@
 import "./Skills.scss";
-import { Skill } from "../Skill/Skill";
+import { Skill } from "../../components/Skill/Skill";
 import { useTranslation } from "react-i18next";
 import { skillsLanguagesData } from "../../constants/skillsLanguages";
 import { skillsToolsData } from "../../constants/skillsTools";
@@ -7,7 +7,7 @@ import { skillsToolsData } from "../../constants/skillsTools";
 export const Skills = () => {
   const { t } = useTranslation();
   return (
-    <div className="bg-white">
+    <div className="bgWhite">
       <section id={t("skills.id")} className="skills">
         <h2 className="title">{t("skills.title")}</h2>
         <p className="description">{t("skills.description")}</p>

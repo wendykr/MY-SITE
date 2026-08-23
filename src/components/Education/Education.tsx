@@ -10,14 +10,14 @@ interface EducationProps {
   isClicked: boolean;
 }
 
-export const Education: React.FC<EducationProps> = ({
+export const Education = ({
   anchor,
   year,
   company,
   name,
   description,
   isClicked,
-}) => {
+}: EducationProps) => {
   const { t } = useTranslation();
   return (
     <div id={anchor} className="education">

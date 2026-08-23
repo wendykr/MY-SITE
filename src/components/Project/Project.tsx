@@ -13,7 +13,7 @@ interface ProjectProps {
   order: boolean;
 }
 
-export const Project: React.FC<ProjectProps> = ({
+export const Project = ({
   name,
   skills,
   description,
@@ -21,7 +21,7 @@ export const Project: React.FC<ProjectProps> = ({
   linkGH,
   screen,
   order,
-}) => {
+}: ProjectProps) => {
   const { t } = useTranslation();
   const [isVisible, setIsVisible] = useState(false);
   const projectRef = useRef<HTMLDivElement>(null);

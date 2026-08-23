@@ -1,0 +1,15 @@
+.blog {
+  max-width: $width-2xl;
+  background-color: $white;
+
+  @media (min-width: $breakpoint-lg) {
+    max-width: $width-4xl;
+  }
+
+  &__list {
+    margin-top: $spacing-3xl;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-6xl;
+  }
+}
