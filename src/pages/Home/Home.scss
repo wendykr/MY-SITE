@@ -1,0 +1,196 @@
+.highlights {
+  background-color: $neutral-100;
+
+  &__grid {
+    margin: $spacing-none auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: $spacing-3xl;
+    text-align: center;
+    max-width: $width-4xl;
+
+    @media (min-width: $breakpoint-sm) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-sm;
+  }
+
+  &__value {
+    font-size: $font-size-display-xs;
+    font-weight: $font-weight-bold;
+    color: $brand-800;
+  }
+
+  &__label {
+    color: $neutral-600;
+    font-size: $font-size-sm;
+  }
+}
+
+.featured {
+  max-width: $width-2xl;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-3xl;
+
+  @media (min-width: $breakpoint-lg) {
+    max-width: $width-4xl;
+  }
+
+  &__grid {
+    margin-top: $spacing-3xl;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-2xl;
+
+    @media (min-width: $breakpoint-sm) {
+      flex-direction: row;
+    }
+  }
+
+  &__card {
+    flex: 1;
+    padding-left: $spacing-xl;
+    border-left: 3px solid $brand-200;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-md;
+  }
+
+  &__company {
+    color: $neutral-600;
+    font-size: $font-size-sm;
+  }
+
+  &__name {
+    font-size: $font-size-lg;
+    font-weight: $font-weight-semibold;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: $brand-800;
+  }
+
+  &__text {
+    color: $neutral-600;
+  }
+
+  &__technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-sm;
+  }
+
+  &__techItem {
+    padding: $spacing-xs $spacing-md;
+    border-radius: $radius-md;
+    background-color: $neutral-200;
+    color: $brand-800;
+    font-size: $font-size-xs;
+  }
+
+  &__link {
+    display: inline-block;
+    margin-top: $spacing-3xl;
+  }
+}
+
+.latestPosts {
+  max-width: $width-2xl;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-3xl;
+
+  @media (min-width: $breakpoint-lg) {
+    max-width: $width-4xl;
+  }
+
+  &__grid {
+    margin-top: $spacing-3xl;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: $spacing-2xl;
+
+    @media (min-width: $breakpoint-sm) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @media (min-width: $breakpoint-lg) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  &__card {
+    padding-left: $spacing-xl;
+    border-left: 3px solid $brand-200;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-sm;
+  }
+
+  &__date {
+    color: $neutral-600;
+    font-size: $font-size-sm;
+  }
+
+  &__title {
+    font-size: $font-size-lg;
+    font-weight: $font-weight-semibold;
+    color: $brand-800;
+  }
+
+  &__excerpt {
+    color: $neutral-600;
+  }
+
+  &__readOriginal {
+    color: $brand-800;
+    text-decoration: underline;
+    font-size: $font-size-sm;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    margin-top: $spacing-3xl;
+  }
+}
+
+.cta {
+  text-align: center;
+  max-width: $width-2xl;
+
+  @media (min-width: $breakpoint-lg) {
+    max-width: $width-4xl;
+  }
+
+  &__text {
+    margin-bottom: $spacing-3xl;
+    color: $neutral-600;
+  }
+
+  &__button {
+    display: inline-block;
+    padding: $spacing-md $spacing-2xl;
+    background-color: $brand-800;
+    color: $white;
+    font-weight: $font-weight-semibold;
+    text-decoration: none;
+    border: 1px solid $brand-800;
+    border-radius: $radius-sm;
+
+    &:hover {
+      background-color: $white;
+      color: $brand-800;
+    }
+
+    @include focus-visible-outline($brand-800, 0.5);
+  }
+}

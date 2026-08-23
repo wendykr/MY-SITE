@@ -3,7 +3,7 @@ import './ToTop.scss';
 import { animateScroll } from 'react-scroll';
 import { RiArrowUpSLine } from "react-icons/ri";
 
-export const ToTop: React.FC = () => {
+export const ToTop = () => {
   const [isDisplay, setIsDisplay] = useState(false);
 
   useEffect(() => {
@@ -32,8 +32,8 @@ export const ToTop: React.FC = () => {
   };
 
   return (
-    <div className={`ToTop ${isDisplay ? 'display' : ''}`}>
-        <RiArrowUpSLine className="ToTop__button" onClick={scrollToTop} />
+    <div className={`toTop ${isDisplay ? 'display' : ''}`}>
+        <RiArrowUpSLine className="toTop__button" onClick={scrollToTop} />
     </div>
   )
 }

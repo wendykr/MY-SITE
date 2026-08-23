@@ -1,26 +1,46 @@
-import { About } from "./components/About/About";
-import { Experiences } from "./components/Experiences/Experiences";
-import { Footer } from "./components/Footer/Footer";
-import { Header } from "./components/Header/Header";
-import { Navigation } from "./components/Navigation/Navigation";
-import { Projects } from "./components/Projects/Projects";
-import { Recommendations } from "./components/Recommendations/Recommendations";
-import { ToTop } from "./components/ToTop/ToTop";
-import { Seo } from "./Seo";
+import { ReactElement } from "react";
+import { Navigate, Route, Routes } from "react-router-dom";
+import { About } from "./pages/About/About";
+import { Blog } from "./pages/Blog/Blog";
+import { Contact } from "./pages/Contact/Contact";
+import { Experiences } from "./pages/Experiences/Experiences";
+import { Home } from "./pages/Home/Home";
+import { Layout } from "./components/Layout/Layout";
+import { Projects } from "./pages/Projects/Projects";
+import { Recommendations } from "./pages/Recommendations/Recommendations";
+import { sectionRoutes } from "./constants/sectionRoutes";
+import { SectionKey } from "./constants/sectionRoutes";
+
+const sectionElements: Record<SectionKey, ReactElement> = {
+  about: <About />,
+  experience: <Experiences />,
+  projects: <Projects />,
+  blog: <Blog />,
+  recommendations: <Recommendations />,
+  contact: <Contact />,
+};
 
 function App() {
   return (
-    <>
-      <Seo />
-      <Navigation />
-      <Header />
-      <About />
-      <Experiences />
-      <Projects />
-      <Recommendations />
-      <Footer />
-      <ToTop />
-    </>
+    <Routes>
+      <Route element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="en" element={<Home />} />
+        {sectionRoutes.flatMap((route) => [
+          <Route
+            key={`${route.key}-cs`}
+            path={route.cs}
+            element={sectionElements[route.key]}
+          />,
+          <Route
+            key={`${route.key}-en`}
+            path={`en/${route.en}`}
+            element={sectionElements[route.key]}
+          />,
+        ])}
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Route>
+    </Routes>
   );
 }
 

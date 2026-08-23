@@ -1,16 +1,8 @@
-.commercial-project {
+.commercialProject {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: $spacing-xl;
-  opacity: 0;
-  transform: translateY(100px);
-  transition: opacity $transition-3xl ease-out, transform $transition-3xl ease-out;
-
-  &.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
 
   &__header {
     display: flex;
@@ -58,7 +50,7 @@
     row-gap: $spacing-md;
   }
 
-  &__tech-item {
+  &__techItem {
     padding: $spacing-xs $spacing-md;
     border-radius: $radius-md;
     background-color: $neutral-200;

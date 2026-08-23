@@ -21,16 +21,13 @@ i18n
       escapeValue: false,
     },
     detection: {
-      // Detect language from the first path segment (e.g. /en/...).
-      // If no language segment is present, fall back to `localStorage` and
-      // finally to the configured `fallbackLng` (which is `cs`).
-      // We intentionally omit `navigator` here so an empty path doesn't
-      // automatically pick the browser language.
-      order: ["path", "localStorage"],
+      // Detect language from the first path segment (e.g. /en/...) only.
+      // We intentionally omit `navigator` and `localStorage` so an empty
+      // path segment always falls back to `fallbackLng` (cs), regardless
+      // of browser language or any language previously visited.
+      order: ["path"],
       // Use the first path segment as the language (0 -> /<lang>/...)
       lookupFromPathIndex: 0,
-      // Do not cache language in localStorage so root path (`/`) falls back
-      // to `fallbackLng` (cs) even if user previously visited `/en`.
       caches: [],
     },
   });

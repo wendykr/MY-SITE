@@ -4,7 +4,6 @@
     "description": "I'm Vendy :), a frontend developer building websites and web apps in React and Next.js using TypeScript.",
     "ogTitle": "Front-end developer - React, Next.js, TypeScript, and JavaScript, Prague",
     "ogDescription": "I build frontend web applications in React, Next.js, and TypeScript. I create UI components, work with APIs, and collaborate on application development within a team.",
-    "canonical": "https://www.vendula-krajickova.cz/",
     "ogImage": "https://www.vendula-krajickova.cz/socials/og-soc.jpg"
   },
   "nav": {
@@ -25,17 +24,18 @@
       "url": "projects"
     },
     "5": {
-      "name": "Educations",
-      "url": "educations"
+      "name": "Recommendations",
+      "url": "recommendations"
     },
     "6": {
       "name": "Contact",
       "url": "contact"
     },
     "7": {
-      "name": "Recommendations",
-      "url": "recommendations"
-    }
+      "name": "Posts",
+      "url": "posts"
+    },
+    "homeAriaLabel": "Go to the homepage"
   },
   "hero": {
     "title": "Hi 👋, I'm",
@@ -48,9 +48,43 @@
     "ariaLabelButtonMail": "Open email client to contact Vendy",
     "ariaLabelButtonAbout": "Go to the About section"
   },
+  "home": {
+    "highlights": {
+      "1": {
+        "value": "5+ years",
+        "label": "self-taught development"
+      },
+      "2": {
+        "value": "React, Next.js & TypeScript",
+        "label": "key technologies"
+      },
+      "3": {
+        "value": "Prague",
+        "label": "meet in person"
+      }
+    },
+    "featured": {
+      "title": "Project collaborations",
+      "linkAll": "View all projects"
+    },
+    "latestPosts": {
+      "title": "I write on LinkedIn",
+      "linkAll": "All posts",
+      "readOriginal": "Read on LinkedIn"
+    },
+    "cta": {
+      "title": "Frontend developer for your team?",
+      "text": "Let's talk about your project and my experience.",
+      "button": "Contact me"
+    }
+  },
   "about": {
     "id": "about",
     "title": "About",
+    "seo": {
+      "title": "About | Vendula Krajickova",
+      "description": "Frontend developer focused on React, Next.js, and TypeScript — a year of agency experience and 9 years managing web content."
+    },
     "subtitle": {
       "who": "Who am I?",
       "tech": "Skills and tools",
@@ -82,10 +116,35 @@
   },
   "contact": {
     "id": "contact",
-    "title": "Did my profile catch your interest? Let's meet in Prague!",
-    "text": "... let's see if we can find the perfect match between my skills and your needs.",
+    "title": "Stay in touch",
+    "seo": {
+      "title": "Contact | Vendula Krajickova",
+      "description": "Looking for a frontend developer for your team? Get in touch to discuss collaboration or meet in person in Prague."
+    },
+    "text1": "Did my profile, experience, or projects I worked on catch your interest?",
+    "text2": "Are you looking for a frontend addition to your team?",
+    "text3": "Let's meet in Prague and discuss our potential collaboration.",
     "ariaLabelEmail": "Contact Vendy via email",
     "ariaLabelLinkedIn": "Visit Vendy's LinkedIn profile"
+  },
+  "recommendations": {
+    "id": "recommendations",
+    "title": "What people say about me",
+    "description": "... colleagues and mentors I've collaborated with.",
+    "seo": {
+      "title": "Recommendations | Vendula Krajickova",
+      "description": "References from colleagues and mentors I've collaborated with on frontend projects in React and Next.js."
+    },
+    "1": {
+      "name": "Julian Xu",
+      "role": "IT Manager, Gen",
+      "text": "As Vendy’s mentor, I saw her exceed all my expectations. She learned React from scratch within the first month, something many people cannot achieve, and invested more than 100% in everything she did."
+    },
+    "2": {
+      "name": "Karel Kutchan",
+      "role": "Lead Frontend Engineer, BlueGhost",
+      "text": "I had the opportunity to lead Vendula and appreciated her responsible approach, attention to detail, and willingness to take feedback on board. I particularly valued her commitment to quality results and motivation to continue developing professionally."
+    }
   },
   "educations": {
     "id": "educations",
@@ -94,14 +153,234 @@
     "textButtonShowAll": "Show more",
     "textButtonShowLess": "Show less"
   },
+  "courses": {
+    "1": {
+      "name": "How to Web",
+      "description": "I refreshed the basics of HTML and CSS in a fictional project. I learned to use Developer tools, render SVG icons via sprite technique, build responsive layouts across devices using flexbox and organize CSS with Sass by splitting code into smaller parts.",
+      "anchor": "how-to-web"
+    },
+    "2": {
+      "name": "Become a Coder",
+      "description": "Learned to create responsive pages, use advanced layout techniques – flexbox and CSS grid, organize CSS with the Sass preprocessor and split code into smaller parts, and create site content using the Eleventy static site generator with templates.",
+      "anchor": "become-a-coder"
+    },
+    "3": {
+      "name": "JavaScript 1",
+      "description": "Basics of programming, DOM manipulation, use event principles and respond to user input, and work with media on the page. Capable of creating a simple application and subsequently publishing it through my GitHub account.",
+      "anchor": "javascript-1"
+    },
+    "4": {
+      "name": "JavaScript 2",
+      "description": "Mastered the basics of creating frontend applications in pure JavaScript. Practical knowledge of communicating with REST APIs. I can use basic building blocks such as components, authentication, and client-side routing. Capable of creating projects based on Webpack.",
+      "anchor": "javascript-2"
+    },
+    "5": {
+      "name": "ReactGirls Mentoring Program",
+      "description": "Programming my own project, where I advanced my skills in developing applications in React. During the project, I had an assigned mentor who provided valuable advice and regularly conducted code reviews.",
+      "anchor": "rg-mentoring"
+    },
+    "6": {
+      "name": "React 1 - Basics",
+      "description": "Refreshed the basics of JavaScript and ES6+ syntax. Understanding of the fundamental principles of React. I can create a simple application composed of components that fetch data from an API, and work with useState, useEffect, and React Router.",
+      "anchor": "react-1"
+    },
+    "7": {
+      "name": "Basics of TypeScript",
+      "description": "I mastered the basics of TypeScript and its type system, simple data modeling, project setup in TypeScript including bundling, basics of parametric types (generics), and recommended practices for developing web applications in TypeScript and React.",
+      "anchor": "basics-typescript"
+    },
+    "8": {
+      "name": "React 2 - Tools and Techniques",
+      "description": "Mastered using TypeScript in React applications. I gained a deeper understanding of React and the component lifecycle and learned to create custom hooks and advanced state management methods using useContext. I can handle forms and validate data using Formik. I became familiar with writing unit tests and testing through Vitest.",
+      "anchor": "react-2"
+    },
+    "9": {
+      "name": "Basics of Next.js",
+      "description": "Creating multi-page applications using the Pages Router and dynamic segments in the URL. Styling methods: CSS/Sass, Styled Components, Tailwind CSS, CSS-in-JS. Data rendering and fetching: getServerSideProps (SSR), getStaticPaths (SSG), Automatic Static Optimization. Image optimization. Awareness of full-stack application development through API Routes and authentication setup.",
+      "anchor": "basics-next"
+    },
+    "10": {
+      "name": "Figma",
+      "description": "Familiarized myself with the Figma environment and its basic features. I understand text styling, adding colors and shadow effects to elements. Work with auto layout for efficient element arrangement. I create components and their variants, design wireframes and functional prototypes according to specifications. Using Figma Variables for clear style management across the design.",
+      "anchor": "figma"
+    },
+    "11": {
+      "name": "Figma Advanced",
+      "description": "I expanded my knowledge of responsive design principles and designing interfaces for different breakpoints. I utilized Figma Variables to maintain consistency across the project and to organize styles clearly. I mastered the principles of microinteractions and their importance for UX, enabling me to design functional and user-friendly interfaces.",
+      "anchor": "figma-advanced"
+    },
+    "12": {
+      "name": "React Academy",
+      "description": "Focus on developing applications in React and TypeScript, working with component architecture, state management, forms, and communication with REST API. It also included working with Git for code versioning and team collaboration on joint projects.",
+      "anchor": "reactgirls-react-akademie"
+    }
+  },
+  "blog": {
+    "id": "posts",
+    "title": "LinkedIn Posts",
+    "description": "... thoughts and experiences I don't want to let fade away.",
+    "seo": {
+      "title": "LinkedIn Posts | Vendula Krajickova",
+      "description": "Articles and insights about frontend development, React, and Storybook that I regularly publish on LinkedIn."
+    },
+    "readOriginal": "Read the full post on LinkedIn",
+    "1": {
+      "title": "Archive your old projects, they'll help future juniors",
+      "text": [
+        "I came across an older Superkvíz project assignment in a Czechitas repository and decided to dust it off.",
+        "I extended the original React assignment with elements of TypeScript and data fetching from Supabase."
+      ]
+    },
+    "2": {
+      "title": "Without the right support and advice, my path would look completely different",
+      "text": [
+        "The ReactGirls Mentoring Program gave me the exact push I needed.",
+        "ReactGirls are currently looking for mentors for their autumn mentoring program."
+      ]
+    },
+    "3": {
+      "title": "In exactly a week, Front & Cookies Open takes place in Prague",
+      "text": [
+        "In exactly a week, Front & Cookies Open takes place in Prague at Etnetera Core.",
+        "I'm looking forward to exchanging a few words in person instead of typing them on a keyboard."
+      ]
+    },
+    "4": {
+      "title": "Over the summer I expanded my tech skills with Next.js basics",
+      "text": [
+        "Over the summer I dusted off my Skillmea subscription and expanded my tech skills with a Next.js fundamentals course.",
+        "Besides an overview of Next.js, I came away with a real-estate listing app project."
+      ]
+    },
+    "5": {
+      "title": "Did I manage to rewrite my own app from React to Next.js?",
+      "text": [
+        "The original version of the XXXMuck catalog in React was built at the start of the React 2 course by Czechitas; now I'm releasing the third version in Next.js.",
+        "I added responsive design, styling with Tailwind CSS and daisyUI, and dark mode."
+      ]
+    },
+    "6": {
+      "title": "Did you know Figma can be an addiction that doesn't harm your health?",
+      "text": [
+        "During three weeks of intensive training I expanded my skills in designing websites from a brief and prototyping in Figma.",
+        "I learned to work with frames, auto layout, and components and their variants."
+      ]
+    },
+    "7": {
+      "title": "A frontend developer from Prague is looking for a new challenge",
+      "text": [
+        "After more than 9 years as a web content editor, I'm looking for a new challenge in frontend development.",
+        "I enjoy working with React, TypeScript, and JavaScript, and I'm open to deepening my Next.js skills."
+      ]
+    },
+    "8": {
+      "title": "Frontend development is no longer just a hobby – I'm going all in",
+      "text": [
+        "I'm joining BlueGhost as a frontend developer.",
+        "I spent more than 9 years as a web content editor before it became clear this was the direction I wanted to go."
+      ]
+    },
+    "9": {
+      "title": "Brno, { Frontendisti }, and me – FrontKon full of inspiration",
+      "text": [
+        "I attended a full-day conference with over 600 (not only) frontend enthusiasts sharing experience and ideas.",
+        "The talks on React Hook Form and Zod, building component libraries, and TanStack Start stood out to me the most."
+      ]
+    },
+    "10": {
+      "title": "I love coding – but not everything has to be a grind",
+      "text": [
+        "AI is everywhere today, so I kept asking myself: how can it help me in my everyday work as a developer?",
+        "On Czechitas' AI for Web Developers course I tried GitHub Copilot, MCP servers, and CLI coding agents."
+      ]
+    },
+    "11": {
+      "title": "Git Working: a refresher on the basics that still matter, even for experienced developers",
+      "text": [
+        "I joined Git Working by PyLadies CZ, a full-day workshop on version control with Git.",
+        "Even though I use Git daily, I wanted to go back over the basics we often take for granted."
+      ]
+    },
+    "12": {
+      "title": "Guess what I came back to? Figma.",
+      "text": [
+        "The follow-up Figma course by Czechitas opened the door to more advanced topics – not just how things look, but how they behave.",
+        "We dove into responsive design, Figma Variables, and micro-interactions."
+      ]
+    },
+    "13": {
+      "title": "It's never too late to go back to React and start from scratch",
+      "text": [
+        "I grabbed a spot at the ReactGirls React Academy, which ran in a new format this year.",
+        "Four weeks of intensive sessions in Prague, 12 lessons, and plenty of hands-on tasks."
+      ]
+    },
+    "14": {
+      "title": "Opening the door to new opportunities in frontend development",
+      "text": [
+        "After a year I'm leaving BlueGhost as a frontend developer, due to the next phase of React projects being postponed.",
+        "I've worked on the frontend of an e-commerce platform and an auction portal in React (Next.js)."
+      ]
+    },
+    "15": {
+      "title": "Nine years of working with websites stand behind every line of my code",
+      "text": [
+        "My path to frontend development didn't start with programming, but with managing websites and their content.",
+        "This past year I've been gaining experience on commercial projects in React and Next.js in an agency environment."
+      ]
+    },
+    "16": {
+      "title": "Rebase, conflicts, and figuring out what actually broke",
+      "text": [
+        "Rebasing an old branch onto dev brought thousands of lines of conflicts.",
+        "AI helped me see that most of them were in generated OpenAPI files, which shouldn't be edited by hand anyway."
+      ]
+    },
+    "17": {
+      "title": "AI doesn't divide developers today, the environment they use it in does",
+      "text": [
+        "One tool, two ways of working – an IDE like VS Code and Cursor, or the terminal.",
+        "I was asked whether I prefer working with AI in an editor or a terminal, and I'm curious how others see it too."
+      ]
+    },
+    "18": {
+      "title": "My portfolio was meant to open doors, now it should show how far I've come",
+      "text": [
+        "A few years ago my portfolio was meant to show what projects I'd built and what technologies I used.",
+        "After a year on commercial projects, I no longer want to present just a list of technologies, but also teamwork and ownership of my part of the project."
+      ]
+    },
+    "19": {
+      "title": "What if the API returns something other than what I expect on the frontend?",
+      "text": [
+        "Until now I used Postman simply – paste the URL, send the request, and see what the API returns.",
+        "But Postman can do much more: work with collections, variables, and run a whole test suite at once."
+      ]
+    },
+    "20": {
+      "title": "The update that changed VS Code's look",
+      "text": [
+        "During recent updates I noticed VS Code looks a bit different when I open it.",
+        "The panels used to look visually unified; now they appear as separate floating blocks."
+      ]
+    }
+  },
   "experience": {
     "id": "experience",
-    "title": "Work Experience"
+    "title": "Work Experience",
+    "seo": {
+      "title": "Work Experience | Vendula Krajickova",
+      "description": "An overview of my career path, from managing web content to working as a frontend developer with React, Next.js, and TypeScript."
+    }
   },
   "projects": {
     "id": "projects",
     "title": "Commercial Projects",
     "description": "... collaboration on frontend development.",
+    "seo": {
+      "title": "Commercial Projects | Vendula Krajickova",
+      "description": "An overview of commercial projects I've worked on as a frontend developer, including an e-commerce platform and a shared component library."
+    },
     "subtitleCommercial": "Commercial projects",
     "commercialNote": "Due to NDA I can't share client names, screenshots or links – here's an overview of my role and the technologies used.",
     "subtitlePersonal": "Personal projects",
@@ -197,68 +476,6 @@
     "7": {
       "name": "XXXMuck",
       "description": "Simple e-shop with a product catalog. I fetch data from an API. Each product has its own detailed page with an interaction button. I styled the application using Tailwind CSS and daisyUI. For dark/light mode switching, I used the NextUI library."
-    }
-  },
-  "courses": {
-    "1": {
-      "name": "How to Web",
-      "description": "I refreshed the basics of HTML and CSS in a fictional project. I learned to use Developer tools, render SVG icons via sprite technique, build responsive layouts across devices using flexbox and organize CSS with Sass by splitting code into smaller parts.",
-      "anchor": "how-to-web"
-    },
-    "2": {
-      "name": "Become a Coder",
-      "description": "Learned to create responsive pages, use advanced layout techniques – flexbox and CSS grid, organize CSS with the Sass preprocessor and split code into smaller parts, and create site content using the Eleventy static site generator with templates.",
-      "anchor": "become-a-coder"
-    },
-    "3": {
-      "name": "JavaScript 1",
-      "description": "Basics of programming, DOM manipulation, use event principles and respond to user input, and work with media on the page. Capable of creating a simple application and subsequently publishing it through my GitHub account.",
-      "anchor": "javascript-1"
-    },
-    "4": {
-      "name": "JavaScript 2",
-      "description": "Mastered the basics of creating frontend applications in pure JavaScript. Practical knowledge of communicating with REST APIs. I can use basic building blocks such as components, authentication, and client-side routing. Capable of creating projects based on Webpack.",
-      "anchor": "javascript-2"
-    },
-    "5": {
-      "name": "ReactGirls Mentoring Program",
-      "description": "Programming my own project, where I advanced my skills in developing applications in React. During the project, I had an assigned mentor who provided valuable advice and regularly conducted code reviews.",
-      "anchor": "rg-mentoring"
-    },
-    "6": {
-      "name": "React 1 - Basics",
-      "description": "Refreshed the basics of JavaScript and ES6+ syntax. Understanding of the fundamental principles of React. I can create a simple application composed of components that fetch data from an API, and work with useState, useEffect, and React Router.",
-      "anchor": "react-1"
-    },
-    "7": {
-      "name": "Basics of TypeScript",
-      "description": "I mastered the basics of TypeScript and its type system, simple data modeling, project setup in TypeScript including bundling, basics of parametric types (generics), and recommended practices for developing web applications in TypeScript and React.",
-      "anchor": "basics-typescript"
-    },
-    "8": {
-      "name": "React 2 - Tools and Techniques",
-      "description": "Mastered using TypeScript in React applications. I gained a deeper understanding of React and the component lifecycle and learned to create custom hooks and advanced state management methods using useContext. I can handle forms and validate data using Formik. I became familiar with writing unit tests and testing through Vitest.",
-      "anchor": "react-2"
-    },
-    "9": {
-      "name": "Basics of Next.js",
-      "description": "Creating multi-page applications using the Pages Router and dynamic segments in the URL. Styling methods: CSS/Sass, Styled Components, Tailwind CSS, CSS-in-JS. Data rendering and fetching: getServerSideProps (SSR), getStaticPaths (SSG), Automatic Static Optimization. Image optimization. Awareness of full-stack application development through API Routes and authentication setup.",
-      "anchor": "basics-next"
-    },
-    "10": {
-      "name": "Figma",
-      "description": "Familiarized myself with the Figma environment and its basic features. I understand text styling, adding colors and shadow effects to elements. Work with auto layout for efficient element arrangement. I create components and their variants, design wireframes and functional prototypes according to specifications. Using Figma Variables for clear style management across the design.",
-      "anchor": "figma"
-    },
-    "11": {
-      "name": "Figma Advanced",
-      "description": "I expanded my knowledge of responsive design principles and designing interfaces for different breakpoints. I utilized Figma Variables to maintain consistency across the project and to organize styles clearly. I mastered the principles of microinteractions and their importance for UX, enabling me to design functional and user-friendly interfaces.",
-      "anchor": "figma-advanced"
-    },
-    "12": {
-      "name": "React Academy",
-      "description": "Focus on developing applications in React and TypeScript, working with component architecture, state management, forms, and communication with REST API. It also included working with Git for code versioning and team collaboration on joint projects.",
-      "anchor": "reactgirls-react-akademie"
     }
   },
   "experienceEntries": {

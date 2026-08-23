@@ -9,13 +9,13 @@ interface ExperienceProps {
   current?: boolean;
 }
 
-export const Experience: React.FC<ExperienceProps> = ({
+export const Experience = ({
   company,
   position,
   period,
   description,
   current,
-}) => {
+}: ExperienceProps) => {
   const { t } = useTranslation();
   const descriptionItems = t(description, { returnObjects: true }) as string[];
 

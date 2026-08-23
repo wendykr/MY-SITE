@@ -1,12 +1,12 @@
-import React from "react";
+import { ElementType } from "react";
 import "./Skill.scss";
 
 interface SkillProps {
   name: string;
-  icon: React.ElementType;
+  icon: ElementType;
 }
 
-export const Skill: React.FC<SkillProps> = ({ name, icon: Icon }) => {
+export const Skill = ({ name, icon: Icon }: SkillProps) => {
   return (
     <div className="skill" title={name}>
       <p className="skill__icon">

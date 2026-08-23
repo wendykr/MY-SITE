@@ -1,79 +1,53 @@
-import { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
+import { useLocation } from "react-router-dom";
+import {
+  findSectionKeyBySlug,
+  getHomePath,
+  getSectionPath,
+  SectionKey,
+} from "./constants/sectionRoutes";
 
-export function Seo() {
-  const { t, i18n } = useTranslation();
+const SITE_URL = "https://www.vendula-krajickova.cz";
 
-  useEffect(() => {
-    const apply = () => {
-      const title = t("meta.title");
-      const description = t("meta.description");
-      const ogTitle = t("meta.ogTitle", { defaultValue: "" }) || "";
-      const ogDescription = t("meta.ogDescription", { defaultValue: "" }) || "";
-
-      if (title) document.title = title;
-
-      const setMeta = (selector: string, attr: string, value?: string) => {
-        if (!value) return;
-        let el = document.head.querySelector(selector) as HTMLElement | null;
-        if (!el) {
-          if (selector.startsWith("meta")) {
-            const m = document.createElement("meta");
-            if (attr === "property")
-              m.setAttribute(
-                "property",
-                selector.match(/\[property="(.+?)"\]/)![1],
-              );
-            else m.setAttribute("name", selector.match(/\[name="(.+?)"\]/)![1]);
-            document.head.appendChild(m);
-            el = m;
-          } else if (selector === 'link[rel="canonical"]') {
-            const l = document.createElement("link");
-            l.setAttribute("rel", "canonical");
-            document.head.appendChild(l);
-            el = l as unknown as HTMLElement;
-          }
-        }
-        if (el) el.setAttribute("content", value);
-      };
-
-      setMeta('meta[name="description"]', "name", description);
-      setMeta('meta[property="og:title"]', "property", ogTitle || title);
-      setMeta(
-        'meta[property="og:description"]',
-        "property",
-        ogDescription || description,
-      );
-      setMeta('meta[name="twitter:title"]', "name", ogTitle || title);
-      setMeta(
-        'meta[name="twitter:description"]',
-        "name",
-        ogDescription || description,
-      );
-
-      const canonical = t("meta.canonical", { defaultValue: "" });
-      if (canonical) {
-        let link = document.head.querySelector(
-          'link[rel="canonical"]',
-        ) as HTMLLinkElement | null;
-        if (!link) {
-          link = document.createElement("link");
-          link.rel = "canonical";
-          document.head.appendChild(link);
-        }
-        link.href = canonical;
-      }
-
-      const html = document.documentElement;
-      html.lang = i18n.language ? i18n.language.slice(0, 2) : html.lang;
-    };
-
-    apply();
-    i18n.on("languageChanged", apply);
-    return () => {
-      i18n.off("languageChanged", apply);
-    };
-  }, [t, i18n]);
-
-  return null;
+interface SeoProps {
+  title: string;
+  description: string;
+  ogTitle?: string;
+  ogDescription?: string;
 }
+
+const getSectionKeyFromPath = (pathname: string): SectionKey | undefined => {
+  const segments = pathname.split("/").filter(Boolean);
+  const slug = segments[0] === "en" ? segments[1] : segments[0];
+  return slug ? findSectionKeyBySlug(slug) : undefined;
+};
+
+export const Seo = ({ title, description, ogTitle, ogDescription }: SeoProps) => {
+  const { i18n } = useTranslation();
+  const { pathname } = useLocation();
+  const lang = i18n.language ? i18n.language.slice(0, 2) : "cs";
+
+  const sectionKey = getSectionKeyFromPath(pathname);
+  const csPath = sectionKey ? getSectionPath(sectionKey, "cs") : getHomePath("cs");
+  const enPath = sectionKey ? getSectionPath(sectionKey, "en") : getHomePath("en");
+  const currentPath = lang === "en" ? enPath : csPath;
+
+  const resolvedOgTitle = ogTitle ?? title;
+  const resolvedOgDescription = ogDescription ?? description;
+
+  return (
+    <Helmet htmlAttributes={{ lang }}>
+      <title>{title}</title>
+      <meta name="description" content={description} />
+      <meta property="og:title" content={resolvedOgTitle} />
+      <meta property="og:description" content={resolvedOgDescription} />
+      <meta name="twitter:title" content={resolvedOgTitle} />
+      <meta name="twitter:description" content={resolvedOgDescription} />
+      <link rel="canonical" href={`${SITE_URL}${currentPath}`} />
+      <link rel="alternate" hrefLang="cs" href={`${SITE_URL}${csPath}`} />
+      <link rel="alternate" hrefLang="en" href={`${SITE_URL}${enPath}`} />
+      <link rel="alternate" hrefLang="x-default" href={`${SITE_URL}${csPath}`} />
+    </Helmet>
+  );
+};

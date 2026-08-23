@@ -2,16 +2,16 @@ import "./CommercialProjects.scss";
 import { commercialProjectsData } from "../../constants/commercialProjects";
 import { CommercialProject } from "../CommercialProject/CommercialProject";
 
-export const CommercialProjects: React.FC = () => {
+export const CommercialProjects = () => {
   return (
-    <div className="commercial-projects">
-      {/* <h3 className="commercial-projects__subtitle">
+    <div className="commercialProjects">
+      {/* <h3 className="commercialProjects__subtitle">
         {t("projects.subtitleCommercial")}
       </h3>
-      <p className="commercial-projects__note">
+      <p className="commercialProjects__note">
         {t("projects.commercialNote")}
       </p> */}
-      <div className="commercial-projects__grid">
+      <div className="commercialProjects__grid">
         {commercialProjectsData
           .flatMap((group) =>
             group.projects.map((project) => ({

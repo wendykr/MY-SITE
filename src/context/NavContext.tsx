@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, ReactNode } from 'react';
+import { createContext, useContext, useState, ReactNode } from 'react';
 
 interface NavContextProps {
   isOpenMenu: boolean;
@@ -14,7 +14,7 @@ interface NavProviderProps {
   children: ReactNode;
 }
 
-export const NavProvider: React.FC<NavProviderProps> = ({ children }) => {
+export const NavProvider = ({ children }: NavProviderProps) => {
   const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false);
 
   return (

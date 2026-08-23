@@ -1,11 +1,12 @@
 import { useTranslation } from "react-i18next";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useNav } from "../../context/NavContext";
+import { findSectionKeyBySlug, getHomePath, getSectionPath } from "../../constants/sectionRoutes";
 import "./LanguageSwitcher.scss";
 
 const LANGUAGES = ["cs", "en"] as const;
 
-export const LanguageSwitcher: React.FC = () => {
+export const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
   const location = useLocation();
   const navigate = useNavigate();
@@ -17,15 +18,16 @@ export const LanguageSwitcher: React.FC = () => {
     if (lang === currentLang) return;
 
     const segments = location.pathname.split("/").filter(Boolean);
-    if (segments[0] === "cs" || segments[0] === "en") {
-      segments[0] = lang;
-    } else {
-      segments.unshift(lang);
-    }
+    const slug = segments[0] === "en" ? segments[1] : segments[0];
+    const sectionKey = slug ? findSectionKeyBySlug(slug) : undefined;
+
+    const newPath = sectionKey
+      ? getSectionPath(sectionKey, lang)
+      : getHomePath(lang);
 
     i18n.changeLanguage(lang);
     setIsOpenMenu(false);
-    navigate(`/${segments.join("/")}${location.hash}`, { replace: true });
+    navigate(newPath, { replace: true });
   };
 
   return (

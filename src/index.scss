@@ -5,19 +5,22 @@
 }
 
 :root {
-  background-color: $neutral-100;
+  background-color: $white;
   color: $neutral-800;
   font-family: 'Poppins', sans-serif;
   font-size: $font-size-md;
   line-height: 1.9;
 }
 
-.bg-white {
+.bgWhite {
   background-color: $white;
 }
 
+.bgNeutral {
+  background-color: $neutral-100;
+}
+
 .title {
-  margin-bottom: $spacing-4xl;
   font-size: $font-size-display-sm;
   font-weight: $font-weight-bold;
   text-align: center;
@@ -30,14 +33,18 @@
 
 section {
   margin: $spacing-none auto;
-  padding: $spacing-7xl $spacing-5xl;
+  padding: $spacing-7xl $spacing-2xl;
 
   @media (min-width: $breakpoint-sm) {
+    padding: $spacing-7xl $spacing-5xl;
+  }
+
+  @media (min-width: $breakpoint-lg) {
     padding: $spacing-7xl $spacing-8xl;
   }
 }
 
-.link-anchor {
+.linkAnchor {
   color: $brand-800;
   text-decoration: underline;
   cursor: pointer;
@@ -48,7 +55,7 @@ section {
   }
 }
 
-.button-reset-style {
+.buttonResetStyle {
   font: inherit;
   background: none;
   border: none;

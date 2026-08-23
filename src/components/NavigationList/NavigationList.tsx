@@ -7,12 +7,12 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross2 } from "react-icons/rx";
 import { useNav } from "../../context/NavContext";
 
-export const NavigationList: React.FC = () => {
+export const NavigationList = () => {
   const { isOpenMenu, setIsOpenMenu } = useNav();
 
   useEffect(() => {
     const handleResize = () => {
-      if (isOpenMenu && window.innerWidth > 640) {
+      if (isOpenMenu && window.innerWidth > 1024) {
         setIsOpenMenu((prev) => !prev);
       }
     };
@@ -39,7 +39,7 @@ export const NavigationList: React.FC = () => {
       </div>
       <ul id="menu" className={`navigationList ${isOpenMenu ? "display" : ""}`}>
         {linkMenuData.map((link) => (
-          <NavigationItem key={link.id} name={link.name} to={link.url} />
+          <NavigationItem key={link.id} name={link.name} sectionKey={link.sectionKey} />
         ))}
         <li className="navigationItem navigationItem--lang">
           <LanguageSwitcher />

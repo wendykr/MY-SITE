@@ -15,7 +15,7 @@
   justify-content: center;
   padding: $spacing-2xl $spacing-5xl;
 
-  @media (min-width: $breakpoint-md) {
+  @media (min-width: $breakpoint-lg) {
     padding: $spacing-sm $spacing-2xl;
   }
 
@@ -23,7 +23,7 @@
     content: "";
     display: none;
 
-    @media (min-width: $breakpoint-md) {
+    @media (min-width: $breakpoint-lg) {
       display: block;
       width: 1px;
       height: $spacing-2xl;
@@ -47,7 +47,7 @@
     cursor: pointer;
     transition: color $transition-sm linear;
 
-    @media (min-width: $breakpoint-md) {
+    @media (min-width: $breakpoint-lg) {
       font-size: $font-size-md;
       color: $neutral-600;
     }
@@ -55,7 +55,7 @@
     &:hover {
       color: $white;
 
-      @media (min-width: $breakpoint-md) {
+      @media (min-width: $breakpoint-lg) {
         color: $brand-600;
       }
     }
@@ -64,7 +64,7 @@
       color: $white;
       font-weight: $font-weight-semibold;
 
-      @media (min-width: $breakpoint-md) {
+      @media (min-width: $breakpoint-lg) {
         color: $brand-600;
       }
     }
@@ -76,7 +76,7 @@
     margin: $spacing-none $spacing-sm;
     color: rgba($white, 0.4);
 
-    @media (min-width: $breakpoint-md) {
+    @media (min-width: $breakpoint-lg) {
       color: $neutral-200;
     }
   }

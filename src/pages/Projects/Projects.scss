@@ -1,5 +1,6 @@
 .projects {
     max-width: $width-2xl;
+    background-color: $white;
 
   @media (min-width: $breakpoint-lg) {
     max-width: $width-4xl;

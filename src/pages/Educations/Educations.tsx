@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "./Educations.scss";
 import { coursesData } from "../../constants/courses";
-import { Education } from "../Education/Education";
+import { Education } from "../../components/Education/Education";
 import { scroller } from "react-scroll";
 import { CoursesDataStructure } from "../../models/Courses";
 import { useTranslation } from "react-i18next";
@@ -67,7 +67,7 @@ export const Educations = () => {
       if (hrefValue && hrefValue.includes("#")) {
         const clickedAnchor = hrefValue.replace("#", "");
 
-        if (target.classList.contains("show-edu")) {
+        if (target.classList.contains("showEdu")) {
           setTargetAnchor(clickedAnchor);
 
           if (!showAll) {
@@ -91,7 +91,7 @@ export const Educations = () => {
   }, [showAll]);
 
   return (
-    <div className="bg-white">
+    <div className="bgWhite">
       <section id={t("educations.id")} className="educations">
         <h2 className="title">{t("educations.title")}</h2>
         <p className="description">{t("educations.description")}</p>
@@ -109,14 +109,14 @@ export const Educations = () => {
         {coursesData.length > 3 &&
           (showAll ? (
             <button
-              className="link-anchor button-reset-style show-edu"
+              className="linkAnchor buttonResetStyle showEdu"
               onClick={toggleShowAll}
             >
               {t("educations.textButtonShowLess")}
             </button>
           ) : (
             <button
-              className="link-anchor button-reset-style"
+              className="linkAnchor buttonResetStyle"
               onClick={toggleShowAll}
             >
               {t("educations.textButtonShowAll")}

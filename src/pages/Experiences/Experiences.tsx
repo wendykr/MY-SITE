@@ -1,14 +1,20 @@
 import "./Experiences.scss";
 import { experiencesData } from "../../constants/experiences";
-import { Experience } from "../Experience/Experience";
+import { Experience } from "../../components/Experience/Experience";
 import { useTranslation } from "react-i18next";
+import Hero from "../../components/Hero/Hero";
+import { Seo } from "../../Seo";
 
 export const Experiences = () => {
   const { t } = useTranslation();
   return (
-    <div className="bg-white">
+    <>
+      <Seo
+        title={t("experience.seo.title")}
+        description={t("experience.seo.description")}
+      />
+      <Hero title={t("experience.title")} />
       <section id={t("experience.id")} className="experiences">
-        <h2 className="title">{t("experience.title")}</h2>
         <div className="experiences__timeline">
           {[...experiencesData].reverse().map((experience) => (
             <Experience
@@ -22,6 +28,6 @@ export const Experiences = () => {
           ))}
         </div>
       </section>
-    </div>
+    </>
   );
 };

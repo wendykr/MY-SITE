@@ -1,9 +1,9 @@
 .contact {
+  max-width: $width-2xl;
+  background-color: $white;
 
-  &__text {
-    font-size: $font-size-md;
-    color: $white;
-    text-align: center;
+  @media (min-width: $breakpoint-lg) {
+    max-width: $width-4xl;
   }
 
   &__container {
@@ -40,14 +40,14 @@
     &:hover {
       color: $white;
       background-color: $brand-800;
-      border: 1px solid $white;
+      border: 1px solid $brand-800;
 
       .contact__icon {
         color: $white;
       }
     }
 
-    @include focus-visible-outline($white, 0.5);
+    @include focus-visible-outline($brand-800, 0.5);
   }
 
   &__icon {

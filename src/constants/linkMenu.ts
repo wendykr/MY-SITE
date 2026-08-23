@@ -1,37 +1,42 @@
-export const linkMenuData = [
+import { SectionKey } from "./sectionRoutes";
+
+export const linkMenuData: { id: number; name: string; sectionKey: SectionKey }[] = [
   {
     id: 1,
     name: 'nav.1.name',
-    url: 'nav.1.url',
+    sectionKey: 'about',
   },
-  // {
-  //   id: 2,
-  //   name: 'nav.2.name',
-  //   url: 'nav.2.url',
-  // },
   {
     id: 3,
     name: 'nav.3.name',
-    url: 'nav.3.url',
+    sectionKey: 'experience',
   },
   {
     id: 4,
     name: 'nav.4.name',
-    url: 'nav.4.url',
+    sectionKey: 'projects',
   },
+  {
+    id: 5,
+    name: 'nav.5.name',
+    sectionKey: 'recommendations',
+  },
+  // Educations section is currently disabled (not routed/rendered anywhere).
+  // Re-enable by adding 'educations' back to SectionKey/sectionRoutes and
+  // Recommendations to sectionElements in App.tsx, then uncomment below.
   // {
-  //   id: 5,
-  //   name: 'nav.5.name',
-  //   url: 'nav.5.url',
+  //   id: 2,
+  //   name: 'nav.educations.name',
+  //   sectionKey: 'educations',
   // },
   {
     id: 7,
     name: 'nav.7.name',
-    url: 'nav.7.url',
+    sectionKey: 'blog',
   },
   {
     id: 6,
     name: 'nav.6.name',
-    url: 'nav.6.url',
+    sectionKey: 'contact',
   },
 ];
