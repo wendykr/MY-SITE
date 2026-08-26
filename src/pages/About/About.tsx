@@ -12,7 +12,7 @@ export const About = () => {
     <>
       <Seo title={t("about.seo.title")} description={t("about.seo.description")} />
       <Hero title={t("about.title")} />
-      <section id={t("about.id")} className="about">
+      <section className="about">
         <h3 className="about__subtitle">{t("about.subtitle.who")}</h3>
         <div className="about__text">
           <p>{t("about.text.p1")}</p>

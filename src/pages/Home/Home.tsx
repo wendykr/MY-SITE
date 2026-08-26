@@ -32,7 +32,7 @@ export const Home = () => {
       />
       <Header />
 
-      <section className="highlights">
+      <section id="highlights" className="highlights">
         <div className="highlights__grid">
           {[1, 2, 3].map((id) => (
             <div className="highlights__item" key={id}>

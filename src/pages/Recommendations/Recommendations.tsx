@@ -18,7 +18,7 @@ export const Recommendations = () => {
         subtitle={t("recommendations.description")}
       />
 
-      <section id={t("recommendations.id")} className="recommendations">
+      <section className="recommendations">
         <div className="recommendations__container">
           {recommendationsData
             .slice()

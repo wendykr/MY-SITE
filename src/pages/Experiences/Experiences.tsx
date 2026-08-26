@@ -14,7 +14,7 @@ export const Experiences = () => {
         description={t("experience.seo.description")}
       />
       <Hero title={t("experience.title")} />
-      <section id={t("experience.id")} className="experiences">
+      <section className="experiences">
         <div className="experiences__timeline">
           {[...experiencesData].reverse().map((experience) => (
             <Experience

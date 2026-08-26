@@ -17,31 +17,33 @@ export const BlogPost = ({ post }: BlogPostProps) => {
   return (
     <article className="blogPost">
       <p className="blogPost__date">{formattedDate}</p>
-      <h3 className="blogPost__title">{t(post.title)}</h3>
-      <div className="blogPost__text">
-        {paragraphs.map((paragraph, index) => (
-          <p key={index}>{paragraph}</p>
-        ))}
-      </div>
-      {post.tags && post.tags.length > 0 && (
-        <div className="blogPost__tags">
-          {post.tags.map((tag) => (
-            <span key={tag} className="blogPost__tag">
-              #{tag}
-            </span>
+      <div className="blogPost__body">
+        <h3 className="blogPost__title">{t(post.title)}</h3>
+        <div className="blogPost__text">
+          {paragraphs.map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
           ))}
         </div>
-      )}
-      {post.link && (
-        <a
-          className="blogPost__link"
-          href={post.link}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {t("blog.readOriginal")}
-        </a>
-      )}
+        {post.tags && post.tags.length > 0 && (
+          <div className="blogPost__tags">
+            {post.tags.map((tag) => (
+              <span key={tag} className="blogPost__tag">
+                #{tag}
+              </span>
+            ))}
+          </div>
+        )}
+        {post.link && (
+          <a
+            className="blogPost__link"
+            href={post.link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {t("blog.readOriginal")}
+          </a>
+        )}
+      </div>
     </article>
   );
 };

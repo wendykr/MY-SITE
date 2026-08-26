@@ -16,7 +16,7 @@ export const Blog = () => {
       <Seo title={t("blog.seo.title")} description={t("blog.seo.description")} />
       <Hero title={t("blog.title")} subtitle={t("blog.description")} />
 
-      <section id={t("blog.id")} className="blog">
+      <section className="blog">
         <div className="blog__list">
           {posts.map((post) => (
             <BlogPost key={post.id} post={post} />
