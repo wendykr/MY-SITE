@@ -14,7 +14,7 @@ export const Contact = () => {
       />
       <Hero title={t("contact.title")} />
 
-      <section id={t("contact.id")} className="contact">
+      <section className="contact">
         <p className="description">{t("contact.text1")}</p>
         <p className="description">{t("contact.text2")}</p>
         <p className="description">{t("contact.text3")}</p>

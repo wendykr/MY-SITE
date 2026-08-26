@@ -6,10 +6,12 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaAngleDoubleDown } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { getSectionPath } from "../../constants/sectionRoutes";
+import { scroller } from "react-scroll";
+
+const HIGHLIGHTS_SECTION_ID = "highlights";
 
 export const Header = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const [isDisplay, setIsDisplay] = useState(true);
 
   useEffect(() => {
@@ -28,7 +30,16 @@ export const Header = () => {
     };
   }, []);
 
-  const aboutPath = getSectionPath("about", i18n.language.slice(0, 2));
+  const handleScrollToHighlights = () => {
+    const nav = document.querySelector(".navigation__container") as HTMLElement;
+    const navOffset = nav ? -nav.offsetHeight : 0;
+    scroller.scrollTo(HIGHLIGHTS_SECTION_ID, {
+      spy: true,
+      smooth: true,
+      offset: navOffset,
+      duration: 1000,
+    });
+  };
 
   return (
     <div className="header__cover">
@@ -71,8 +82,9 @@ export const Header = () => {
         </div>
         {isDisplay && (
           <Link
-            to={aboutPath}
-            aria-label={t("hero.ariaLabelButtonAbout")}
+            to={`#${HIGHLIGHTS_SECTION_ID}`}
+            onClick={handleScrollToHighlights}
+            aria-label={t("hero.ariaLabelButtonScrollDown")}
           >
             <FaAngleDoubleDown className="header__icon--down" />
           </Link>

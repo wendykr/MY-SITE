@@ -46,7 +46,7 @@
     "ariaLabelButtonGH": "Open Vendy's GitHub profile",
     "ariaLabelButtonLI": "Open Vendy's LinkedIn profile",
     "ariaLabelButtonMail": "Open email client to contact Vendy",
-    "ariaLabelButtonAbout": "Go to the About section"
+    "ariaLabelButtonScrollDown": "Go to the next section"
   },
   "home": {
     "highlights": {

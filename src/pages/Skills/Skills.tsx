@@ -8,7 +8,7 @@ export const Skills = () => {
   const { t } = useTranslation();
   return (
     <div className="bgWhite">
-      <section id={t("skills.id")} className="skills">
+      <section className="skills">
         <h2 className="title">{t("skills.title")}</h2>
         <p className="description">{t("skills.description")}</p>
         <div className="skills__container">

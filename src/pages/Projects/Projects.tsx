@@ -13,7 +13,7 @@ export const Projects = () => {
         description={t("projects.seo.description")}
       />
       <Hero title={t("projects.title")} subtitle={t("projects.description")} />
-      <section id={t("projects.id")} className="projects">
+      <section className="projects">
         <CommercialProjects />
       </section>
     </>
