@@ -12,6 +12,5 @@ export const experiencesData = [
     position: "experienceEntries.2.position",
     period: "experienceEntries.2.period",
     description: "experienceEntries.2.description",
-    current: true,
   },
 ];
