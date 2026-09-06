@@ -1,4 +1,6 @@
-export const experiencesData = [
+import { ExperiencesDataStructure } from "../models/Experiences";
+
+export const experiencesData: ExperiencesDataStructure[] = [
   {
     id: 1,
     company: "ATKM",
