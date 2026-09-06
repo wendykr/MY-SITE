@@ -113,7 +113,7 @@ export const Home = () => {
           </div>
           <Link
             className="latestPosts__link linkAnchor"
-            to={getSectionPath("blog", lang)}
+            to={getSectionPath("posts", lang)}
           >
             {t("home.latestPosts.linkAll")}
           </Link>

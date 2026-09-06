@@ -15,7 +15,7 @@ const sectionElements: Record<SectionKey, ReactElement> = {
   about: <About />,
   experience: <Experiences />,
   projects: <Projects />,
-  blog: <Blog />,
+  posts: <Blog />,
   recommendations: <Recommendations />,
   contact: <Contact />,
 };

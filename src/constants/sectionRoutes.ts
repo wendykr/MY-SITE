@@ -2,7 +2,7 @@ export type SectionKey =
   | "about"
   | "experience"
   | "projects"
-  | "blog"
+  | "posts"
   | "recommendations"
   | "contact";
 
@@ -16,7 +16,7 @@ export const sectionRoutes: SectionRoute[] = [
   { key: "about", cs: "o-mne", en: "about" },
   { key: "experience", cs: "zkusenosti", en: "experience" },
   { key: "projects", cs: "projekty", en: "projects" },
-  { key: "blog", cs: "prispevky", en: "posts" },
+  { key: "posts", cs: "prispevky", en: "posts" },
   { key: "recommendations", cs: "doporuceni", en: "recommendations" },
   { key: "contact", cs: "kontakt", en: "contact" },
 ];

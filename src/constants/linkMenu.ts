@@ -32,7 +32,7 @@ export const linkMenuData: { id: number; name: string; sectionKey: SectionKey }[
   {
     id: 7,
     name: 'nav.7.name',
-    sectionKey: 'blog',
+    sectionKey: 'posts',
   },
   {
     id: 6,
