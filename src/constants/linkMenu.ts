@@ -16,11 +16,6 @@ export const linkMenuData: { id: number; name: string; sectionKey: SectionKey }[
     name: 'nav.4.name',
     sectionKey: 'projects',
   },
-  {
-    id: 5,
-    name: 'nav.5.name',
-    sectionKey: 'recommendations',
-  },
   // Educations section is currently disabled (not routed/rendered anywhere).
   // Re-enable by adding 'educations' back to SectionKey/sectionRoutes and
   // Recommendations to sectionElements in App.tsx, then uncomment below.
@@ -33,6 +28,11 @@ export const linkMenuData: { id: number; name: string; sectionKey: SectionKey }[
     id: 7,
     name: 'nav.7.name',
     sectionKey: 'posts',
+  },
+  {
+    id: 5,
+    name: 'nav.5.name',
+    sectionKey: 'recommendations',
   },
   {
     id: 6,
