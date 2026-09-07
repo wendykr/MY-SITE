@@ -363,6 +363,20 @@
         "Během posledních aktualizací jsem si všimla, že VS Code po otevření vypadá trochu jinak.",
         "Dříve byly panely vizuálně sjednocené, teď vypadají jako samostatné plovoucí bloky."
       ]
+    },
+    "21": {
+      "title": "Commit message nejsou jen pro mě, ale i pro celý tým",
+      "text": [
+        "Na vlastních projektech jsem do commit message napsala jen to, co jsem změnila, a šla dál.",
+        "V týmu jsem se setkala s tím, že commit message může obsahovat typ změny, číslo issue i konvenci Conventional Commits."
+      ]
+    },
+    "22": {
+      "title": "Do Cursoru jsem si přenesla to, na co jsem zvyklá z VS Code",
+      "text": [
+        "VS Code používám dlouho a mám tam vlastní nastavení, zkratky i extensions, se kterými pracuju každý den.",
+        "Přesně tohle nastavení jsem pak mohla do Cursoru přenést jedním kliknutím díky funkci Import Settings from VS Code."
+      ]
     }
   },
   "experience": {

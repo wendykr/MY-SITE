@@ -363,6 +363,20 @@
         "During recent updates I noticed VS Code looks a bit different when I open it.",
         "The panels used to look visually unified; now they appear as separate floating blocks."
       ]
+    },
+    "21": {
+      "title": "Commit messages aren't just for me, they're for the whole team too",
+      "text": [
+        "On my own projects I'd just write what I changed in the commit message and move on.",
+        "In the team I encountered the idea that a commit message can include the type of change, an issue number, and the Conventional Commits convention."
+      ]
+    },
+    "22": {
+      "title": "I brought into Cursor what I was used to from VS Code",
+      "text": [
+        "I've used VS Code for a long time and have my own settings, shortcuts and extensions I work with every day.",
+        "That exact setup was then just one click away from moving into Cursor, thanks to Import Settings from VS Code."
+      ]
     }
   },
   "experience": {
