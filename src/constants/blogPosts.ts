@@ -176,4 +176,12 @@ export const blogPostsData: BlogPostDataStructure[] = [
     tags: ["cursor", "vscode", "frontend", "webdevelopment"],
     link: "https://www.linkedin.com/posts/vendula-krajickova_cursor-vscode-frontend-activity-7500466246262525955-sbIL",
   },
+  {
+    id: 23,
+    date: "2026-09-08",
+    title: "blog.23.title",
+    text: "blog.23.text",
+    tags: ["historiewebu", "frontend", "webdevelopment"],
+    link: "https://www.linkedin.com/posts/vendula-krajickova_historiewebu-frontend-webdevelopment-activity-7503002981701746689-8iBH",
+  },
 ];
