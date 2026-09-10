@@ -80,8 +80,6 @@
   &__name {
     font-size: $font-size-lg;
     font-weight: $font-weight-semibold;
-    text-transform: uppercase;
-    letter-spacing: 0.02em;
     color: $brand-800;
   }
 
@@ -199,6 +197,9 @@
 .cta {
   text-align: center;
   max-width: $width-2xl;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-3xl;
 
   @media (min-width: $breakpoint-lg) {
     max-width: $width-4xl;
