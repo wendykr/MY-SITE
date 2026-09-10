@@ -377,6 +377,13 @@
         "VS Code používám dlouho a mám tam vlastní nastavení, zkratky i extensions, se kterými pracuju každý den.",
         "Přesně tohle nastavení jsem pak mohla do Cursoru přenést jedním kliknutím díky funkci Import Settings from VS Code."
       ]
+    },
+    "23": {
+      "title": "V minulosti web nezačínal obsahem, ale tlačítkem Vstupte",
+      "text": [
+        "Weby dřív často vítaly logem, animací nebo výrazným obrázkem a teprve kliknutím na tlačítko Vstupte se otevřel skutečný obsah.",
+        "Dnes tohle vnímám spíše jako raritu. Homepage má být rovnou místem, kde najdeme obsah a navigaci."
+      ]
     }
   },
   "experience": {

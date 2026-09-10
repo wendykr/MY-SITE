@@ -377,6 +377,13 @@
         "I've used VS Code for a long time and have my own settings, shortcuts and extensions I work with every day.",
         "That exact setup was then just one click away from moving into Cursor, thanks to Import Settings from VS Code."
       ]
+    },
+    "23": {
+      "title": "In the past, a website didn't start with content, but with an Enter button",
+      "text": [
+        "Sites used to greet you with a logo, an animation or a striking image, and only a click on the Enter button revealed the actual content.",
+        "Today I see that approach as more of a rarity. A homepage is expected to be the place with content and navigation right away."
+      ]
     }
   },
   "experience": {
