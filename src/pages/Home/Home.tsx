@@ -122,10 +122,12 @@ export const Home = () => {
 
       <section className="cta">
         <h2 className="title">{t("home.cta.title")}</h2>
-        <p className="cta__text">{t("home.cta.text")}</p>
-        <Link className="cta__button" to={getSectionPath("contact", lang)}>
-          {t("home.cta.button")}
-        </Link>
+        <div className="cta__content">
+          <p className="cta__text">{t("home.cta.text")}</p>
+          <Link className="cta__button" to={getSectionPath("contact", lang)}>
+            {t("home.cta.button")}
+          </Link>
+        </div>
       </section>
     </>
   );
