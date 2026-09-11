@@ -8,6 +8,7 @@ import { Home } from "./pages/Home/Home";
 import { Layout } from "./components/Layout/Layout";
 import { Projects } from "./pages/Projects/Projects";
 import { Recommendations } from "./pages/Recommendations/Recommendations";
+import { Video } from "./pages/Video/Video";
 import { sectionRoutes } from "./constants/sectionRoutes";
 import { SectionKey } from "./constants/sectionRoutes";
 
@@ -23,6 +24,8 @@ const sectionElements: Record<SectionKey, ReactElement> = {
 function App() {
   return (
     <Routes>
+      <Route path="video" element={<Video />} />
+      <Route path="en/video" element={<Video />} />
       <Route element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="en" element={<Home />} />
