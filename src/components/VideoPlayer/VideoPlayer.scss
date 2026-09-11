@@ -1,0 +1,85 @@
+.videoPlayer {
+  position: relative;
+  width: 100%;
+  max-width: $width-2xl;
+  background-color: $black;
+  border-radius: $radius-md;
+  overflow: hidden;
+
+  &__stage {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background-color: $black;
+  }
+
+  &__backdrop {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $black;
+    background-size: cover;
+    background-position: center;
+    filter: blur(18px) brightness(0.65);
+    transform: scale(1.1);
+  }
+
+  &__video {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    cursor: pointer;
+
+    @include focus-visible-outline($brand-200, 0.8, 2px, -2px);
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+    gap: $spacing-lg;
+    padding: $spacing-md $spacing-lg;
+    background-color: $neutral-950;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    padding: $spacing-none;
+    border: none;
+    border-radius: $radius-sm;
+    background: transparent;
+    color: $white;
+    font-size: $font-size-md;
+    cursor: pointer;
+    transition: color $transition-xs;
+
+    &:hover {
+      color: $brand-200;
+    }
+
+    @include focus-visible-outline($brand-200, 0.8);
+  }
+
+  &__time {
+    flex-shrink: 0;
+    font-size: $font-size-xs;
+    color: $white;
+    min-width: 80px;
+  }
+
+  &__seek {
+    flex: 1;
+    height: 4px;
+    accent-color: $brand-500;
+    cursor: pointer;
+  }
+}

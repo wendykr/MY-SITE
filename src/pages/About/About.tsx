@@ -1,16 +1,22 @@
 import "./About.scss";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import { skillGroups } from "../../constants/skills";
 import { Skill } from "../../components/Skill/Skill";
 import Hero from "../../components/Hero/Hero";
 import { Seo } from "../../Seo";
 
 export const About = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const lang = i18n.language.slice(0, 2);
+  const videoPath = lang === "en" ? "/en/video" : "/video";
 
   return (
     <>
-      <Seo title={t("about.seo.title")} description={t("about.seo.description")} />
+      <Seo
+        title={t("about.seo.title")}
+        description={t("about.seo.description")}
+      />
       <Hero title={t("about.title")} />
       <section className="about">
         <h3 className="about__subtitle">{t("about.subtitle.who")}</h3>
@@ -19,6 +25,9 @@ export const About = () => {
           <p>{t("about.text.p2")}</p>
           <p>{t("about.text.p3")}</p>
         </div>
+        <Link className="about__videoLink" to={videoPath}>
+          {t("about.video.fullscreenLink")}
+        </Link>
 
         <h3 className="about__subtitle">{t("about.subtitle.tech")}</h3>
         <div className="about__skills">

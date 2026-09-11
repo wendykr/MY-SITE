@@ -87,8 +87,12 @@
     },
     "subtitle": {
       "who": "Who am I?",
+      "video": "Video introduction",
       "tech": "Skills and tools",
       "traits": "My approach to work"
+    },
+    "video": {
+      "fullscreenLink": "Go to video introduction"
     },
     "text": {
       "p1": "Frontend developer of websites and web applications focused on React, Next.js and TypeScript.",
@@ -508,5 +512,20 @@
   },
   "footer": {
     "author": "Vendula Krajickova"
+  },
+  "video": {
+    "seo": {
+      "title": "Video introduction | Vendula Krajickova",
+      "description": "A short video where I introduce myself and share a few words about my work and approach."
+    }
+  },
+  "videoPlayer": {
+    "play": "Play",
+    "pause": "Pause",
+    "seek": "Seek video",
+    "mute": "Mute",
+    "unmute": "Unmute",
+    "fullscreen": "Fullscreen",
+    "exitFullscreen": "Exit fullscreen"
   }
 }

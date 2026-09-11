@@ -35,6 +35,27 @@
     }
   }
 
+  &__videoLink {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: $spacing-lg;
+    padding: $spacing-md $spacing-2xl;
+    background-color: $brand-800;
+    color: $white;
+    font-weight: $font-weight-semibold;
+    text-decoration: none;
+    border: 1px solid $brand-800;
+    border-radius: $radius-sm;
+
+    &:hover {
+      background-color: $white;
+      color: $brand-800;
+    }
+
+    @include focus-visible-outline($brand-800, 0.5);
+  }
+
   &__skills {
     display: flex;
     flex-direction: column;

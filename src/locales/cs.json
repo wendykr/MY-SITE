@@ -87,8 +87,12 @@
     },
     "subtitle": {
       "who": "Kdo jsem?",
+      "video": "Videopředstavení",
       "tech": "Dovednosti a nástroje",
       "traits": "Můj přístup k práci"
+    },
+    "video": {
+      "fullscreenLink": "Přejít na videopředstavení"
     },
     "text": {
       "p1": "Frontend vývojářka webů a webových aplikací se zaměřením na React, Next.js a TypeScript.",
@@ -508,5 +512,20 @@
   },
   "footer": {
     "author": "Vendula Krajíčková"
+  },
+  "video": {
+    "seo": {
+      "title": "Videopředstavení | Vendula Krajíčková",
+      "description": "Krátké video, ve kterém se osobně představím a řeknu pár slov o své práci a přístupu."
+    }
+  },
+  "videoPlayer": {
+    "play": "Přehrát",
+    "pause": "Pozastavit",
+    "seek": "Posun ve videu",
+    "mute": "Ztlumit",
+    "unmute": "Zrušit ztlumení",
+    "fullscreen": "Celá obrazovka",
+    "exitFullscreen": "Ukončit celou obrazovku"
   }
 }
