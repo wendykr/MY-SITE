@@ -4,6 +4,21 @@ import path from "path";
 
 const distDir = path.resolve(process.cwd(), "dist");
 const localesDir = path.resolve(process.cwd(), "src", "locales");
+const SITE_URL = "https://www.vendula-krajickova.cz";
+const DEFAULT_LANG = "cs";
+
+// Mirrors src/constants/sectionRoutes.ts plus the standalone "video" route
+// declared directly in src/App.tsx. Kept in sync by hand since this script
+// runs as plain Node before any TypeScript is compiled.
+const SECTION_ROUTES = [
+  { jsonKey: "about", cs: "o-mne", en: "about" },
+  { jsonKey: "experience", cs: "zkusenosti", en: "experience" },
+  { jsonKey: "projects", cs: "projekty", en: "projects" },
+  { jsonKey: "blog", cs: "prispevky", en: "posts" },
+  { jsonKey: "recommendations", cs: "doporuceni", en: "recommendations" },
+  { jsonKey: "contact", cs: "kontakt", en: "contact" },
+  { jsonKey: "video", cs: "video", en: "video" },
+];
 
 function read(file) {
   return fs.readFileSync(file, { encoding: "utf8" });
@@ -36,24 +51,7 @@ function replaceHrefAttr(tag, value) {
   return tag.replace(/>$/, ` href="${escapeAttr(value)}">`);
 }
 
-function ensureLangInUrl(url, lang) {
-  try {
-    const u = new URL(url);
-    let pathname = u.pathname;
-    if (!pathname.endsWith("/")) pathname += "/";
-    const segments = pathname.split("/").filter(Boolean);
-    if (segments[0] && segments[0] !== lang) segments.unshift(lang);
-    else if (!segments[0]) segments.unshift(lang);
-    u.pathname = "/" + segments.join("/");
-    if (!u.pathname.endsWith("/")) u.pathname += "/";
-    return u.toString();
-  } catch (e) {
-    if (!url.endsWith("/")) url += "/";
-    return url + lang + "/";
-  }
-}
-
-function replaceMeta(html, meta, lang) {
+function replaceMeta(html, meta, lang, canonicalUrl) {
   let out = html;
   out = out.replace(/<html[^>]*lang="[^"]*"[^>]*>/i, (m) =>
     m.replace(/lang="[^"]*"/, `lang="${lang}"`),
@@ -88,17 +86,25 @@ function replaceMeta(html, meta, lang) {
     meta.ogDescription || meta.description,
   );
 
-  if (meta.canonical) {
-    const langUrl = ensureLangInUrl(meta.canonical, lang);
+  if (canonicalUrl) {
     out = out.replace(/<meta[^>]*property=(?:"|')og:url(?:"|')[^>]*>/i, (m) =>
-      replaceContentAttr(m, langUrl),
+      replaceContentAttr(m, canonicalUrl),
     );
     out = out.replace(/<link[^>]*rel=(?:"|')canonical(?:"|')[^>]*>/i, (m) =>
-      replaceHrefAttr(m, langUrl),
+      replaceHrefAttr(m, canonicalUrl),
     );
   }
 
   return out;
+}
+
+// Maps a route's URL path (e.g. "/", "/en", "/o-mne", "/en/about") to the
+// dist/ file that Netlify will serve for it, mirroring getHomePath /
+// getSectionPath from src/constants/sectionRoutes.ts.
+function outFileForPath(urlPath) {
+  const clean = urlPath.replace(/^\//, "");
+  const dir = clean === "" ? distDir : path.join(distDir, ...clean.split("/"));
+  return path.join(dir, "index.html");
 }
 
 function main() {
@@ -109,20 +115,31 @@ function main() {
   }
 
   const baseHtml = read(baseFile);
-
   const files = fs.readdirSync(localesDir).filter((f) => f.endsWith(".json"));
+
   for (const file of files) {
-    const full = path.join(localesDir, file);
     const lang = path.basename(file, ".json");
-    try {
-      const json = JSON.parse(read(full));
-      const meta = json.meta || {};
-      const outHtml = replaceMeta(baseHtml, meta, lang);
-      const outPath = path.join(distDir, lang, "index.html");
-      write(outPath, outHtml);
-      console.log(`Generated localized index for ${lang} -> ${outPath}`);
-    } catch (e) {
-      console.error(`Failed to process locale ${file}:`, e);
+    const json = JSON.parse(read(path.join(localesDir, file)));
+    const prefix = lang === DEFAULT_LANG ? "" : `/${lang}`;
+
+    const homePath = lang === DEFAULT_LANG ? "/" : prefix;
+    const homeMeta = json.meta || {};
+    const homeHtml = replaceMeta(baseHtml, homeMeta, lang, `${SITE_URL}${homePath}`);
+    const homeOut = outFileForPath(homePath);
+    write(homeOut, homeHtml);
+    console.log(`Generated ${lang} home -> ${homeOut}`);
+
+    for (const route of SECTION_ROUTES) {
+      const section = json[route.jsonKey];
+      const seo = section && section.seo;
+      if (!seo) continue;
+
+      const slug = lang === DEFAULT_LANG ? route.cs : route.en;
+      const sectionPath = `${prefix}/${slug}`;
+      const sectionHtml = replaceMeta(baseHtml, seo, lang, `${SITE_URL}${sectionPath}`);
+      const sectionOut = outFileForPath(sectionPath);
+      write(sectionOut, sectionHtml);
+      console.log(`Generated ${lang} ${route.jsonKey} -> ${sectionOut}`);
     }
   }
 }
