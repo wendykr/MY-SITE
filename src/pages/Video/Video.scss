@@ -37,14 +37,11 @@
     color: $brand-600;
     background-color: $white;
     border: 1px solid $brand-600;
-    transition: background-color $transition-sm linear, color $transition-sm linear;
 
     &:hover {
       background-color: $brand-600;
       color: $white;
     }
-
-    @include focus-visible-outline($brand-600, 0.5);
   }
 
   &__content {
