@@ -15,6 +15,7 @@ interface SeoProps {
   description: string;
   ogTitle?: string;
   ogDescription?: string;
+  noIndex?: boolean;
 }
 
 const getSectionKeyFromPath = (pathname: string): SectionKey | undefined => {
@@ -23,7 +24,13 @@ const getSectionKeyFromPath = (pathname: string): SectionKey | undefined => {
   return slug ? findSectionKeyBySlug(slug) : undefined;
 };
 
-export const Seo = ({ title, description, ogTitle, ogDescription }: SeoProps) => {
+export const Seo = ({
+  title,
+  description,
+  ogTitle,
+  ogDescription,
+  noIndex,
+}: SeoProps) => {
   const { i18n } = useTranslation();
   const { pathname } = useLocation();
   const lang = i18n.language ? i18n.language.slice(0, 2) : "cs";
@@ -40,6 +47,7 @@ export const Seo = ({ title, description, ogTitle, ogDescription }: SeoProps) =>
     <Helmet htmlAttributes={{ lang }}>
       <title>{title}</title>
       <meta name="description" content={description} />
+      {noIndex && <meta name="robots" content="noindex, nofollow" />}
       <meta property="og:title" content={resolvedOgTitle} />
       <meta property="og:description" content={resolvedOgDescription} />
       <meta name="twitter:title" content={resolvedOgTitle} />
