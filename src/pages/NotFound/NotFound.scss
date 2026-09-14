@@ -1,0 +1,64 @@
+.notFound {
+  width: 100%;
+  background: $neutral-100;
+  padding: $spacing-6xl $spacing-none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: $breakpoint-md) {
+    flex: 1;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    padding: $spacing-8xl $spacing-none;
+  }
+
+  @media (min-width: $breakpoint-5xl) {
+    flex: none;
+  }
+
+  &__inner {
+    max-width: $width-4xl;
+    margin: $spacing-none auto;
+    padding: $spacing-none $spacing-5xl;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $spacing-md;
+
+    @media (min-width: $breakpoint-lg) {
+      padding: $spacing-none $spacing-8xl;
+    }
+  }
+
+  &__code {
+    margin: $spacing-none;
+    font-size: $font-size-display-lg;
+    font-weight: $font-weight-bold;
+    color: $brand-800;
+
+    @media (min-width: $breakpoint-lg) {
+      font-size: $font-size-display-xl;
+    }
+  }
+
+  &__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: $spacing-lg;
+    padding: $spacing-md $spacing-2xl;
+    background-color: $brand-800;
+    color: $white;
+    font-weight: $font-weight-semibold;
+    text-decoration: none;
+    border: 1px solid $brand-800;
+    border-radius: $radius-sm;
+
+    &:hover {
+      background-color: $white;
+      color: $brand-800;
+    }
+  }
+}
