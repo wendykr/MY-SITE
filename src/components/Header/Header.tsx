@@ -59,7 +59,7 @@ export const Header = () => {
                 href="https://github.com/wendykr/"
                 aria-label={t("hero.ariaLabelButtonGH")}
               >
-                <FaGithub className="header__icon" />
+                <FaGithub className="header__icon" aria-hidden="true" />
               </a>
             </li>
             <li>
@@ -67,7 +67,7 @@ export const Header = () => {
                 href="https://www.linkedin.com/in/vendula-krajickova/"
                 aria-label={t("hero.ariaLabelButtonLI")}
               >
-                <FaLinkedinIn className="header__icon" />
+                <FaLinkedinIn className="header__icon" aria-hidden="true" />
               </a>
             </li>
             <li>
@@ -75,7 +75,7 @@ export const Header = () => {
                 href="mailto:vendysacek@seznam.cz"
                 aria-label={t("hero.ariaLabelButtonMail")}
               >
-                <FaEnvelope className="header__icon" />
+                <FaEnvelope className="header__icon" aria-hidden="true" />
               </a>
             </li>
           </ul>
@@ -86,7 +86,7 @@ export const Header = () => {
             onClick={handleScrollToHighlights}
             aria-label={t("hero.ariaLabelButtonScrollDown")}
           >
-            <FaAngleDoubleDown className="header__icon--down" />
+            <FaAngleDoubleDown className="header__icon--down" aria-hidden="true" />
           </Link>
         )}
       </header>

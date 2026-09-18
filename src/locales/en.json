@@ -35,7 +35,9 @@
       "name": "Posts",
       "url": "posts"
     },
-    "homeAriaLabel": "Go to the homepage"
+    "homeAriaLabel": "Go to the homepage",
+    "openMenuAriaLabel": "Open menu",
+    "closeMenuAriaLabel": "Close menu"
   },
   "hero": {
     "title": "Hi 👋, I'm",
