@@ -6,8 +6,10 @@ import { LanguageSwitcher } from "../LanguageSwitcher/LanguageSwitcher";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross2 } from "react-icons/rx";
 import { useNav } from "../../context/NavContext";
+import { useTranslation } from "react-i18next";
 
 export const NavigationList = () => {
+  const { t } = useTranslation();
   const { isOpenMenu, setIsOpenMenu } = useNav();
 
   useEffect(() => {
@@ -30,11 +32,24 @@ export const NavigationList = () => {
 
   return (
     <>
-      <div id="toggler" onClick={handleClick}>
+      <div
+        id="toggler"
+        onClick={handleClick}
+        role="button"
+        tabIndex={0}
+        aria-expanded={isOpenMenu}
+        aria-label={t(isOpenMenu ? "nav.closeMenuAriaLabel" : "nav.openMenuAriaLabel")}
+        onKeyDown={(e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            handleClick();
+          }
+        }}
+      >
         {isOpenMenu ? (
-          <RxCross2 className="navigation__icon" />
+          <RxCross2 className="navigation__icon" aria-hidden="true" />
         ) : (
-          <RxHamburgerMenu className="navigation__icon" />
+          <RxHamburgerMenu className="navigation__icon" aria-hidden="true" />
         )}
       </div>
       <ul id="menu" className={`navigationList ${isOpenMenu ? "display" : ""}`}>

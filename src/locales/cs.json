@@ -35,7 +35,9 @@
       "name": "Příspěvky",
       "url": "prispevky"
     },
-    "homeAriaLabel": "Přejít na úvodní stránku"
+    "homeAriaLabel": "Přejít na úvodní stránku",
+    "openMenuAriaLabel": "Otevřít menu",
+    "closeMenuAriaLabel": "Zavřít menu"
   },
   "hero": {
     "title": "Ahoj 👋, jsem",
