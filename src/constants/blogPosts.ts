@@ -184,4 +184,20 @@ export const blogPostsData: BlogPostDataStructure[] = [
     tags: ["historiewebu", "frontend", "webdevelopment"],
     link: "https://www.linkedin.com/posts/vendula-krajickova_historiewebu-frontend-webdevelopment-activity-7503002981701746689-8iBH",
   },
+  {
+    id: 24,
+    date: "2026-09-15",
+    title: "blog.24.title",
+    text: "blog.24.text",
+    tags: ["vscode", "designsystem", "scss", "frontend"],
+    link: "https://www.linkedin.com/posts/vendula-krajickova_13529e-vscode-designsystem-activity-7505539692063498240-XC4I",
+  },
+  {
+    id: 25,
+    date: "2026-09-22",
+    title: "blog.25.title",
+    text: "blog.25.text",
+    tags: ["react", "nextjs", "skeleton", "loading", "frontend"],
+    link: "https://www.linkedin.com/posts/vendula-krajickova_react-nextjs-skeleton-activity-7508076537921957891-QZRv",
+  },
 ];

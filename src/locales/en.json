@@ -390,6 +390,20 @@
         "Sites used to greet you with a logo, an animation or a striking image, and only a click on the Enter button revealed the actual content.",
         "Today I see that approach as more of a rarity. A homepage is expected to be the place with content and navigation right away."
       ]
+    },
+    "24": {
+      "title": "A VS Code extension that shows an SCSS variable's value on hover",
+      "text": [
+        "I built a design system with colors, typography and spacing in my project using Claude Code, which unified the values into variables.",
+        "Thanks to the SCSS IntelliSense extension in VS Code, I can now hover over a variable like $brand-800 and see its actual value right away."
+      ]
+    },
+    "25": {
+      "title": "Gray blocks as a visual stand-in for content while data loads from the server",
+      "text": [
+        "On commercial projects I used skeleton loading instead of text informing the user that data is loading.",
+        "In React I handle it with useState and useEffect, and in the Next.js App Router it's enough to create a loading.tsx file for the given route segment."
+      ]
     }
   },
   "experience": {
