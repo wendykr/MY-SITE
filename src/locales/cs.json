@@ -390,6 +390,20 @@
         "Weby dřív často vítaly logem, animací nebo výrazným obrázkem a teprve kliknutím na tlačítko Vstupte se otevřel skutečný obsah.",
         "Dnes tohle vnímám spíše jako raritu. Homepage má být rovnou místem, kde najdeme obsah a navigaci."
       ]
+    },
+    "24": {
+      "title": "Rozšíření pro VS Code, které na hover zobrazí hodnotu SCSS proměnné",
+      "text": [
+        "Design systém s barvami, typografií a spacingem jsem si v projektu vytvořila pomocí Claude Code, který sjednotil hodnoty do proměnných.",
+        "Díky SCSS IntelliSense ve VS Code teď u proměnné jako $brand-800 hned při hoveru vidím její konkrétní hodnotu."
+      ]
+    },
+    "25": {
+      "title": "Šedé bloky jako vizuální náhrada obsahu, dokud se data stahují ze serveru",
+      "text": [
+        "Na komerčních projektech jsem využila skeleton loading místo textu informujícího o načítání dat.",
+        "V Reactu ho řeším přes useState a useEffect, v Next.js App Routeru stačí vytvořit soubor loading.tsx pro daný route segment."
+      ]
     }
   },
   "experience": {
