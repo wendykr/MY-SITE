@@ -543,5 +543,16 @@
     "unmute": "Unmute",
     "fullscreen": "Fullscreen",
     "exitFullscreen": "Exit fullscreen"
+  },
+  "notFound": {
+    "code": "404",
+    "seo": {
+      "title": "Page Not Found | Vendula Krajickova",
+      "description": "The page you're looking for could not be found. Head back to Vendy Krajickova's homepage."
+    },
+    "title": "Oops, this page doesn't exist 🙈",
+    "text": "The page you're looking for doesn't exist or has been moved.",
+    "button": "Back to homepage",
+    "ariaLabelButton": "Go to homepage"
   }
 }

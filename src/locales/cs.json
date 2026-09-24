@@ -543,5 +543,16 @@
     "unmute": "Zrušit ztlumení",
     "fullscreen": "Celá obrazovka",
     "exitFullscreen": "Ukončit celou obrazovku"
+  },
+  "notFound": {
+    "code": "404",
+    "seo": {
+      "title": "Stránka nenalezena | Vendula Krajíčková",
+      "description": "Požadovaná stránka nebyla nalezena. Vraťte se na hlavní stránku webu Vendy Krajíčkové."
+    },
+    "title": "Jejda, tahle stránka tu není 🙈",
+    "text": "Stránka, kterou hledáte, neexistuje nebo byla přesunuta.",
+    "button": "Zpět na hlavní stránku",
+    "ariaLabelButton": "Přejít na hlavní stránku"
   }
 }

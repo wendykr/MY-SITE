@@ -1,11 +1,12 @@
 import { ReactElement } from "react";
-import { Navigate, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import { About } from "./pages/About/About";
 import { Blog } from "./pages/Blog/Blog";
 import { Contact } from "./pages/Contact/Contact";
 import { Experiences } from "./pages/Experiences/Experiences";
 import { Home } from "./pages/Home/Home";
 import { Layout } from "./components/Layout/Layout";
+import { NotFound } from "./pages/NotFound/NotFound";
 import { Projects } from "./pages/Projects/Projects";
 import { Recommendations } from "./pages/Recommendations/Recommendations";
 import { Video } from "./pages/Video/Video";
@@ -41,7 +42,7 @@ function App() {
             element={sectionElements[route.key]}
           />,
         ])}
-        <Route path="*" element={<Navigate to="/" replace />} />
+        <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
   );
