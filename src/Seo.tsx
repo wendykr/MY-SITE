@@ -8,7 +8,12 @@ import {
   SectionKey,
 } from "./constants/sectionRoutes";
 
-const SITE_URL = "https://www.vendula-krajickova.cz";
+const SITE_URL = "https://vendula-krajickova.cz";
+
+// Netlify serves every page from <path>/index.html and 301-redirects "/en" to
+// "/en/", so canonical and hreflang URLs must include the trailing slash.
+const toAbsoluteUrl = (path: string): string =>
+  `${SITE_URL}${path.endsWith("/") ? path : `${path}/`}`;
 
 interface SeoProps {
   title: string;
@@ -44,10 +49,10 @@ export const Seo = ({ title, description, ogTitle, ogDescription }: SeoProps) =>
       <meta property="og:description" content={resolvedOgDescription} />
       <meta name="twitter:title" content={resolvedOgTitle} />
       <meta name="twitter:description" content={resolvedOgDescription} />
-      <link rel="canonical" href={`${SITE_URL}${currentPath}`} />
-      <link rel="alternate" hrefLang="cs" href={`${SITE_URL}${csPath}`} />
-      <link rel="alternate" hrefLang="en" href={`${SITE_URL}${enPath}`} />
-      <link rel="alternate" hrefLang="x-default" href={`${SITE_URL}${csPath}`} />
+      <link rel="canonical" href={toAbsoluteUrl(currentPath)} />
+      <link rel="alternate" hrefLang="cs" href={toAbsoluteUrl(csPath)} />
+      <link rel="alternate" hrefLang="en" href={toAbsoluteUrl(enPath)} />
+      <link rel="alternate" hrefLang="x-default" href={toAbsoluteUrl(csPath)} />
     </Helmet>
   );
 };
