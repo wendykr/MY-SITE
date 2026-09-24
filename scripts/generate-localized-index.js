@@ -4,8 +4,14 @@ import path from "path";
 
 const distDir = path.resolve(process.cwd(), "dist");
 const localesDir = path.resolve(process.cwd(), "src", "locales");
-const SITE_URL = "https://www.vendula-krajickova.cz";
+const SITE_URL = "https://vendula-krajickova.cz";
 const DEFAULT_LANG = "cs";
+
+// Netlify serves every page from <path>/index.html and 301-redirects "/en" to
+// "/en/", so canonical URLs must include the trailing slash.
+function toAbsoluteUrl(urlPath) {
+  return `${SITE_URL}${urlPath.endsWith("/") ? urlPath : `${urlPath}/`}`;
+}
 
 // Mirrors src/constants/sectionRoutes.ts plus the standalone "video" route
 // declared directly in src/App.tsx. Kept in sync by hand since this script
@@ -124,7 +130,7 @@ function main() {
 
     const homePath = lang === DEFAULT_LANG ? "/" : prefix;
     const homeMeta = json.meta || {};
-    const homeHtml = replaceMeta(baseHtml, homeMeta, lang, `${SITE_URL}${homePath}`);
+    const homeHtml = replaceMeta(baseHtml, homeMeta, lang, toAbsoluteUrl(homePath));
     const homeOut = outFileForPath(homePath);
     write(homeOut, homeHtml);
     console.log(`Generated ${lang} home -> ${homeOut}`);
@@ -136,7 +142,7 @@ function main() {
 
       const slug = lang === DEFAULT_LANG ? route.cs : route.en;
       const sectionPath = `${prefix}/${slug}`;
-      const sectionHtml = replaceMeta(baseHtml, seo, lang, `${SITE_URL}${sectionPath}`);
+      const sectionHtml = replaceMeta(baseHtml, seo, lang, toAbsoluteUrl(sectionPath));
       const sectionOut = outFileForPath(sectionPath);
       write(sectionOut, sectionHtml);
       console.log(`Generated ${lang} ${route.jsonKey} -> ${sectionOut}`);

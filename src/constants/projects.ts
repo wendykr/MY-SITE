@@ -46,7 +46,7 @@ export const projectsData = [
     skills: "React / TypeScript / Vite",
     description: "project.5.description",
     linkGH: "https://github.com/wendykr/MY-SITE",
-    linkWeb: "https://www.vendula-krajickova.cz/",
+    linkWeb: "https://vendula-krajickova.cz/",
     screen: "../project/screen-my-site.jpg",
   },
   {
